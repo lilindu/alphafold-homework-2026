@@ -1,0 +1,28 @@
+[
+ {
+  "name": "33_9QS9",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "rnaSequence": {
+     "sequence": "AAAAAA",
+     "count": 1
+    }
+   },
+   {
+    "proteinChain": {
+     "sequence": "MSITFVAAWVQREPLTLVNLTPHEVILHLDGGPLRLPASDVVPRLLLSEGRQETLVVNDPEYPGEAASVREVPIAVGATWLGIDPPLPEPRPGTVYVTSRVVAEHFPERSDLVWPDDLIRDADGQVVGARRLGCLPRPVLPRPCDDGAQGDQDGRPRTEEER",
+     "count": 2
+    }
+   },
+   {
+    "ion": {
+     "ion": "MG",
+     "count": 6
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]

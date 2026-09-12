@@ -1,0 +1,384 @@
+{
+ "30ZS": {
+  "per": {
+   "1": 3
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9Q1L": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9PUB": {
+  "per": {
+   "1": 4
+  },
+  "reported": 4,
+  "listed": 2,
+  "note": "\u6309\u5bf9\u79f0\u64cd\u4f5c\u5c55\u5f00 \u00d72"
+ },
+ "9PFP": {
+  "per": {
+   "4": 1,
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 4,
+  "listed": 4,
+  "note": ""
+ },
+ "9P4Z": {
+  "per": {
+   "1": 1
+  },
+  "reported": 1,
+  "listed": 1,
+  "note": ""
+ },
+ "9P4C": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9O9Y": {
+  "per": {
+   "1": 2,
+   "2": 2
+  },
+  "reported": 4,
+  "listed": 4,
+  "note": ""
+ },
+ "9O9D": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9O71": {
+  "per": {
+   "2": 3,
+   "1": 3
+  },
+  "reported": 6,
+  "listed": 2,
+  "note": "\u6309\u5bf9\u79f0\u64cd\u4f5c\u5c55\u5f00 \u00d73"
+ },
+ "9NYB": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9NKZ": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9NIY": {
+  "per": {
+   "4": 1,
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 4,
+  "listed": 4,
+  "note": ""
+ },
+ "9IA3": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9I8A": {
+  "per": {
+   "2": 1,
+   "1": 1
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "36BT": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "30TL": {
+  "per": {
+   "2": 2,
+   "1": 2
+  },
+  "reported": 4,
+  "listed": 2,
+  "note": "\u6309\u5bf9\u79f0\u64cd\u4f5c\u5c55\u5f00 \u00d72"
+ },
+ "23VF": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "21EJ": {
+  "per": {
+   "1": 2
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "11KP": {
+  "per": {
+   "2": 1,
+   "1": 1
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "10VC": {
+  "per": {
+   "2": 1,
+   "1": 1
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "9ZIQ": {
+  "per": {
+   "2": 1,
+   "1": 1
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "9Y1G": {
+  "per": {
+   "4": 1,
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 4,
+  "listed": 4,
+  "note": ""
+ },
+ "9X8S": {
+  "per": {
+   "2": 2,
+   "1": 4
+  },
+  "reported": 6,
+  "listed": 6,
+  "note": ""
+ },
+ "9W2K": {
+  "per": {
+   "4": 1,
+   "3": 1,
+   "2": 1,
+   "1": 2
+  },
+  "reported": 5,
+  "listed": 5,
+  "note": ""
+ },
+ "9ULL": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9UD2": {
+  "per": {
+   "6": 1,
+   "5": 1,
+   "4": 1,
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 6,
+  "listed": 6,
+  "note": ""
+ },
+ "9U7W": {
+  "per": {
+   "1": 1
+  },
+  "reported": 1,
+  "listed": 1,
+  "note": ""
+ },
+ "9U3B": {
+  "per": {
+   "1": 1
+  },
+  "reported": 1,
+  "listed": 1,
+  "note": ""
+ },
+ "9U19": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9TEL": {
+  "per": {
+   "3": 1,
+   "2": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9T9W": {
+  "per": {
+   "2": 1,
+   "1": 1
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "9T6Y": {
+  "per": {
+   "1": 1
+  },
+  "reported": 1,
+  "listed": 1,
+  "note": ""
+ },
+ "9S9E": {
+  "per": {
+   "2": 2,
+   "1": 2
+  },
+  "reported": 4,
+  "listed": 4,
+  "note": ""
+ },
+ "9S1S": {
+  "per": {
+   "2": 1,
+   "1": 2
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9RLL": {
+  "per": {
+   "1": 3
+  },
+  "reported": 3,
+  "listed": 1,
+  "note": "\u6309\u5bf9\u79f0\u64cd\u4f5c\u5c55\u5f00 \u00d73"
+ },
+ "9QS9": {
+  "per": {
+   "2": 1,
+   "1": 2
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9QNM": {
+  "per": {
+   "1": 1
+  },
+  "reported": 1,
+  "listed": 1,
+  "note": ""
+ },
+ "9QEV": {
+  "per": {
+   "1": 3
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ },
+ "9QDG": {
+  "per": {
+   "2": 1,
+   "1": 1
+  },
+  "reported": 2,
+  "listed": 2,
+  "note": ""
+ },
+ "9Q8C": {
+  "per": {
+   "1": 1
+  },
+  "reported": 1,
+  "listed": 1,
+  "note": ""
+ },
+ "9ZRO": {
+  "per": {
+   "2": 1,
+   "3": 1,
+   "1": 1
+  },
+  "reported": 3,
+  "listed": 3,
+  "note": ""
+ }
+}

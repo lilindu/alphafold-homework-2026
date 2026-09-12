@@ -1,0 +1,896 @@
+{
+ "21EJ": [
+  {
+   "entity": "1",
+   "type": "Protein",
+   "pos": 110,
+   "code": "CSD",
+   "status": "UNSUPPORTED",
+   "desc": "Cupin type-2 domain-containing protein"
+  }
+ ],
+ "9PFY": [
+  {
+   "entity": "1",
+   "type": "Protein",
+   "pos": 122,
+   "code": "HIP",
+   "status": "supported",
+   "desc": "nucleoside-diphosphate kinase"
+  }
+ ],
+ "9PHD": [
+  {
+   "entity": "3",
+   "type": "Protein",
+   "pos": 1,
+   "code": "A1CRT",
+   "status": "UNSUPPORTED",
+   "desc": "cyclic peptide CP141076"
+  }
+ ],
+ "9T9W": [
+  {
+   "entity": "2",
+   "type": "Protein",
+   "pos": 5,
+   "code": "SEP",
+   "status": "supported",
+   "desc": "NF-kappa-B inhibitor alpha"
+  },
+  {
+   "entity": "2",
+   "type": "Protein",
+   "pos": 9,
+   "code": "SEP",
+   "status": "supported",
+   "desc": "NF-kappa-B inhibitor alpha"
+  }
+ ],
+ "9IBQ": [
+  {
+   "entity": "3",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*AP*TP*GP*TP*AP*G)-3')"
+  },
+  {
+   "entity": "3",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*AP*TP*GP*TP*AP*G)-3')"
+  },
+  {
+   "entity": "3",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*AP*TP*GP*TP*AP*G)-3')"
+  },
+  {
+   "entity": "3",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*AP*TP*GP*TP*AP*G)-3')"
+  },
+  {
+   "entity": "3",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*AP*TP*GP*TP*AP*G)-3')"
+  },
+  {
+   "entity": "3",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*AP*TP*GP*TP*AP*G)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 13,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 14,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 15,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(P*CP*TP*AP*CP*AP*TP*TP*GP*GP*TP*TP*AP*CP*CP*T)-3')"
+  }
+ ],
+ "9LYV": [
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*AP*CP*TP*AP*AP*TP*TP*AP*GP*TP*A)-3')"
+  }
+ ],
+ "9OA4": [
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 13,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 14,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 15,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 16,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*TP*CP*CP*CP*AP*CP*TP*TP*TP*CP*GP*CP*TP*TP*AP*T)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 13,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 14,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 15,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 16,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (5'-D(*AP*AP*TP*AP*AP*GP*CP*GP*GP*AP*AP*GP*TP*GP*GP*G)-3')"
+  }
+ ],
+ "9U19": [
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "2",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "12bp reverse complementary"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DA",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DC",
+   "status": "UNSUPPORTED",
+   "desc": "CACG-containing 12bp forward strand"
+  }
+ ],
+ "9TEL": [
+  {
+   "entity": "1",
+   "type": "Protein",
+   "pos": 273,
+   "code": "CSO",
+   "status": "UNSUPPORTED",
+   "desc": "RNA helicase"
+  }
+ ],
+ "9TKV": [
+  {
+   "entity": "1",
+   "type": "Protein",
+   "pos": 25,
+   "code": "CSO",
+   "status": "UNSUPPORTED",
+   "desc": "RNA helicase"
+  }
+ ],
+ "9PLB": [
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 1,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 2,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 3,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 4,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 5,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 6,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 7,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 8,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 9,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 10,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 11,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 12,
+   "code": "DT",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  },
+  {
+   "entity": "1",
+   "type": "DNA",
+   "pos": 13,
+   "code": "DG",
+   "status": "UNSUPPORTED",
+   "desc": "DNA (13-MER)"
+  }
+ ]
+}

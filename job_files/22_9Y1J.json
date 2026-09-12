@@ -1,0 +1,52 @@
+[
+ {
+  "name": "22_9Y1J",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "dnaSequence": {
+     "sequence": "GTCGG",
+     "count": 1
+    }
+   },
+   {
+    "dnaSequence": {
+     "sequence": "GCTGATGCGC",
+     "count": 1
+    }
+   },
+   {
+    "dnaSequence": {
+     "sequence": "CCGACTGCGCATCAGC",
+     "count": 1
+    }
+   },
+   {
+    "proteinChain": {
+     "sequence": "MSKRKAPQETLNGGITDMLTELANFEKNVSQAIHKYNAYRKAASVIAKYPHKIKSGAEAKKLPGVGTKIAEKIDEFLATGKLRKLEKIRQDDTSSSINFLTRVSGIGPSAARKFVDEGIKTLEDLRKNEDKLNHHQRIGLKYFGDFEKRIPREEMLQMQDIVLNEVKKVDSEYIATVCGSFRRGAESSGDMDVLLTHPSFTSESTKQPKLLHQVVEQLQKVHFITDTLSKGETKFMGVCQLPSKNDEKEYPHRRIDIRLIPKDQYYCGVLYFTGSDIFNKNMRAHALEKGFTINEYTIRPLGVTGVAGEPLPVDSEKDIFDYIQWKYREPKDRSE",
+     "count": 1
+    }
+   },
+   {
+    "ligand": {
+     "ligand": "F2A",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "NA",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "MG",
+     "count": 1
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]

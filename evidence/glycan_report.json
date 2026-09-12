@@ -1,0 +1,363 @@
+{
+ "10CX": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "32OA": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9M1X": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9QUM": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9R6D": {
+  "glycan_attached": [],
+  "glycan_free": [
+   {
+    "monomers": [
+     "GLC"
+    ],
+    "desc": "alpha-D-glucopyranose-(1-1)-alpha-D-glucopyranose",
+    "n_residues": 2
+   }
+  ],
+  "covalent_nonpolymer": []
+ },
+ "12NS": {
+  "glycan_attached": [],
+  "glycan_free": [
+   {
+    "monomers": [
+     "BMA"
+    ],
+    "desc": "beta-D-mannopyranose-(1-4)-beta-D-mannopyranose",
+    "n_residues": 2
+   }
+  ],
+  "covalent_nonpolymer": []
+ },
+ "21EJ": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9SA2": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9YGW": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "10DA": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9PVR": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9PFY": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9T6Y": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9TBU": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": [
+   {
+    "code": "AMP",
+    "role": null,
+    "partner": "THR",
+    "partner_seq": 67,
+    "target": "AMP"
+   }
+  ]
+ },
+ "9U8Z": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9Q1H": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9R5Y": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9SPS": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9TFT": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9P48": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9PHD": {
+  "glycan_attached": [
+   {
+    "monomers": [
+     "BMA",
+     "FUC",
+     "MAN",
+     "NAG"
+    ],
+    "desc": "alpha-D-mannopyranose-(1-3)-beta-D-mannopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-[alpha-L-fucopyranose-(1-3)][alpha-L-fucopyranose-(1-6)]2-acetamido-2-deoxy-beta-D-glucopyranose",
+    "n_residues": 6,
+    "role": "N-Glycosylation",
+    "residue": "ASN",
+    "seq_id": 11,
+    "position": 11,
+    "attach_aa": "N",
+    "attach_entity": "1",
+    "site_verified": true,
+    "monomers_supported": false,
+    "size_ok": true
+   }
+  ],
+  "glycan_free": [],
+  "covalent_nonpolymer": [
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 23,
+    "target": "NAG"
+   },
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 286,
+    "target": "NAG"
+   }
+  ]
+ },
+ "9T9W": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9ZIQ": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9IBQ": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9LYV": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9OA4": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9U19": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9NYB": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9QS9": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9TEL": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9TKV": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": [
+   {
+    "code": "GTP",
+    "role": null,
+    "partner": "G",
+    "partner_seq": 1,
+    "target": "GTP"
+   }
+  ]
+ },
+ "9IA3": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9NJY": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9NKZ": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9Q1L": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9ZRO": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "10ZO": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9M6O": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9M1H": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9O9D": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9O9Y": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9NMV": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": [
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 75,
+    "target": "NAG"
+   },
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 142,
+    "target": "NAG"
+   },
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 23,
+    "target": "NAG"
+   }
+  ]
+ },
+ "9NV2": {
+  "glycan_attached": [
+   {
+    "monomers": [
+     "BMA",
+     "NAG"
+    ],
+    "desc": "beta-D-mannopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose-(1-4)-2-acetamido-2-deoxy-beta-D-glucopyranose",
+    "n_residues": 3,
+    "role": "N-Glycosylation",
+    "residue": "ASN",
+    "seq_id": 56,
+    "position": 56,
+    "attach_aa": "N",
+    "attach_entity": "2",
+    "site_verified": true,
+    "monomers_supported": true,
+    "size_ok": true
+   }
+  ],
+  "glycan_free": [],
+  "covalent_nonpolymer": [
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 151,
+    "target": "NAG"
+   },
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 58,
+    "target": "NAG"
+   },
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 196,
+    "target": "NAG"
+   },
+   {
+    "code": "NAG",
+    "role": "N-Glycosylation",
+    "partner": "ASN",
+    "partner_seq": 17,
+    "target": "NAG"
+   }
+  ]
+ },
+ "9I9W": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ },
+ "9PLB": {
+  "glycan_attached": [],
+  "glycan_free": [],
+  "covalent_nonpolymer": []
+ }
+}

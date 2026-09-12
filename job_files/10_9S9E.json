@@ -1,0 +1,22 @@
+[
+ {
+  "name": "10_9S9E",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "QVQLQESGGGLVQAGGSLRLSCAASGRTFSSYAMAWFRQAPGKEREFVASISWNGDSTYYADSVKGRFTISGDNAKNTWYLQMKSLKPEDTAVYYCNTEDEGSGTYYEWGQGTQVTVSSENLYFQ",
+     "count": 2
+    }
+   },
+   {
+    "proteinChain": {
+     "sequence": "LKCNQLIPPFWKTCPKGKNLCYKMTMRAAPMVPVKRGCIDVCPKSSLLIKYMCCNTDKCN",
+     "count": 2
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]
