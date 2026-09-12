@@ -23,7 +23,7 @@ import urllib.request
 
 OP = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 G = "https://data.rcsb.org/graphql"
-OUT = "/Users/lilindu/pdb-structures-for-homework/alphafold_homework_41"
+OUT = "/Users/lilindu/alphafold-homework-2026"
 
 Q = """
 query($ids:[String!]!){

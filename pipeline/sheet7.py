@@ -2,7 +2,7 @@
 import json
 import os
 
-REPO = "/Users/lilindu/alphafold_homework_41"
+REPO = "/Users/lilindu/alphafold-homework-2026"
 recs = json.load(open(os.path.join(REPO, "targets.json")))
 bits = json.load(open("/tmp/afhw/bits7.json"))
 

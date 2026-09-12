@@ -20,7 +20,7 @@ import json
 import os
 from collections import Counter
 
-REPO = "/Users/lilindu/alphafold_homework_41"
+REPO = "/Users/lilindu/alphafold-homework-2026"
 BAN = ["班1", "班2", "班3", "班4"]
 
 BUILTIN_LIG = {"ADP", "ATP", "AMP", "GTP", "GDP", "FAD", "NAD", "NAP", "NDP",

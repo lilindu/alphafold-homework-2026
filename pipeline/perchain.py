@@ -22,7 +22,7 @@ dropped.
 import json
 import os
 
-OUT = "/Users/lilindu/pdb-structures-for-homework/alphafold_homework_41"
+OUT = "/Users/lilindu/alphafold-homework-2026"
 raw = json.load(open("seqgap_raw.json"))
 recs = json.load(open("targets41_full.json"))
 

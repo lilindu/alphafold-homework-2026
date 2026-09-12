@@ -2,7 +2,7 @@
 import json
 import os
 
-OUT = "/Users/lilindu/pdb-structures-for-homework/alphafold_homework_41"
+OUT = "/Users/lilindu/alphafold-homework-2026"
 recs = json.load(open(os.path.join(OUT, "targets41.json")))
 bits = json.load(open("/tmp/afhw/bits41.json"))
 

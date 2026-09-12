@@ -22,7 +22,7 @@ from collections import Counter
 
 OP = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 G = "https://data.rcsb.org/graphql"
-OUT = "/Users/lilindu/pdb-structures-for-homework/alphafold_homework_41"
+OUT = "/Users/lilindu/alphafold-homework-2026"
 
 # additives that must never be entered: detergents, cryoprotectants, buffers
 EXTRA_IGNORE = {

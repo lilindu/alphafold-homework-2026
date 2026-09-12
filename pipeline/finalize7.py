@@ -20,7 +20,7 @@ import urllib.request
 
 OP = urllib.request.build_opener(urllib.request.ProxyHandler({}))
 G = "https://data.rcsb.org/graphql"
-REPO = "/Users/lilindu/alphafold_homework_41"
+REPO = "/Users/lilindu/alphafold-homework-2026"
 
 BUILTIN_LIG = {"ADP", "ATP", "AMP", "GTP", "GDP", "FAD", "NAD", "NAP", "NDP",
                "HEM", "HEC", "PLM", "OLA", "MYR", "CIT", "CLA", "CHL", "BCL", "BCB"}
