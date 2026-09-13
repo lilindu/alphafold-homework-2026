@@ -84,7 +84,7 @@ def inputs(rec):
                 out.append(f"　└ 翻译后修饰:{p['code']} 加在第 {p['pos']} 位"
                            f"({p['parent']},构建体编号 {p['pos_construct']})")
     for l in rec["ligands"]:
-        tag = "下拉菜单内" if l["code"] in BUILTIN_LIG else "需手输 CCD 代码"
+        tag = "下拉菜单内置" if l["code"] in BUILTIN_LIG else "任意 CCD"
         out.append(f"配体({tag}):{l['code']} ×{l['count']} — {l['name'][:56]}")
     for i in rec["ions"]:
         out.append(f"离子:{i['code']} ×{i['count']}")
@@ -95,7 +95,8 @@ def cautions(rec):
     cs = []
     manual = [l["code"] for l in rec["ligands"] if l["code"] not in BUILTIN_LIG]
     if manual:
-        cs.append("在 request builder 里加 “CCD Code” 条目,手动输入:" + "、".join(manual))
+        cs.append("以下配体不在下拉菜单里,而是任意 CCD 代码:" + "、".join(manual)
+                  + "。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲")
     if rec["ptms"]:
         cs.append("修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),"
                   "位置已换算为全长编号")

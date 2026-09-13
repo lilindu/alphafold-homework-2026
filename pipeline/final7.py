@@ -197,7 +197,7 @@ CLASSES = [
                          and clean(r) and resol(r) <= 3.2),
          order="diverse"),
     dict(key="ligand", n=4, label="蛋白 + 小分子配体",
-         note="配体不在 Server 内置清单里,须加 “CCD Code” 条目手动输入;"
+         note="配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;"
               "代码已核实在冻结的 CCD 2024_10_28 字典中",
          test=lambda r: (otherlig(r) and not cofac(r) and not NUC(r)
                          and not has_ab_chain(r) and not memb(r)

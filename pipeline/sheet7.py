@@ -33,11 +33,20 @@ def worst_hom(r):
 
 
 def comp(r):
+    """All four input kinds, in the order they appear in the job JSON."""
     parts = []
     for c in r["chains"]:
         t = {"Protein": "蛋白", "DNA": "DNA", "RNA": "RNA"}[c["type"]]
         cp = f"×{c['copies']}" if c["copies"] > 1 else ""
         parts.append(f"{t}{c['len']}{cp}")
+    for p in r["ptms"]:
+        parts.append(f"**{p['code']}**@{p['pos']}")
+    for l in r["ligands"]:
+        cp = f"×{l['count']}" if l["count"] > 1 else ""
+        parts.append(f"配体 {l['code']}{cp}")
+    for i in r["ions"]:
+        cp = f"×{i['count']}" if i["count"] > 1 else ""
+        parts.append(f"离子 {i['code']}{cp}")
     return " + ".join(parts)
 
 
@@ -164,8 +173,6 @@ for b in BAN:
     for r in by[b]:
         res = f"{r['resolution']:.2f}" if r["resolution"] else "—"
         t = r["title"].replace("|", "/")
-        if len(t) > 40:
-            t = t[:39] + "…"
         A(f"| {r['no']} | [{r['id']}](https://www.rcsb.org/structure/{r['id']}) "
           f"| {CAT_NUM[r['category']]} | {res} | {r['tokens']} | {comp(r)} "
           f"| {hom_label(worst_hom(r))} | {t} |")
@@ -175,6 +182,10 @@ A("## 逐题输入规格")
 A("")
 A("`job_files/` 下有对应 JSON,可用 Server 的 “Upload JSON” 直接导入;`sequences/` 是")
 A("同样内容的 FASTA。下面是人读版本。")
+A("")
+A("**上传 JSON 后不需要手输任何东西** —— 序列、配体的 CCD 代码、离子、翻译后修饰都会")
+A("自动填进 request builder(点 “Open draft” 即可核对)。下面标「任意 CCD」的配体只是")
+A("说它不在下拉菜单的 19 种内置辅因子里,不是说要自己敲。")
 A("")
 for b in BAN:
     A(f"### {b}")

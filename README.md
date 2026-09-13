@@ -105,67 +105,71 @@ deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋�
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
-| 1 | [11KP](https://www.rcsb.org/structure/11KP) | 1 | 1.48 | 1182 | 蛋白837 + 蛋白345 | 无 | Crystal structure of the Caenorhabditis… |
-| 2 | [9NYI](https://www.rcsb.org/structure/9NYI) | 2 | 1.98 | 1508 | DNA6×4 + 蛋白371×4 | 未筛查 | Structure of HalA in complex with oligo… |
-| 3 | [9SIT](https://www.rcsb.org/structure/9SIT) | 3 | 1.75 | 2942 | RNA60 + DNA46 + 蛋白335×6 + DNA46 + 蛋白181 + 蛋白255 + 蛋白344 | 未筛查 | Type I-F_HNH variant Cascade bound to d… |
-| 4 | [9PV1](https://www.rcsb.org/structure/9PV1) | 4 | 1.20 | 674 | 蛋白310×2 | 无 | Biotin halogenase BtnX, anaerobic struc… |
-| 5 | [9S1S](https://www.rcsb.org/structure/9S1S) | 5 | 1.62 | 1212 | 蛋白6 + 蛋白603×2 | ≥60% (3) | Crystal structure of C278S mutant of mo… |
-| 6 | [9MAU](https://www.rcsb.org/structure/9MAU) | 6 | 2.87 | 563 | 蛋白563 | 无 | Cryo-EM structure of human OAT1 in the … |
-| 7 | [9PS4](https://www.rcsb.org/structure/9PS4) | 6 | 3.29 | 1755 | 蛋白585×3 | 无 | Cryo-EM structure of NCLX without calci… |
-| 8 | [9NJY](https://www.rcsb.org/structure/9NJY) | 7 | 1.58 | 1428 | 蛋白989 + 蛋白225 + 蛋白214 | 未筛查 | Terminal two domains of ClfA002 with bo… |
-| 9 | [9P4C](https://www.rcsb.org/structure/9P4C) | 7 | 1.52 | 1049 | 蛋白622 + 蛋白211 + 蛋白216 | 未筛查 | Crystal structure of Mesothelin C-termi… |
-| 10 | [9S9E](https://www.rcsb.org/structure/9S9E) | 7 | 1.31 | 370 | 蛋白125×2 + 蛋白60×2 | 未筛查 | Co-crystal of broadly neutralizing bipa… |
+| 1 | [11KP](https://www.rcsb.org/structure/11KP) | 1 | 1.48 | 1182 | 蛋白837 + 蛋白345 | 无 | Crystal structure of the Caenorhabditis elegans telomeric POT-1-TEBP-1 complex interface |
+| 2 | [9NYI](https://www.rcsb.org/structure/9NYI) | 2 | 1.98 | 1508 | DNA6×4 + 蛋白371×4 | 未筛查 | Structure of HalA in complex with oligodeoxyadenylate |
+| 3 | [9SIT](https://www.rcsb.org/structure/9SIT) | 3 | 1.75 | 2942 | RNA60 + DNA46 + 蛋白335×6 + DNA46 + 蛋白181 + 蛋白255 + 蛋白344 | 未筛查 | Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position |
+| 4 | [9PV1](https://www.rcsb.org/structure/9PV1) | 4 | 1.20 | 674 | 蛋白310×2 + 配体 AKG×2 + 配体 BTN×2 + 配体 FE2 + 离子 CL | 无 | Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketoglutarate, chloride |
+| 5 | [9S1S](https://www.rcsb.org/structure/9S1S) | 5 | 1.62 | 1212 | 蛋白6 + 蛋白603×2 + **SEP**@2 | ≥60% (3) | Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosphopeptide |
+| 6 | [9MAU](https://www.rcsb.org/structure/9MAU) | 6 | 2.87 | 563 | 蛋白563 | 无 | Cryo-EM structure of human OAT1 in the apo state |
+| 7 | [9PS4](https://www.rcsb.org/structure/9PS4) | 6 | 3.29 | 1755 | 蛋白585×3 | 无 | Cryo-EM structure of NCLX without calcium (class 1) |
+| 8 | [9NJY](https://www.rcsb.org/structure/9NJY) | 7 | 1.58 | 1428 | 蛋白989 + 蛋白225 + 蛋白214 | 未筛查 | Terminal two domains of ClfA002 with bound Fab of AZD7745 |
+| 9 | [9P4C](https://www.rcsb.org/structure/9P4C) | 7 | 1.52 | 1049 | 蛋白622 + 蛋白211 + 蛋白216 | 未筛查 | Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex |
+| 10 | [9S9E](https://www.rcsb.org/structure/9S9E) | 7 | 1.31 | 370 | 蛋白125×2 + 蛋白60×2 | 未筛查 | Co-crystal of broadly neutralizing biparatopic monomeric VHH in complex with cardiotoxin (P01468) naja pallida |
 
 ### 班2(10 题)
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
-| 11 | [9SCD](https://www.rcsb.org/structure/9SCD) | 1 | 1.52 | 1051 | 蛋白710 + 蛋白341 | 无 | Structure of S. pombe PNUTS (565 - 644)… |
-| 12 | [9U19](https://www.rcsb.org/structure/9U19) | 2 | 1.18 | 396 | 蛋白371 + DNA12 + DNA12 | 未筛查 | Crystal structure of the NKX2.1 homeodo… |
-| 13 | [9VHE](https://www.rcsb.org/structure/9VHE) | 3 | 2.50 | 2960 | DNA74 + RNA65 + 蛋白216 + 蛋白550×4 + 蛋白311 | 未筛查 | cryoEM structure of retron-Eco7 complex |
-| 14 | [29LA](https://www.rcsb.org/structure/29LA) | 4 | 1.13 | 289 | 蛋白275 | ≥30% (1) | L-DOPA extradiol dioxygenase from Beta … |
-| 15 | [9T9W](https://www.rcsb.org/structure/9T9W) | 5 | 1.16 | 922 | 蛋白317 + 蛋白605 | ≥95% (7) | Crystal structure of beta-TrCP bound by… |
-| 16 | [9M0S](https://www.rcsb.org/structure/9M0S) | 6 | 3.50 | 600 | 蛋白549 | 无 | Acetyl-CoA-bound SLC33A1 in a cytoplasm… |
-| 17 | [9UET](https://www.rcsb.org/structure/9UET) | 6 | 3.68 | 814 | 蛋白406×2 | 无 | Cryo-EM structure of human choline-phos… |
-| 18 | [9NKZ](https://www.rcsb.org/structure/9NKZ) | 7 | 1.48 | 844 | 蛋白230 + 蛋白217 + 蛋白397 | 未筛查 | Crystal structure of Fab MAM01 in compl… |
+| 11 | [9SCD](https://www.rcsb.org/structure/9SCD) | 1 | 1.52 | 1051 | 蛋白710 + 蛋白341 | 无 | Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 2 |
+| 12 | [9U19](https://www.rcsb.org/structure/9U19) | 2 | 1.18 | 396 | 蛋白371 + DNA12 + DNA12 + 离子 MG | 未筛查 | Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex containing a CACG motif variant |
+| 13 | [9VHE](https://www.rcsb.org/structure/9VHE) | 3 | 2.50 | 2960 | DNA74 + RNA65 + 蛋白216 + 蛋白550×4 + 蛋白311 + 配体 ATP×3 + 离子 MG | 未筛查 | cryoEM structure of retron-Eco7 complex |
+| 14 | [29LA](https://www.rcsb.org/structure/29LA) | 4 | 1.13 | 289 | 蛋白275 + 配体 4NC + 离子 K + 离子 CL + 离子 MG | ≥30% (1) | L-DOPA extradiol dioxygenase from Beta vulgaris in complex with 4-nitrocatechol |
+| 15 | [9T9W](https://www.rcsb.org/structure/9T9W) | 5 | 1.16 | 922 | 蛋白317 + 蛋白605 + **SEP**@32 + **SEP**@36 | ≥95% (7) | Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron peptide |
+| 16 | [9M0S](https://www.rcsb.org/structure/9M0S) | 6 | 3.50 | 600 | 蛋白549 + 配体 ACO | 无 | Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation |
+| 17 | [9UET](https://www.rcsb.org/structure/9UET) | 6 | 3.68 | 814 | 蛋白406×2 + 离子 MG×2 | 无 | Cryo-EM structure of human choline-phosphotransferase 1 |
+| 18 | [9NKZ](https://www.rcsb.org/structure/9NKZ) | 7 | 1.48 | 844 | 蛋白230 + 蛋白217 + 蛋白397 | 未筛查 | Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoite protein |
 | 19 | [9VDY](https://www.rcsb.org/structure/9VDY) | 7 | 2.28 | 1523 | 蛋白218 + 蛋白232 + 蛋白1073 | 未筛查 | hA5-6 Fab bound to SFTSV glycoprotein Gn |
-| 20 | [9ZRO](https://www.rcsb.org/structure/9ZRO) | 7 | 1.40 | 3871 | 蛋白3433 + 蛋白214 + 蛋白224 | 未筛查 | Neutralizing W037 Fab antibody fragment… |
+| 20 | [9ZRO](https://www.rcsb.org/structure/9ZRO) | 7 | 1.40 | 3871 | 蛋白3433 + 蛋白214 + 蛋白224 | 未筛查 | Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII |
 
 ### 班3(10 题)
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
 | 21 | [9SDC](https://www.rcsb.org/structure/9SDC) | 1 | 1.70 | 644 | 蛋白77×4 + 蛋白84×4 | 无 | RelSI toxin-antitoxin complex |
-| 22 | [9Y1J](https://www.rcsb.org/structure/9Y1J) | 2 | 1.55 | 398 | DNA5 + DNA10 + DNA16 + 蛋白335 | 未筛查 | S180R human DNA polymerase beta, Ternar… |
-| 23 | [9TEL](https://www.rcsb.org/structure/9TEL) | 3 | 1.44 | 728 | RNA10 + RNA10 + 蛋白674 | 未筛查 | Structure of chicken LGP2 bound to 10-m… |
-| 24 | [21ZG](https://www.rcsb.org/structure/21ZG) | 4 | 1.40 | 350 | 蛋白338 | ≥30% (1) | Crystal structure of the petrobactin-bi… |
-| 25 | [9X8S](https://www.rcsb.org/structure/9X8S) | 5 | 1.70 | 922 | 蛋白7×2 + 蛋白227×4 | ≥95% (7) | Crystal structure of the human GAS41 YE… |
-| 26 | [9M2H](https://www.rcsb.org/structure/9M2H) | 6 | 3.40 | 497 | 蛋白485 | 无 | Structure of the auxin importer AUX1 in… |
-| 27 | [9N93](https://www.rcsb.org/structure/9N93) | 6 | 2.95 | 807 | 蛋白807 | 无 | Human TMEM63A mutant V53M lipid-open st… |
+| 22 | [9Y1J](https://www.rcsb.org/structure/9Y1J) | 2 | 1.55 | 398 | DNA5 + DNA10 + DNA16 + 蛋白335 + 配体 F2A + 离子 NA + 离子 MG | 未筛查 | S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp |
+| 23 | [9TEL](https://www.rcsb.org/structure/9TEL) | 3 | 1.44 | 728 | RNA10 + RNA10 + 蛋白674 + 配体 ADP + 配体 ALF + 离子 MG + 离子 ZN | 未筛查 | Structure of chicken LGP2 bound to 10-mer RNA mismatched duplex that mimics the influenza B virus vRNA promoter (panhandle) and to ADP-AlF4-Mg. |
+| 24 | [21ZG](https://www.rcsb.org/structure/21ZG) | 4 | 1.40 | 350 | 蛋白338 + 配体 DHB + 离子 FE | ≥30% (1) | Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus complexed with ferric siderophore mimic, Fe(3,4-DHB)2 |
+| 25 | [9X8S](https://www.rcsb.org/structure/9X8S) | 5 | 1.70 | 922 | 蛋白7×2 + 蛋白227×4 + **ALY**@4 | ≥95% (7) | Crystal structure of the human GAS41 YEATS domain in complex with an acetylated YFV capsid peptide (K4ac) |
+| 26 | [9M2H](https://www.rcsb.org/structure/9M2H) | 6 | 3.40 | 497 | 蛋白485 + 配体 3C4 | 无 | Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound state |
+| 27 | [9N93](https://www.rcsb.org/structure/9N93) | 6 | 2.95 | 807 | 蛋白807 | 无 | Human TMEM63A mutant V53M lipid-open state |
 | 28 | [9IA3](https://www.rcsb.org/structure/9IA3) | 7 | 1.11 | 634 | 蛋白191 + 蛋白228 + 蛋白215 | 未筛查 | Bc8.108 Fab bound to preS2 peptide |
-| 29 | [9NW4](https://www.rcsb.org/structure/9NW4) | 7 | 1.82 | 827 | 蛋白229 + 蛋白220 + 蛋白378 | 未筛查 | Structure of CISV1 antibody bound to Pv… |
-| 30 | [9Q1L](https://www.rcsb.org/structure/9Q1L) | 7 | 1.56 | 1038 | 蛋白214 + 蛋白230 + 蛋白593 | 未筛查 | Crystal structure of the walnut allerge… |
+| 29 | [9NW4](https://www.rcsb.org/structure/9NW4) | 7 | 1.82 | 827 | 蛋白229 + 蛋白220 + 蛋白378 | 未筛查 | Structure of CISV1 antibody bound to PvCSP repeat peptide |
+| 30 | [9Q1L](https://www.rcsb.org/structure/9Q1L) | 7 | 1.56 | 1038 | 蛋白214 + 蛋白230 + 蛋白593 + 离子 CL | 未筛查 | Crystal structure of the walnut allergen Jug r 2 bound to the human-derived Fab 6D12 |
 
 ### 班4(11 题)
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
-| 31 | [9V8I](https://www.rcsb.org/structure/9V8I) | 1 | 1.70 | 644 | 蛋白534 + 蛋白110 | 无 | Crystal structure for YxiD-YxxD toxin-i… |
-| 32 | [36BT](https://www.rcsb.org/structure/36BT) | 2 | 1.85 | 2942 | DNA38 + 蛋白1435 + 蛋白1435 | 未筛查 | HIV-1 reverse transcriptase in complex … |
-| 33 | [9QS9](https://www.rcsb.org/structure/9QS9) | 3 | 1.44 | 336 | RNA6 + 蛋白162×2 | 未筛查 | Structure and mechanism of the broad sp… |
-| 34 | [24UX](https://www.rcsb.org/structure/24UX) | 4 | 1.20 | 668 | 蛋白321×2 | 无 | Crystal structure of FPP-methyltransfer… |
-| 35 | [30TL](https://www.rcsb.org/structure/30TL) | 5 | 1.20 | 509 | 蛋白5×2 + 蛋白248×2 | ≥95% (278) | 14-3-3sigma protein binding to ERalpha-… |
-| 36 | [9O0I](https://www.rcsb.org/structure/9O0I) | 6 | 3.86 | 825 | 蛋白315×2 + 蛋白195 | 无 | Cryo-EM structure of Local KwaA-KwaB co… |
-| 37 | [9VEB](https://www.rcsb.org/structure/9VEB) | 6 | 3.56 | 1086 | 蛋白543×2 | 无 | Cryo-EM structure of the aspartate:alan… |
-| 38 | [9NCY](https://www.rcsb.org/structure/9NCY) | 7 | 1.63 | 840 | 蛋白230 + 蛋白213 + 蛋白397 | 未筛查 | Fab1392 in complex with the C-terminal … |
-| 39 | [9ULL](https://www.rcsb.org/structure/9ULL) | 7 | 1.63 | 810 | 蛋白360 + 蛋白219 + 蛋白231 | 未筛查 | Mogamulizumab in complex with CCR4 N-te… |
-| 40 | [9ULM](https://www.rcsb.org/structure/9ULM) | 7 | 2.01 | 940 | 蛋白360 + 蛋白130 + 蛋白219 + 蛋白231 | 未筛查 | Mogamulizumab in complex with CCR4 N-te… |
-| 41 | [9Y3I](https://www.rcsb.org/structure/9Y3I) | 7 | 1.80 | 1120 | 蛋白301×2 + 蛋白132×2 + 蛋白127×2 | 未筛查 | Crystal Structure of PA14 Cif Bound to … |
+| 31 | [9V8I](https://www.rcsb.org/structure/9V8I) | 1 | 1.70 | 644 | 蛋白534 + 蛋白110 | 无 | Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus subtilis 6633. |
+| 32 | [36BT](https://www.rcsb.org/structure/36BT) | 2 | 1.85 | 2942 | DNA38 + 蛋白1435 + 蛋白1435 + 配体 6FN + 离子 MG | 未筛查 | HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated ISL-triphosphate |
+| 33 | [9QS9](https://www.rcsb.org/structure/9QS9) | 3 | 1.44 | 336 | RNA6 + 蛋白162×2 + 离子 MG×6 | 未筛查 | Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Crn4 |
+| 34 | [24UX](https://www.rcsb.org/structure/24UX) | 4 | 1.20 | 668 | 蛋白321×2 + 配体 SAH | 无 | Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH |
+| 35 | [30TL](https://www.rcsb.org/structure/30TL) | 5 | 1.20 | 509 | 蛋白5×2 + 蛋白248×2 + **TPO**@4 + 离子 CA + 离子 CL + 离子 MG | ≥95% (278) | 14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation) |
+| 36 | [9O0I](https://www.rcsb.org/structure/9O0I) | 6 | 3.86 | 825 | 蛋白315×2 + 蛋白195 | 无 | Cryo-EM structure of Local KwaA-KwaB complex |
+| 37 | [9VEB](https://www.rcsb.org/structure/9VEB) | 6 | 3.56 | 1086 | 蛋白543×2 | 无 | Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C |
+| 38 | [9NCY](https://www.rcsb.org/structure/9NCY) | 7 | 1.63 | 840 | 蛋白230 + 蛋白213 + 蛋白397 | 未筛查 | Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum circumsporozoite protein |
+| 39 | [9ULL](https://www.rcsb.org/structure/9ULL) | 7 | 1.63 | 810 | 蛋白360 + 蛋白219 + 蛋白231 | 未筛查 | Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24) |
+| 40 | [9ULM](https://www.rcsb.org/structure/9ULM) | 7 | 2.01 | 940 | 蛋白360 + 蛋白130 + 蛋白219 + 蛋白231 | 未筛查 | Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29) |
+| 41 | [9Y3I](https://www.rcsb.org/structure/9Y3I) | 7 | 1.80 | 1120 | 蛋白301×2 + 蛋白132×2 + 蛋白127×2 | 未筛查 | Crystal Structure of PA14 Cif Bound to Nanobodies VHH108 and VHH219 |
 
 ## 逐题输入规格
 
 `job_files/` 下有对应 JSON,可用 Server 的 “Upload JSON” 直接导入;`sequences/` 是
 同样内容的 FASTA。下面是人读版本。
+
+**上传 JSON 后不需要手输任何东西** —— 序列、配体的 CCD 代码、离子、翻译后修饰都会
+自动填进 request builder(点 “Open draft” 即可核对)。下面标「任意 CCD」的配体只是
+说它不在下拉菜单的 19 种内置辅因子里,不是说要自己敲。
 
 ### 班1
 
@@ -236,20 +240,20 @@ Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position
 Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketoglutarate, chloride
 
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2025-07-31 · release 2026-06-24 · 估算 token 674
-- 这一类考察什么:配体不在 Server 内置清单里,须加 “CCD Code” 条目手动输入;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
 - 蛋白质链 ×2:310 aa — Biotin halogenase BtnX
 - 　└ 全长序列 A8LT50(构建体 312 aa)
 - 　└ 训练截止前同源体:无同源体
-- 配体(需手输 CCD 代码):AKG ×2 — 2-OXOGLUTARIC ACID
-- 配体(需手输 CCD 代码):BTN ×2 — BIOTIN
-- 配体(需手输 CCD 代码):FE2 ×1 — FE (II) ION
+- 配体(任意 CCD):AKG ×2 — 2-OXOGLUTARIC ACID
+- 配体(任意 CCD):BTN ×2 — BIOTIN
+- 配体(任意 CCD):FE2 ×1 — FE (II) ION
 - 离子:CL ×1
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:AKG、BTN、FE2
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:AKG、BTN、FE2。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×2、PEG×1、SO4×1
 
 文件:`job_files/04_9PV1.json` · `sequences/04_9PV1.fasta`
@@ -442,7 +446,7 @@ cryoEM structure of retron-Eco7 complex
 - 　└ 全长序列 P0DV91(构建体 550 aa,实验结构里只解出 447 个残基)
 - 蛋白质链:311 aa — Retron Ec78 reverse transcriptase
 - 　└ 全长序列 Q46666(构建体 311 aa,实验结构里只解出 273 个残基)
-- 配体(下拉菜单内):ATP ×3 — ADENOSINE-5'-TRIPHOSPHATE
+- 配体(下拉菜单内置):ATP ×3 — ADENOSINE-5'-TRIPHOSPHATE
 - 离子:MG ×1
 
 注意:
@@ -455,20 +459,20 @@ cryoEM structure of retron-Eco7 complex
 L-DOPA extradiol dioxygenase from Beta vulgaris in complex with 4-nitrocatechol
 
 - X-RAY DIFFRACTION / 1.13 Å · deposit 2026-03-19 · release 2026-08-12 · 估算 token 289
-- 这一类考察什么:配体不在 Server 内置清单里,须加 “CCD Code” 条目手动输入;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
 - 蛋白质链:275 aa — 4,5-DOPA dioxygenase extradiol 1
 - 　└ 全长序列 I3PFJ9(构建体 278 aa,实验结构里只解出 265 个残基)
 - 　└ 训练截止前同源体:>=30%(1 个)
-- 配体(需手输 CCD 代码):4NC ×1 — 4-NITROCATECHOL
+- 配体(任意 CCD):4NC ×1 — 4-NITROCATECHOL
 - 离子:K ×1
 - 离子:CL ×1
 - 离子:MG ×1
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:4NC
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:4NC。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:PEG×1、NI×1、EDO×1
 
 文件:`job_files/14_29LA.json` · `sequences/14_29LA.fasta`
@@ -511,10 +515,10 @@ Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation
 - 蛋白质链:549 aa — Acetyl-coenzyme A transporter 1
 - 　└ 全长序列 O00400(构建体 560 aa,实验结构里只解出 424 个残基)
 - 　└ 训练截止前同源体:无同源体
-- 配体(需手输 CCD 代码):ACO ×1 — ACETYL COENZYME *A
+- 配体(任意 CCD):ACO ×1 — ACETYL COENZYME *A
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:ACO
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:ACO。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 以下链在实验结构里并未全部解出(Acetyl-coenzyme  75%),比较时只对齐两者共有的残基
 - Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
 
@@ -643,12 +647,12 @@ S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp
 - DNA 链:16 nt — Template strand
 - 蛋白质链:335 aa — DNA polymerase beta
 - 　└ 全长序列 P06746(构建体 335 aa,实验结构里只解出 326 个残基)
-- 配体(需手输 CCD 代码):F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
+- 配体(任意 CCD):F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
 - 离子:NA ×1
 - 离子:MG ×1
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:F2A
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:F2A。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 
 文件:`job_files/22_9Y1J.json` · `sequences/22_9Y1J.fasta`
 
@@ -665,13 +669,13 @@ Structure of chicken LGP2 bound to 10-mer RNA mismatched duplex that mimics the 
 - RNA 链:10 nt — RNA (5'-R(*UP*GP*CP*UP*UP*CP*UP*GP*CP*U)-3')
 - 蛋白质链:674 aa — RNA helicase
 - 　└ 全长序列 G0YYQ5(构建体 673 aa,实验结构里只解出 661 个残基)
-- 配体(下拉菜单内):ADP ×1 — ADENOSINE-5'-DIPHOSPHATE
-- 配体(需手输 CCD 代码):ALF ×1 — TETRAFLUOROALUMINATE ION
+- 配体(下拉菜单内置):ADP ×1 — ADENOSINE-5'-DIPHOSPHATE
+- 配体(任意 CCD):ALF ×1 — TETRAFLUOROALUMINATE ION
 - 离子:MG ×1
 - 离子:ZN ×1
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:ALF
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:ALF。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 
 文件:`job_files/23_9TEL.json` · `sequences/23_9TEL.fasta`
 
@@ -680,18 +684,18 @@ Structure of chicken LGP2 bound to 10-mer RNA mismatched duplex that mimics the 
 Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus complexed with ferric siderophore mimic, Fe(3,4-DHB)2
 
 - X-RAY DIFFRACTION / 1.40 Å · deposit 2026-01-04 · release 2026-04-22 · 估算 token 350
-- 这一类考察什么:配体不在 Server 内置清单里,须加 “CCD Code” 条目手动输入;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
 - 蛋白质链:338 aa — Ferric anguibactin-binding protein
 - 　└ 全长序列 Q815N5(构建体 302 aa,实验结构里只解出 295 个残基)
 - 　└ 训练截止前同源体:>=30%(1 个)
-- 配体(需手输 CCD 代码):DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
+- 配体(任意 CCD):DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
 - 离子:FE ×1
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:DHB
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:DHB。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:IPA×1、EDO×1
 
 文件:`job_files/24_21ZG.json` · `sequences/24_21ZG.fasta`
@@ -731,10 +735,10 @@ Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound 
 - 蛋白质链:485 aa — Auxin transporter protein 1
 - 　└ 全长序列 Q96247(构建体 485 aa,实验结构里只解出 431 个残基)
 - 　└ 训练截止前同源体:无同源体
-- 配体(需手输 CCD 代码):3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
+- 配体(任意 CCD):3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:3C4
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:3C4。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 以下链在实验结构里并未全部解出(Auxin transporte 88%),比较时只对齐两者共有的残基
 - Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
 
@@ -864,11 +868,11 @@ HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated IS
 - 　└ 全长序列 P04585(构建体 455 aa,实验结构里只解出 375 个残基)
 - 蛋白质链:1435 aa — Reverse transcriptase/ribonuclease H
 - 　└ 全长序列 P04585(构建体 562 aa,实验结构里只解出 530 个残基)
-- 配体(需手输 CCD 代码):6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
+- 配体(任意 CCD):6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
 - 离子:MG ×1
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:6FN
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:6FN。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 以下链在实验结构里并未全部解出(p51 RT 82%、Reverse transcri 94%),比较时只对齐两者共有的残基
 
 文件:`job_files/32_36BT.json` · `sequences/32_36BT.fasta`
@@ -897,17 +901,17 @@ Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Cr
 Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH
 
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-03-22 · release 2026-08-12 · 估算 token 668
-- 这一类考察什么:配体不在 Server 内置清单里,须加 “CCD Code” 条目手动输入;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
 - 蛋白质链 ×2:321 aa — Methyltransferase domain protein
 - 　└ 全长序列 A0AB33WVX4(构建体 311 aa,实验结构里只解出 292 个残基)
 - 　└ 训练截止前同源体:无同源体
-- 配体(需手输 CCD 代码):SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
+- 配体(任意 CCD):SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
 
 注意:
-- 在 request builder 里加 “CCD Code” 条目,手动输入:SAH
+- 以下配体不在下拉菜单里,而是任意 CCD 代码:SAH。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 生物学装配按对称操作展开 ×2
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×1、IMD×1
 - 以下链在实验结构里并未全部解出(Methyltransferas 93%),比较时只对齐两者共有的残基
