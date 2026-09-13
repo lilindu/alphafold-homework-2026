@@ -119,10 +119,12 @@ def cautions(rec):
     if partial:
         d = "、".join(f"{c['desc'][:16]} {int(c['frac_observed']*100)}%" for c in partial[:3])
         cs.append(f"以下链在实验结构里并未全部解出({d}),比较时只对齐两者共有的残基")
-    short = [c for c in rec["chains"] if c["type"] == "Protein" and c["len"] < 20]
+    short = [c for c in rec["chains"] if c["type"] == "Protein" and c["len"] < 16]
     if short:
-        cs.append("含极短肽链(<20 aa):pTM 对短链系统性偏低(FAQ 明示),"
-                  "评估以 pLDDT / PAE 为主")
+        sd = "、".join(f"{c['desc']} {c['len']} aa" for c in short[:3])
+        cs.append(f"含极短肽链({sd}):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,"
+                  "该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 "
+                  "chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM")
     if rec["category"] == "ab":
         cs.append("建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型")
     if rec["category"] == "memb":

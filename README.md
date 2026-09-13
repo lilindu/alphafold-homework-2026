@@ -281,7 +281,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 注意:
 - 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
 - 生物学装配按对称操作展开 ×2
-- 含极短肽链(<20 aa):pTM 对短链系统性偏低(FAQ 明示),评估以 pLDDT / PAE 为主
+- 含极短肽链(ERa peptide pT594 weak mutant 5 aa):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM
 
 文件:`job_files/jia_5_30TL.json` · `sequences/jia_5_30TL.fasta`
 
@@ -524,7 +524,7 @@ Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosph
 - 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×2、SO4×2
 - 以下链在实验结构里并未全部解出(Model phosphohex 66%),比较时只对齐两者共有的残基
-- 含极短肽链(<20 aa):pTM 对短链系统性偏低(FAQ 明示),评估以 pLDDT / PAE 为主
+- 含极短肽链(Model phosphohexapeptide 6 aa):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM
 
 文件:`job_files/yi_5_9S1S.json` · `sequences/yi_5_9S1S.fasta`
 
@@ -964,7 +964,7 @@ Crystal structure of the human GAS41 YEATS domain in complex with an acetylated 
 
 注意:
 - 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
-- 含极短肽链(<20 aa):pTM 对短链系统性偏低(FAQ 明示),评估以 pLDDT / PAE 为主
+- 含极短肽链(Yellow Fever Virus Capsid Protein 7 aa):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM
 
 文件:`job_files/ding_5_9X8S.json` · `sequences/ding_5_9X8S.fasta`
 
