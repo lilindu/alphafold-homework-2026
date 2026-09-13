@@ -9,7 +9,7 @@ BUILTIN_LIG = {"ADP", "ATP", "AMP", "GTP", "GDP", "FAD", "NAD", "NAP", "NDP",
                "HEM", "HEC", "PLM", "OLA", "MYR", "CIT", "CLA", "CHL", "BCL", "BCB"}
 ENTKEY = {"Protein": "proteinChain", "DNA": "dnaSequence", "RNA": "rnaSequence"}
 COMP = {"A": "T", "T": "A", "G": "C", "C": "G"}
-BAN = ["班1", "班2", "班3", "班4"]
+BAN = ["甲班", "乙班", "丙班", "丁班"]
 CAT_ORDER = ["hetero", "dna", "rna", "ligand", "ptm", "memb", "ab"]
 CAT_NUM = {k: i + 1 for i, k in enumerate(CAT_ORDER)}
 CAT_LABEL = {"hetero": "异源蛋白复合体", "dna": "蛋白 + DNA", "rna": "蛋白 + RNA",
@@ -45,7 +45,7 @@ def job_json(rec):
         seqs.append({"ligand": {"ligand": code, "count": l["count"]}})
     for i in rec["ions"]:
         seqs.append({"ion": {"ion": i["code"], "count": i["count"]}})
-    return [{"name": f"{rec['no']:02d}_{rec['id']}", "modelSeeds": [],
+    return [{"name": f"{rec['prefix']}_{rec['no']}_{rec['id']}", "modelSeeds": [],
              "sequences": seqs, "dialect": "alphafoldserver", "version": 1}]
 
 
@@ -146,7 +146,7 @@ allj = []
 for r in recs:
     j = job_json(r)
     allj.extend(j)
-    stem = f"{r['no']:02d}_{r['id']}"
+    stem = f"{r['prefix']}_{r['no']}_{r['id']}"
     json.dump(j, open(os.path.join(jobs, stem + ".json"), "w"), indent=1)
     with open(os.path.join(seqs, stem + ".fasta"), "w") as f:
         for c in r["chains"]:

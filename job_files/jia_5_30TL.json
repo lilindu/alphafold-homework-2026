@@ -1,0 +1,46 @@
+[
+ {
+  "name": "jia_5_30TL",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "AAATV",
+     "count": 2,
+     "modifications": [
+      {
+       "ptmType": "CCD_TPO",
+       "ptmPosition": 4
+      }
+     ]
+    }
+   },
+   {
+    "proteinChain": {
+     "sequence": "MERASLIQKAKLAEQAERYEDMAAFMKGAVEKGEELSCEERNLLSVAYKNVVGGQRAAWRVLSSIEQKSNEEGSEEKGPEVREYREKVETELQGVCDTVLGLLDSHLIKEAGDAESRVFYLKMKGDYYRYLAEVATGDDKKRIIDSARSAYQEAMDISKKEMPPTNPIRLGLALNFSVFHYEIANSPEEAISLAKTTFDEAMADLHTLSEDSYKDSTLIMQLLRDNLTLWTADNAGEEGGEAPQEPQS",
+     "count": 2
+    }
+   },
+   {
+    "ion": {
+     "ion": "CA",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "CL",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "MG",
+     "count": 1
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]

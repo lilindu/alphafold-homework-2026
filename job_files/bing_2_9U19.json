@@ -1,0 +1,34 @@
+[
+ {
+  "name": "bing_2_9U19",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "MSMSPKHTTPFSVSDILSPLEESYKKVGMEGGGLGAPLAAYRQGQAAPPTAAMQQHAVGHHGAVTAAYHMTAAGVPQLSHSAVGGYCNGNLGNMSELPPYQDTMRNSASGPGWYGANPDPRFPAISRFMGPASGMNMSGMGGLGSLGDVSKNMAPLPSAPRRKRRVLFSQAQVYELERRFKQQKYLSAPEREHLASMIHLTPTQVKIWFQNHRYKMKRQAKDKAAQQQLQQDSGGGGGGGGTGCPQQQQAQQQSPRRVAVPVLVKDGKPCQAGAPAPGAASLQGHAQQQAQHQAQAAQAAAAAISVGSGGAGLGAHPGHQPGSAGQSPDLAHHAASPAALQGQVSSLSHLNSSGSDYGTMSCSTLLYGRTW",
+     "count": 1
+    }
+   },
+   {
+    "dnaSequence": {
+     "sequence": "GAACACGTGACT",
+     "count": 1
+    }
+   },
+   {
+    "dnaSequence": {
+     "sequence": "AGTCACGTGTTC",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "MG",
+     "count": 1
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]

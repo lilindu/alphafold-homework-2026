@@ -1,6 +1,1086 @@
 [
  {
-  "class": "班1",
+  "class": "甲班",
+  "category": "hetero",
+  "label": "异源蛋白复合体",
+  "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
+  "id": "9V8I",
+  "title": "Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus subtilis 6633.",
+  "resolution": 1.7,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2025-05-29",
+  "release": "2025-12-24",
+  "chains": [
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "YxiDCTD",
+    "seq": "MKTLDVHALHEGIQHTIEKLDKQKQQLEKLEKSVEHLAGMKDALKGKGGDAIRTFYEECHKPFLLFFGMFIDEYKKVLKQTQHAISSVESDSHGMIAEAFLSHDARHGVKHAREVTEQLTDAVNRQTSAIGHIVSLPAVNDTFFRMETEQAERLISDTLNKLFQFDGQQTQALETAKSDFQTMKKYIDQLETMYTGPKIEITGYKSGSILKSQEEENINQTFGTINPQMKEADDSPMEMMLKKLAENEKSKVDSVVKTGHSKKVSKNIIVINGKVYNTSEHREHIKTDFSNAEVKQVVYNDTLYNVYISGNDMKLEPVVSLSDIKVDENGNVKILETAVELTGVYDLFKAATGRDPVSGEKVTGKDRVVASINSVPFAKIAKLEKLIDINKLINDGKKAKKASEVKNVAKDTGNGVPSYGKKSLPKGPYREVHGFPVKVKPGAQEKHIPNTPNYKQEIANGKNKSIFYGDNKTAQELLDKYAGKGDFLKNGRERVDFGKPIGKYYDRNTGEYVETTKGLIHYGKDGAHIVPSRP",
+    "len": 534,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "E0TXK9",
+    "regions": [
+     [
+      15,
+      408,
+      127
+     ]
+    ],
+    "construct_len": 141,
+    "observed": 107,
+    "frac_observed": 0.759,
+    "unobserved_ranges": [
+     [
+      1,
+      34
+     ]
+    ],
+    "homology": {
+     "bin": 0.0,
+     "n": 0
+    },
+    "reason_construct": null
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "YxxD",
+    "seq": "MGYDSLIETLIKYENNDLILEWTSGLRIIGELDTVFETDNGLDEDDNNYTEYDAAAFKVNKILSKPIQNEGNVYNWLRQEKSSLVEISLYDDPPSTVLLTDGQRVWKSDN",
+    "len": 110,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "A0A9Q4H945",
+    "regions": [
+     [
+      1,
+      1,
+      110
+     ]
+    ],
+    "construct_len": 110,
+    "observed": 108,
+    "frac_observed": 0.982,
+    "unobserved_ranges": [
+     [
+      1,
+      1
+     ],
+     [
+      110,
+      110
+     ]
+    ],
+    "homology": {
+     "bin": 0.0,
+     "n": 0
+    },
+    "reason_construct": null
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 644,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 1,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "dna",
+  "label": "蛋白 + DNA",
+  "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
+  "id": "36BT",
+  "title": "HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated ISL-triphosphate",
+  "resolution": 1.85,
+  "method": "ELECTRON MICROSCOPY",
+  "deposit": "2026-05-29",
+  "release": "2026-09-02",
+  "chains": [
+   {
+    "entity": "3",
+    "type": "DNA",
+    "desc": "DNAddG (38-MER)",
+    "seq": "TAAATCCCCCCCTTCGGTGCTTTGCACCGAAGGGGGGG",
+    "len": 38,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 38,
+    "observed": 35,
+    "frac_observed": 0.921,
+    "unobserved_ranges": [
+     [
+      21,
+      23
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "p51 RT",
+    "seq": "MGARASVLSGGELDRWEKIRLRPGGKKKYKLKHIVWASRELERFAVNPGLLETSEGCRQILGQLQPSLQTGSEELRSLYNTVATLYCVHQRIEIKDTKEALDKIEEEQNKSKKKAQQAAADTGHSNQVSQNYPIVQNIQGQMVHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIYKRWIILGLNKIVRMYSPTSILDIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPAATLEEMMTACQGVGGPGHKARVLAEAMSQVTNSATIMMQRGNFRNQRKIVKCFNCGKEGHTARNCRAPRKKGCWKCGKEGHQMKDCTERQANFLREDLAFLQGKAREFSSEQTRANSPTRRELQVWGRDNNSPSEAGADRQGTVSFNFPQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNFPISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKIGPENPYNTPVFAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKKKSVTVLDVGDAYFSVPLDEDFRKYTAFTIPSINNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRKQNPDIVIYQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGLTTPDKKHQKEPPFLWMGYELHPDKWTVQPIVLPEKDSWTVNDIQKLVGKLNWASQIYPGIKVRQLCKLLRGTKALTEVIPLTEEAELELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLKTGKYARMRGAHTNDVKQLTEAVQKITTESIVIWGKTPKFKLPIQKETWETWWTEYWQATWIPEWEFVNTPPLVKLWYQLEKEPIVGAETFYVDGAANRETKLGKAGYVTNRGRQKVVTLTDTTNQKTELQAIYLALQDSGLEVNIVTDSQYALGIIQAQPDQSESELVNQIIEQLIKKEKVYLAWVPAHKGIGGNEQVDKLVSAGIRKVLFLDGIDKAQDEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMHGQVDCSPGIWQLDCTHLEGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPVKTIHTDNGSNFTGATVRAACWWAGIKQEFGIPYNPQSQGVVESMNKELKKIIGQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRNPLWKGPAKLLWKGEGAVVIQDNSDIKVVPRRKAKIIRDYGKQMAGDDCVASRQDED",
+    "len": 1435,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "P04585",
+    "regions": [
+     [
+      16,
+      588,
+      440
+     ]
+    ],
+    "construct_len": 455,
+    "observed": 375,
+    "frac_observed": 0.824,
+    "unobserved_ranges": [
+     [
+      1,
+      21
+     ],
+     [
+      100,
+      109
+     ],
+     [
+      226,
+      248
+     ],
+     [
+      370,
+      376
+     ],
+     [
+      437,
+      455
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Reverse transcriptase/ribonuclease H",
+    "seq": "MGARASVLSGGELDRWEKIRLRPGGKKKYKLKHIVWASRELERFAVNPGLLETSEGCRQILGQLQPSLQTGSEELRSLYNTVATLYCVHQRIEIKDTKEALDKIEEEQNKSKKKAQQAAADTGHSNQVSQNYPIVQNIQGQMVHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIYKRWIILGLNKIVRMYSPTSILDIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPAATLEEMMTACQGVGGPGHKARVLAEAMSQVTNSATIMMQRGNFRNQRKIVKCFNCGKEGHTARNCRAPRKKGCWKCGKEGHQMKDCTERQANFLREDLAFLQGKAREFSSEQTRANSPTRRELQVWGRDNNSPSEAGADRQGTVSFNFPQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNFPISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKIGPENPYNTPVFAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKKKSVTVLDVGDAYFSVPLDEDFRKYTAFTIPSINNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRKQNPDIVIYQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGLTTPDKKHQKEPPFLWMGYELHPDKWTVQPIVLPEKDSWTVNDIQKLVGKLNWASQIYPGIKVRQLCKLLRGTKALTEVIPLTEEAELELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLKTGKYARMRGAHTNDVKQLTEAVQKITTESIVIWGKTPKFKLPIQKETWETWWTEYWQATWIPEWEFVNTPPLVKLWYQLEKEPIVGAETFYVDGAANRETKLGKAGYVTNRGRQKVVTLTDTTNQKTELQAIYLALQDSGLEVNIVTDSQYALGIIQAQPDQSESELVNQIIEQLIKKEKVYLAWVPAHKGIGGNEQVDKLVSAGIRKVLFLDGIDKAQDEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMHGQVDCSPGIWQLDCTHLEGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPVKTIHTDNGSNFTGATVRAACWWAGIKQEFGIPYNPQSQGVVESMNKELKKIIGQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRNPLWKGPAKLLWKGEGAVVIQDNSDIKVVPRRKAKIIRDYGKQMAGDDCVASRQDED",
+    "len": 1435,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "P04585",
+    "regions": [
+     [
+      3,
+      588,
+      560
+     ]
+    ],
+    "construct_len": 562,
+    "observed": 530,
+    "frac_observed": 0.943,
+    "unobserved_ranges": [
+     [
+      1,
+      5
+     ],
+     [
+      137,
+      141
+     ],
+     [
+      541,
+      562
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   }
+  ],
+  "ligands": [
+   {
+    "code": "6FN",
+    "count": 1,
+    "atoms": 33,
+    "name": "2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen triphosphate)",
+    "mw": 533.193
+   }
+  ],
+  "ions": [
+   {
+    "code": "MG",
+    "count": 1
+   }
+  ],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 2942,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 2,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "rna",
+  "label": "蛋白 + RNA",
+  "note": "RNA 构象自由度大,是公认较难的一类",
+  "id": "9QS9",
+  "title": "Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Crn4",
+  "resolution": 1.441,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2025-04-04",
+  "release": "2025-12-03",
+  "chains": [
+   {
+    "entity": "2",
+    "type": "RNA",
+    "desc": "Cyclic polyA",
+    "seq": "AAAAAA",
+    "len": 6,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 6,
+    "observed": 6,
+    "frac_observed": 1.0,
+    "unobserved_ranges": [],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Crn4 H15A",
+    "seq": "MSITFVAAWVQREPLTLVNLTPHEVILHLDGGPLRLPASDVVPRLLLSEGRQETLVVNDPEYPGEAASVREVPIAVGATWLGIDPPLPEPRPGTVYVTSRVVAEHFPERSDLVWPDDLIRDADGQVVGARRLGCLPRPVLPRPCDDGAQGDQDGRPRTEEER",
+    "len": 162,
+    "copies": 2,
+    "source": "uniprot",
+    "uniprot": "A0A1H0EUC2",
+    "regions": [
+     [
+      6,
+      14,
+      144
+     ]
+    ],
+    "construct_len": 149,
+    "observed": 125,
+    "frac_observed": 0.839,
+    "unobserved_ranges": [
+     [
+      1,
+      4
+     ],
+     [
+      130,
+      149
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   }
+  ],
+  "ligands": [],
+  "ions": [
+   {
+    "code": "MG",
+    "count": 6
+   }
+  ],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 336,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 3,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "ligand",
+  "label": "蛋白 + 小分子配体",
+  "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
+  "id": "24UX",
+  "title": "Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH",
+  "resolution": 1.2,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2026-03-22",
+  "release": "2026-08-12",
+  "chains": [
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Methyltransferase domain protein",
+    "seq": "MNQPTIDHNHPLQPVTVRHGRALPYHVIRGAEVSGYEGKVVYTYQDDPEDWRKAIGDRLMFQFGVYDDPRSRPPISPDESGLRYFDRQMELAGYGRGDFGPVKRILDVGCGWGFGLKYLADRFPACPRLDGINISARQLEYCAKYHAEHRLSERINLYLCNAQDVDLLPHADEPYDLVTVRGVISHFPNDLYERSMAKLASRLRPGATVIISDNLYNLPLEQYRSDTADDVDRLACKHRKTPGYFRQVLEQCGLNVEDMRVLPENIDVARWFMDVKKNIETHFTPDTIPPPLEELRVMAVNVSVALIKDQFSTYSVIARHP",
+    "len": 321,
+    "copies": 2,
+    "source": "uniprot",
+    "uniprot": "A0AB33WVX4",
+    "regions": [
+     [
+      12,
+      22,
+      300
+     ]
+    ],
+    "construct_len": 311,
+    "observed": 292,
+    "frac_observed": 0.939,
+    "unobserved_ranges": [
+     [
+      1,
+      12
+     ],
+     [
+      214,
+      220
+     ]
+    ],
+    "homology": {
+     "bin": 0.0,
+     "n": 0
+    },
+    "reason_construct": null
+   }
+  ],
+  "ligands": [
+   {
+    "code": "SAH",
+    "count": 1,
+    "atoms": 26,
+    "name": "S-ADENOSYL-L-HOMOCYSTEINE",
+    "mw": 384.411
+   }
+  ],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [
+   [
+    "GOL",
+    1
+   ],
+   [
+    "IMD",
+    1
+   ]
+  ],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 668,
+  "assembly_note": "生物学装配按对称操作展开 ×2",
+  "ghosts": [],
+  "no": 4,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "ptm",
+  "label": "有翻译后修饰的蛋白",
+  "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
+  "id": "30TL",
+  "title": "14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation)",
+  "resolution": 1.2,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2026-05-13",
+  "release": "2026-08-26",
+  "chains": [
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "ERa peptide pT594 weak mutant",
+    "seq": "AAATV",
+    "len": 5,
+    "copies": 2,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 5,
+    "observed": 5,
+    "frac_observed": 1.0,
+    "unobserved_ranges": [],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "14-3-3 protein sigma",
+    "seq": "MERASLIQKAKLAEQAERYEDMAAFMKGAVEKGEELSCEERNLLSVAYKNVVGGQRAAWRVLSSIEQKSNEEGSEEKGPEVREYREKVETELQGVCDTVLGLLDSHLIKEAGDAESRVFYLKMKGDYYRYLAEVATGDDKKRIIDSARSAYQEAMDISKKEMPPTNPIRLGLALNFSVFHYEIANSPEEAISLAKTTFDEAMADLHTLSEDSYKDSTLIMQLLRDNLTLWTADNAGEEGGEAPQEPQS",
+    "len": 248,
+    "copies": 2,
+    "source": "uniprot",
+    "uniprot": "P31947",
+    "regions": [
+     [
+      6,
+      1,
+      231
+     ]
+    ],
+    "construct_len": 236,
+    "observed": 236,
+    "frac_observed": 1.0,
+    "unobserved_ranges": [],
+    "homology": {
+     "bin": 0.95,
+     "n": 278
+    },
+    "reason_construct": null
+   }
+  ],
+  "ligands": [],
+  "ions": [
+   {
+    "code": "CA",
+    "count": 1
+   },
+   {
+    "code": "CL",
+    "count": 1
+   },
+   {
+    "code": "MG",
+    "count": 1
+   }
+  ],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [
+   {
+    "entity": "2",
+    "code": "TPO",
+    "pos": 4,
+    "pos_construct": 4,
+    "parent": "T"
+   }
+  ],
+  "ptm_interface": {
+   "min_dist": 2.63,
+   "n_close": 34,
+   "code": "TPO"
+  },
+  "tokens": 509,
+  "assembly_note": "生物学装配按对称操作展开 ×2",
+  "ghosts": [],
+  "no": 5,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "memb",
+  "label": "膜蛋白",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "id": "9O0I",
+  "title": "Cryo-EM structure of Local KwaA-KwaB complex",
+  "resolution": 3.86,
+  "method": "ELECTRON MICROSCOPY",
+  "deposit": "2025-04-02",
+  "release": "2025-08-06",
+  "chains": [
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "Kiwa protein KwaB",
+    "seq": "MTTQQLKEKISKIIDNFSGIRVVFTTTANELKLSRIEGSALNSIAEGFIDKIKEDIINNEDLTSPLLSNFDDRKNALFKFDYEQYPEEFNKITQAIAIPPNSQDYYNPLNKFTDVKGIIILISGDNKCLALYKNKTNLAVLRNSRKMFNLVPDPDGYLKQLPNEILRLDFNYDLFSIGEDFYIKNHKTLETQMKFHQVIEAQAVIALNSLRDSLLIEDISGLEKSSREISFARKLAKISKHSPVLGKIDTKTIIDYVSQHKYLSAILQINEAGDKLLIKTKTSQKHFIKLMSDDYLQSDLTKIIYMSIAKDRLDE",
+    "len": 315,
+    "copies": 2,
+    "source": "uniprot",
+    "uniprot": "P0DW46",
+    "regions": [
+     [
+      1,
+      1,
+      315
+     ]
+    ],
+    "construct_len": 321,
+    "observed": 315,
+    "frac_observed": 0.981,
+    "unobserved_ranges": [
+     [
+      316,
+      321
+     ]
+    ],
+    "homology": {
+     "bin": 0.0,
+     "n": 0
+    },
+    "reason_construct": null
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Kiwa protein KwaA",
+    "seq": "MQRNTYNKVGLYILSLAMLFVFIIILTAKIPFCFTSDCSFIGLKKLVLTNIVPIVCFVFFLFSIYFYNRLKNITKYNGQDSVKITSCQSESYESLTFLATYIVPFMGFSFEDMQKNIAYLLLVVVIGIIFIKTDKYYANPTLALFGFKLYRVNILHPGSGETKNLIAISNDVLKVDDNVYYSFFDEFVFIARKKI",
+    "len": 195,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "P0DW45",
+    "regions": [
+     [
+      1,
+      1,
+      195
+     ]
+    ],
+    "construct_len": 203,
+    "observed": 195,
+    "frac_observed": 0.961,
+    "unobserved_ranges": [
+     [
+      196,
+      203
+     ]
+    ],
+    "homology": {
+     "bin": 0.0,
+     "n": 0
+    },
+    "reason_construct": null
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 825,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 6,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "memb",
+  "label": "膜蛋白",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "id": "9VEB",
+  "title": "Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C",
+  "resolution": 3.56,
+  "method": "ELECTRON MICROSCOPY",
+  "deposit": "2025-06-09",
+  "release": "2025-08-06",
+  "chains": [
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Aspartate/alanine antiporter",
+    "seq": "MNAIGNFLVGTPVFTIFICLALGYLLGKLKIGSFTLGATVGVLIVALLIGQLGVFPRDTLLGDIFFDFFMFAIGYRVGPSFISSMKKFGAKIVYATLIFLVSAFIVAYACFKMFHIGPGIAAGIIAGGLTQSAVIGSSLETISKLPISDHLKTLYSNQIPIVYTLTYVFGTIGVLIFLRDIMPKLMHIDLKKQAVKTAKELDMIPVPVIVASTHFYTINDGSSLIGQTLGTVNTKFAKGLVAAGLNDSADMASVINAGDVLAISGGIDEIGRAVQEFNLLEVTGKTKAYVSKQVVLKKNFSADVLKNAQDKGVLVATLAGDVMDPAQFSTLKPAESVTLVGQKDAVSEVQSQLGRLRAAENIINYSWFALGIALSAALGIVGTKVSGVPIALGGGTASLIVGLVQSIYRDKHAHMDTIPDSLLEFFQSIGLNLFIATVGLSAAKTFISAIQSMGISVLLIGAVISILPHIITFVICYYLMKMEPISIIGAQTGADTLSAALNDVSERVGSDASPFFAAAVAPAYAIGNIFLTLMGPIFIVLLS",
+    "len": 543,
+    "copies": 2,
+    "source": "uniprot",
+    "uniprot": "Q8L3K8",
+    "regions": [
+     [
+      1,
+      1,
+      331
+     ],
+     [
+      338,
+      332,
+      212
+     ]
+    ],
+    "construct_len": 549,
+    "observed": 543,
+    "frac_observed": 0.989,
+    "unobserved_ranges": [
+     [
+      332,
+      337
+     ]
+    ],
+    "homology": {
+     "bin": 0.0,
+     "n": 0
+    },
+    "reason_construct": null
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 1086,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 7,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "ab",
+  "label": "抗原抗体复合物",
+  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
+  "id": "9NCY",
+  "title": "Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum circumsporozoite protein",
+  "resolution": 1.63,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2025-02-17",
+  "release": "2026-03-11",
+  "chains": [
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Fab1392 heavy chain",
+    "seq": "QVQLQESGPGLVRSSETLSLTCTVSGDSMRRYFRNWIRQSPGRGLEWIGAIFDNGSTRYNPSLKSRVTMSVDVSKNQFSLRLSSVTAADTAVYYCARARDYYDFLTRTYRNFYFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSC",
+    "len": 230,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 230,
+    "observed": 228,
+    "frac_observed": 0.991,
+    "unobserved_ranges": [
+     [
+      229,
+      230
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "Fab1392 light chain",
+    "seq": "DIQMTQSPSSLSASVGERVIITCQASQDINHYLNWYQQKPGTAPKLLIYDASKLETGVPSRFSGSGSGTDFTFTIASLQPEDFATYYCQHYDLYPLFGGGTKVDVKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+    "len": 213,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 213,
+    "observed": 212,
+    "frac_observed": 0.995,
+    "unobserved_ranges": [
+     [
+      213,
+      213
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "3",
+    "type": "Protein",
+    "desc": "Circumsporozoite protein",
+    "seq": "MMRKLAILSVSSFLFVEALFQEYQCYGSSSNTRVLNELNYDNAGTNLYNELEMNYYGKQENWYSLKKNSRSLGENDDGNNEDNEKLRKPKHKKLKQPADGNPDPNANPNVDPNANPNVDPNANPNVDPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNVDPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNKNNQGNGQGHNMPNDPNRNVDENANANSAVKNNNNEEPSDKHIKEYLNKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYANDIEKKICKMEKCSSVFNVVNSSIGLIMVLSFLFLN",
+    "len": 397,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "Q7K740",
+    "regions": [
+     [
+      1,
+      310,
+      67
+     ]
+    ],
+    "construct_len": 73,
+    "observed": 65,
+    "frac_observed": 0.89,
+    "unobserved_ranges": [
+     [
+      66,
+      73
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [
+   [
+    "SO4",
+    2
+   ],
+   [
+    "GOL",
+    3
+   ],
+   [
+    "PEG",
+    3
+   ]
+  ],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 840,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 8,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "ab",
+  "label": "抗原抗体复合物",
+  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
+  "id": "9ULL",
+  "title": "Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)",
+  "resolution": 1.63,
+  "method": "X-RAY DIFFRACTION/SOLUTION SCATTERING",
+  "deposit": "2025-04-20",
+  "release": "2026-04-22",
+  "chains": [
+   {
+    "entity": "3",
+    "type": "Protein",
+    "desc": "C-C chemokine receptor type 4",
+    "seq": "MNPTDIADTTLDESIYSNYYLYESIPKPCTKEGIKAFGELFLPPLYSLVFVFGLLGNSVVVLVLFKYKRLRSMTDVYLLNLAISDLLFVFSLPFWGYYAADQWVFGLGLCKMISWMYLVGFYSGIFFVMLMSIDRYLAIVHAVFSLRARTLTYGVITSLATWSVAVFASLPGFLFSTCYTERNHTYCKTKYSLNSTTWKVLSSLEINILGLVIPLGIMLFCYSMIIRTLQHCKNEKKNKAVKMIFAVVVLFLGFWTPYNIVLFLETLVELEVLQDCTFERYLDYAIQATETLAFVHCCLNPIIYFFLGEKFRKYILQLFKTCRGLFVLCQYCGLLQIYSADTPSSSYTQSTMDHDLHDAL",
+    "len": 360,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "P51679",
+    "regions": [
+     [
+      1,
+      14,
+      11
+     ]
+    ],
+    "construct_len": 11,
+    "observed": 10,
+    "frac_observed": 0.909,
+    "unobserved_ranges": [
+     [
+      1,
+      1
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   },
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "light chain",
+    "seq": "DVLMTQSPLSLPVTPGEPASISCRSSRNIVHINGDTYLEWYLQKPGQSPQLLIYKVSNRFSGVPDRFSGSGSGTDFTLKISRVEAEDVGVYYCFQGSLLPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+    "len": 219,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 219,
+    "observed": 217,
+    "frac_observed": 0.991,
+    "unobserved_ranges": [
+     [
+      218,
+      219
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "heavy chain",
+    "seq": "EVQLVESGGDLVQPGRSLRLSCAASGFIFSNYGMSWVRQAPGKGLEWVATISSASTYSYYPDSVKGRFTISRDNAKNSLYLQMNSLRVEDTALYYCGRHSDGNFAFGYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHH",
+    "len": 231,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 231,
+    "observed": 216,
+    "frac_observed": 0.935,
+    "unobserved_ranges": [
+     [
+      133,
+      136
+     ],
+     [
+      221,
+      231
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 810,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 9,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "ab",
+  "label": "抗原抗体复合物",
+  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
+  "id": "9ULM",
+  "title": "Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)",
+  "resolution": 2.01,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2025-04-20",
+  "release": "2026-04-22",
+  "chains": [
+   {
+    "entity": "4",
+    "type": "Protein",
+    "desc": "C-C chemokine receptor type 4",
+    "seq": "MNPTDIADTTLDESIYSNYYLYESIPKPCTKEGIKAFGELFLPPLYSLVFVFGLLGNSVVVLVLFKYKRLRSMTDVYLLNLAISDLLFVFSLPFWGYYAADQWVFGLGLCKMISWMYLVGFYSGIFFVMLMSIDRYLAIVHAVFSLRARTLTYGVITSLATWSVAVFASLPGFLFSTCYTERNHTYCKTKYSLNSTTWKVLSSLEINILGLVIPLGIMLFCYSMIIRTLQHCKNEKKNKAVKMIFAVVVLFLGFWTPYNIVLFLETLVELEVLQDCTFERYLDYAIQATETLAFVHCCLNPIIYFFLGEKFRKYILQLFKTCRGLFVLCQYCGLLQIYSADTPSSSYTQSTMDHDLHDAL",
+    "len": 360,
+    "copies": 1,
+    "source": "uniprot",
+    "uniprot": "P51679",
+    "regions": [
+     [
+      1,
+      2,
+      28
+     ]
+    ],
+    "construct_len": 28,
+    "observed": 11,
+    "frac_observed": 0.393,
+    "unobserved_ranges": [
+     [
+      1,
+      12
+     ],
+     [
+      24,
+      28
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   },
+   {
+    "entity": "3",
+    "type": "Protein",
+    "desc": "anti-kappa VHH",
+    "seq": "MQVQLQESGGGLVQPGGSLRLSCAASGRTISSYAMSWFRQAPGKEREFVATARRSGDGAFYADSVQGRFTVSRDNAKNTVYLQMNSLKPEDTAVYYCAVDSDTFYSGSYDYWGQGTQVTVSSLEHHHHHH",
+    "len": 130,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 130,
+    "observed": 120,
+    "frac_observed": 0.923,
+    "unobserved_ranges": [
+     [
+      1,
+      2
+     ],
+     [
+      123,
+      130
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "light chain",
+    "seq": "DVLMTQSPLSLPVTPGEPASISCRSSRNIVHINGDTYLEWYLQKPGQSPQLLIYKVSNRFSGVPDRFSGSGSGTDFTLKISRVEAEDVGVYYCFQGSLLPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+    "len": 219,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 219,
+    "observed": 217,
+    "frac_observed": 0.991,
+    "unobserved_ranges": [
+     [
+      218,
+      219
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "heavy chain",
+    "seq": "EVQLVESGGDLVQPGRSLRLSCAASGFIFSNYGMSWVRQAPGKGLEWVATISSASTYSYYPDSVKGRFTISRDNAKNSLYLQMNSLRVEDTALYYCGRHSDGNFAFGYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHH",
+    "len": 231,
+    "copies": 1,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 231,
+    "observed": 214,
+    "frac_observed": 0.926,
+    "unobserved_ranges": [
+     [
+      134,
+      138
+     ],
+     [
+      220,
+      231
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 940,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 10,
+  "prefix": "jia"
+ },
+ {
+  "class": "甲班",
+  "category": "ab",
+  "label": "抗原抗体复合物",
+  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
+  "id": "9Y3I",
+  "title": "Crystal Structure of PA14 Cif Bound to Nanobodies VHH108 and VHH219",
+  "resolution": 1.8,
+  "method": "X-RAY DIFFRACTION",
+  "deposit": "2025-09-02",
+  "release": "2026-09-09",
+  "chains": [
+   {
+    "entity": "3",
+    "type": "Protein",
+    "desc": "CFTR inhibitory factor",
+    "seq": "AEEFPVPNGFESAYREVDGVKLHYVKGGQGPLVMLVHGFGQTWYEWHQLMPELAKRFTVIAPDLPGLGQSEPPKTGYSGEQVAVYLHKLARQFSPDRPFDLVAHDIGIWNTYPMVVKNQADIARLVYMEAPIPDARIYRFPAFTAQGESLVWHFSFFAADDRLAETLIAGKERFFLEHFIKSHASNTEVFSERLLDLYARSYAKPHSLNASFEYYRALNESVRQNAELAKTRLQMPTMTLAGGGHGGMGTFQLEQMKAYAEDVEGHVLPGCGHWLPEECAAPMNRLVIDFLSRGRHHHHHH",
+    "len": 301,
+    "copies": 2,
+    "source": "uniprot",
+    "uniprot": "A0A0M3KL26",
+    "regions": [
+     [
+      1,
+      1,
+      295
+     ]
+    ],
+    "construct_len": 295,
+    "observed": 294,
+    "frac_observed": 0.997,
+    "unobserved_ranges": [
+     [
+      1,
+      1
+     ]
+    ],
+    "homology": null,
+    "reason_construct": null
+   },
+   {
+    "entity": "2",
+    "type": "Protein",
+    "desc": "Nanobody VHH108",
+    "seq": "MAEVQLVESGGGLVQPGGSLRLSCEATGNFDDRGIGWFRQAPGKEREGIACITTRGRTHYAESVEGRFTISTDIANNAVYLQMNSLKPEDTAVYYCAKAIRLTTDRTQCVAFPGVSWGRGTQVTVSSGQAGQ",
+    "len": 132,
+    "copies": 2,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 132,
+    "observed": 123,
+    "frac_observed": 0.932,
+    "unobserved_ranges": [
+     [
+      1,
+      4
+     ],
+     [
+      128,
+      132
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   },
+   {
+    "entity": "1",
+    "type": "Protein",
+    "desc": "Nanobody VHH219",
+    "seq": "MAEVQLVESGGGLVQPGGSLRLSCTTSTSLFSITTMGWYRQAPGKQRELVASIKRGGGTNYADSMKGRFTISRDNARNTVFLEMNNLTTEDTAVYYCNAAILAYTGEVTNYWGQGTQVTVSSGQAGQ",
+    "len": 127,
+    "copies": 2,
+    "source": "construct",
+    "uniprot": null,
+    "regions": [],
+    "construct_len": 127,
+    "observed": 119,
+    "frac_observed": 0.937,
+    "unobserved_ranges": [
+     [
+      1,
+      3
+     ],
+     [
+      123,
+      127
+     ]
+    ],
+    "homology": null,
+    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+   }
+  ],
+  "ligands": [],
+  "ions": [],
+  "dropped": [],
+  "omitted_pdb": [
+   [
+    "FMT",
+    2
+   ]
+  ],
+  "ptms": [],
+  "ptm_interface": null,
+  "tokens": 1120,
+  "assembly_note": "",
+  "ghosts": [],
+  "no": 11,
+  "prefix": "jia"
+ },
+ {
+  "class": "乙班",
   "category": "hetero",
   "label": "异源蛋白复合体",
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
@@ -83,10 +1163,11 @@
   "tokens": 1182,
   "assembly_note": "",
   "ghosts": [],
-  "no": 1
+  "no": 1,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "dna",
   "label": "蛋白 + DNA",
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
@@ -154,10 +1235,11 @@
   "tokens": 1508,
   "assembly_note": "",
   "ghosts": [],
-  "no": 2
+  "no": 2,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "rna",
   "label": "蛋白 + RNA",
   "note": "RNA 构象自由度大,是公认较难的一类",
@@ -359,10 +1441,11 @@
   "tokens": 2942,
   "assembly_note": "",
   "ghosts": [],
-  "no": 3
+  "no": 3,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
@@ -454,10 +1537,11 @@
   "tokens": 674,
   "assembly_note": "",
   "ghosts": [],
-  "no": 4
+  "no": 4,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
@@ -552,10 +1636,11 @@
   "tokens": 1212,
   "assembly_note": "",
   "ghosts": [],
-  "no": 5
+  "no": 5,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "memb",
   "label": "膜蛋白",
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
@@ -615,10 +1700,11 @@
   "tokens": 563,
   "assembly_note": "",
   "ghosts": [],
-  "no": 6
+  "no": 6,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "memb",
   "label": "膜蛋白",
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
@@ -678,10 +1764,11 @@
   "tokens": 1755,
   "assembly_note": "",
   "ghosts": [],
-  "no": 7
+  "no": 7,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -774,10 +1861,11 @@
   "tokens": 1428,
   "assembly_note": "",
   "ghosts": [],
-  "no": 8
+  "no": 8,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -860,10 +1948,11 @@
   "tokens": 1049,
   "assembly_note": "",
   "ghosts": [],
-  "no": 9
+  "no": 9,
+  "prefix": "yi"
  },
  {
-  "class": "班1",
+  "class": "乙班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -934,10 +2023,11 @@
   "tokens": 370,
   "assembly_note": "",
   "ghosts": [],
-  "no": 10
+  "no": 10,
+  "prefix": "yi"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "hetero",
   "label": "异源蛋白复合体",
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
@@ -1028,10 +2118,11 @@
   "tokens": 1051,
   "assembly_note": "",
   "ghosts": [],
-  "no": 11
+  "no": 1,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "dna",
   "label": "蛋白 + DNA",
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
@@ -1114,10 +2205,11 @@
   "tokens": 396,
   "assembly_note": "",
   "ghosts": [],
-  "no": 12
+  "no": 2,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "rna",
   "label": "蛋白 + RNA",
   "note": "RNA 构象自由度大,是公认较难的一类",
@@ -1303,10 +2395,11 @@
   "tokens": 2960,
   "assembly_note": "",
   "ghosts": [],
-  "no": 13
+  "no": 3,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
@@ -1392,10 +2485,11 @@
   "tokens": 289,
   "assembly_note": "",
   "ghosts": [],
-  "no": 14
+  "no": 4,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
@@ -1510,10 +2604,11 @@
   "tokens": 922,
   "assembly_note": "",
   "ghosts": [],
-  "no": 15
+  "no": 5,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "memb",
   "label": "膜蛋白",
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
@@ -1585,10 +2680,11 @@
   "tokens": 600,
   "assembly_note": "",
   "ghosts": [],
-  "no": 16
+  "no": 6,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "memb",
   "label": "膜蛋白",
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
@@ -1654,10 +2750,11 @@
   "tokens": 814,
   "assembly_note": "",
   "ghosts": [],
-  "no": 17
+  "no": 7,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -1749,10 +2846,11 @@
   "tokens": 844,
   "assembly_note": "",
   "ghosts": [],
-  "no": 18
+  "no": 8,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -1853,10 +2951,11 @@
   "tokens": 1523,
   "assembly_note": "",
   "ghosts": [],
-  "no": 19
+  "no": 9,
+  "prefix": "bing"
  },
  {
-  "class": "班2",
+  "class": "丙班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -1949,10 +3048,11 @@
   "tokens": 3871,
   "assembly_note": "",
   "ghosts": [],
-  "no": 20
+  "no": 10,
+  "prefix": "bing"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "hetero",
   "label": "异源蛋白复合体",
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
@@ -2034,10 +3134,11 @@
   "tokens": 644,
   "assembly_note": "",
   "ghosts": [],
-  "no": 21
+  "no": 1,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "dna",
   "label": "蛋白 + DNA",
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
@@ -2154,10 +3255,11 @@
   "tokens": 398,
   "assembly_note": "",
   "ghosts": [],
-  "no": 22
+  "no": 2,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "rna",
   "label": "蛋白 + RNA",
   "note": "RNA 构象自由度大,是公认较难的一类",
@@ -2268,10 +3370,11 @@
   "tokens": 728,
   "assembly_note": "",
   "ghosts": [],
-  "no": 23
+  "no": 3,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
@@ -2349,10 +3452,11 @@
   "tokens": 350,
   "assembly_note": "",
   "ghosts": [],
-  "no": 24
+  "no": 4,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
@@ -2428,10 +3532,11 @@
   "tokens": 922,
   "assembly_note": "",
   "ghosts": [],
-  "no": 25
+  "no": 5,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "memb",
   "label": "膜蛋白",
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
@@ -2495,10 +3600,11 @@
   "tokens": 497,
   "assembly_note": "",
   "ghosts": [],
-  "no": 26
+  "no": 6,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "memb",
   "label": "膜蛋白",
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
@@ -2562,10 +3668,11 @@
   "tokens": 807,
   "assembly_note": "",
   "ghosts": [],
-  "no": 27
+  "no": 7,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -2652,10 +3759,11 @@
   "tokens": 634,
   "assembly_note": "",
   "ghosts": [],
-  "no": 28
+  "no": 8,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -2756,10 +3864,11 @@
   "tokens": 827,
   "assembly_note": "",
   "ghosts": [],
-  "no": 29
+  "no": 9,
+  "prefix": "ding"
  },
  {
-  "class": "班3",
+  "class": "丁班",
   "category": "ab",
   "label": "抗原抗体复合物",
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
@@ -2865,1075 +3974,7 @@
   "tokens": 1038,
   "assembly_note": "",
   "ghosts": [],
-  "no": 30
- },
- {
-  "class": "班4",
-  "category": "hetero",
-  "label": "异源蛋白复合体",
-  "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
-  "id": "9V8I",
-  "title": "Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus subtilis 6633.",
-  "resolution": 1.7,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2025-05-29",
-  "release": "2025-12-24",
-  "chains": [
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "YxiDCTD",
-    "seq": "MKTLDVHALHEGIQHTIEKLDKQKQQLEKLEKSVEHLAGMKDALKGKGGDAIRTFYEECHKPFLLFFGMFIDEYKKVLKQTQHAISSVESDSHGMIAEAFLSHDARHGVKHAREVTEQLTDAVNRQTSAIGHIVSLPAVNDTFFRMETEQAERLISDTLNKLFQFDGQQTQALETAKSDFQTMKKYIDQLETMYTGPKIEITGYKSGSILKSQEEENINQTFGTINPQMKEADDSPMEMMLKKLAENEKSKVDSVVKTGHSKKVSKNIIVINGKVYNTSEHREHIKTDFSNAEVKQVVYNDTLYNVYISGNDMKLEPVVSLSDIKVDENGNVKILETAVELTGVYDLFKAATGRDPVSGEKVTGKDRVVASINSVPFAKIAKLEKLIDINKLINDGKKAKKASEVKNVAKDTGNGVPSYGKKSLPKGPYREVHGFPVKVKPGAQEKHIPNTPNYKQEIANGKNKSIFYGDNKTAQELLDKYAGKGDFLKNGRERVDFGKPIGKYYDRNTGEYVETTKGLIHYGKDGAHIVPSRP",
-    "len": 534,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "E0TXK9",
-    "regions": [
-     [
-      15,
-      408,
-      127
-     ]
-    ],
-    "construct_len": 141,
-    "observed": 107,
-    "frac_observed": 0.759,
-    "unobserved_ranges": [
-     [
-      1,
-      34
-     ]
-    ],
-    "homology": {
-     "bin": 0.0,
-     "n": 0
-    },
-    "reason_construct": null
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "YxxD",
-    "seq": "MGYDSLIETLIKYENNDLILEWTSGLRIIGELDTVFETDNGLDEDDNNYTEYDAAAFKVNKILSKPIQNEGNVYNWLRQEKSSLVEISLYDDPPSTVLLTDGQRVWKSDN",
-    "len": 110,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "A0A9Q4H945",
-    "regions": [
-     [
-      1,
-      1,
-      110
-     ]
-    ],
-    "construct_len": 110,
-    "observed": 108,
-    "frac_observed": 0.982,
-    "unobserved_ranges": [
-     [
-      1,
-      1
-     ],
-     [
-      110,
-      110
-     ]
-    ],
-    "homology": {
-     "bin": 0.0,
-     "n": 0
-    },
-    "reason_construct": null
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 644,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 31
- },
- {
-  "class": "班4",
-  "category": "dna",
-  "label": "蛋白 + DNA",
-  "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
-  "id": "36BT",
-  "title": "HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated ISL-triphosphate",
-  "resolution": 1.85,
-  "method": "ELECTRON MICROSCOPY",
-  "deposit": "2026-05-29",
-  "release": "2026-09-02",
-  "chains": [
-   {
-    "entity": "3",
-    "type": "DNA",
-    "desc": "DNAddG (38-MER)",
-    "seq": "TAAATCCCCCCCTTCGGTGCTTTGCACCGAAGGGGGGG",
-    "len": 38,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 38,
-    "observed": 35,
-    "frac_observed": 0.921,
-    "unobserved_ranges": [
-     [
-      21,
-      23
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "p51 RT",
-    "seq": "MGARASVLSGGELDRWEKIRLRPGGKKKYKLKHIVWASRELERFAVNPGLLETSEGCRQILGQLQPSLQTGSEELRSLYNTVATLYCVHQRIEIKDTKEALDKIEEEQNKSKKKAQQAAADTGHSNQVSQNYPIVQNIQGQMVHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIYKRWIILGLNKIVRMYSPTSILDIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPAATLEEMMTACQGVGGPGHKARVLAEAMSQVTNSATIMMQRGNFRNQRKIVKCFNCGKEGHTARNCRAPRKKGCWKCGKEGHQMKDCTERQANFLREDLAFLQGKAREFSSEQTRANSPTRRELQVWGRDNNSPSEAGADRQGTVSFNFPQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNFPISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKIGPENPYNTPVFAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKKKSVTVLDVGDAYFSVPLDEDFRKYTAFTIPSINNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRKQNPDIVIYQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGLTTPDKKHQKEPPFLWMGYELHPDKWTVQPIVLPEKDSWTVNDIQKLVGKLNWASQIYPGIKVRQLCKLLRGTKALTEVIPLTEEAELELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLKTGKYARMRGAHTNDVKQLTEAVQKITTESIVIWGKTPKFKLPIQKETWETWWTEYWQATWIPEWEFVNTPPLVKLWYQLEKEPIVGAETFYVDGAANRETKLGKAGYVTNRGRQKVVTLTDTTNQKTELQAIYLALQDSGLEVNIVTDSQYALGIIQAQPDQSESELVNQIIEQLIKKEKVYLAWVPAHKGIGGNEQVDKLVSAGIRKVLFLDGIDKAQDEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMHGQVDCSPGIWQLDCTHLEGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPVKTIHTDNGSNFTGATVRAACWWAGIKQEFGIPYNPQSQGVVESMNKELKKIIGQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRNPLWKGPAKLLWKGEGAVVIQDNSDIKVVPRRKAKIIRDYGKQMAGDDCVASRQDED",
-    "len": 1435,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "P04585",
-    "regions": [
-     [
-      16,
-      588,
-      440
-     ]
-    ],
-    "construct_len": 455,
-    "observed": 375,
-    "frac_observed": 0.824,
-    "unobserved_ranges": [
-     [
-      1,
-      21
-     ],
-     [
-      100,
-      109
-     ],
-     [
-      226,
-      248
-     ],
-     [
-      370,
-      376
-     ],
-     [
-      437,
-      455
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Reverse transcriptase/ribonuclease H",
-    "seq": "MGARASVLSGGELDRWEKIRLRPGGKKKYKLKHIVWASRELERFAVNPGLLETSEGCRQILGQLQPSLQTGSEELRSLYNTVATLYCVHQRIEIKDTKEALDKIEEEQNKSKKKAQQAAADTGHSNQVSQNYPIVQNIQGQMVHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIYKRWIILGLNKIVRMYSPTSILDIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPAATLEEMMTACQGVGGPGHKARVLAEAMSQVTNSATIMMQRGNFRNQRKIVKCFNCGKEGHTARNCRAPRKKGCWKCGKEGHQMKDCTERQANFLREDLAFLQGKAREFSSEQTRANSPTRRELQVWGRDNNSPSEAGADRQGTVSFNFPQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNFPISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKIGPENPYNTPVFAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKKKSVTVLDVGDAYFSVPLDEDFRKYTAFTIPSINNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRKQNPDIVIYQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGLTTPDKKHQKEPPFLWMGYELHPDKWTVQPIVLPEKDSWTVNDIQKLVGKLNWASQIYPGIKVRQLCKLLRGTKALTEVIPLTEEAELELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLKTGKYARMRGAHTNDVKQLTEAVQKITTESIVIWGKTPKFKLPIQKETWETWWTEYWQATWIPEWEFVNTPPLVKLWYQLEKEPIVGAETFYVDGAANRETKLGKAGYVTNRGRQKVVTLTDTTNQKTELQAIYLALQDSGLEVNIVTDSQYALGIIQAQPDQSESELVNQIIEQLIKKEKVYLAWVPAHKGIGGNEQVDKLVSAGIRKVLFLDGIDKAQDEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMHGQVDCSPGIWQLDCTHLEGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPVKTIHTDNGSNFTGATVRAACWWAGIKQEFGIPYNPQSQGVVESMNKELKKIIGQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRNPLWKGPAKLLWKGEGAVVIQDNSDIKVVPRRKAKIIRDYGKQMAGDDCVASRQDED",
-    "len": 1435,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "P04585",
-    "regions": [
-     [
-      3,
-      588,
-      560
-     ]
-    ],
-    "construct_len": 562,
-    "observed": 530,
-    "frac_observed": 0.943,
-    "unobserved_ranges": [
-     [
-      1,
-      5
-     ],
-     [
-      137,
-      141
-     ],
-     [
-      541,
-      562
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   }
-  ],
-  "ligands": [
-   {
-    "code": "6FN",
-    "count": 1,
-    "atoms": 33,
-    "name": "2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen triphosphate)",
-    "mw": 533.193
-   }
-  ],
-  "ions": [
-   {
-    "code": "MG",
-    "count": 1
-   }
-  ],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 2942,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 32
- },
- {
-  "class": "班4",
-  "category": "rna",
-  "label": "蛋白 + RNA",
-  "note": "RNA 构象自由度大,是公认较难的一类",
-  "id": "9QS9",
-  "title": "Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Crn4",
-  "resolution": 1.441,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2025-04-04",
-  "release": "2025-12-03",
-  "chains": [
-   {
-    "entity": "2",
-    "type": "RNA",
-    "desc": "Cyclic polyA",
-    "seq": "AAAAAA",
-    "len": 6,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 6,
-    "observed": 6,
-    "frac_observed": 1.0,
-    "unobserved_ranges": [],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Crn4 H15A",
-    "seq": "MSITFVAAWVQREPLTLVNLTPHEVILHLDGGPLRLPASDVVPRLLLSEGRQETLVVNDPEYPGEAASVREVPIAVGATWLGIDPPLPEPRPGTVYVTSRVVAEHFPERSDLVWPDDLIRDADGQVVGARRLGCLPRPVLPRPCDDGAQGDQDGRPRTEEER",
-    "len": 162,
-    "copies": 2,
-    "source": "uniprot",
-    "uniprot": "A0A1H0EUC2",
-    "regions": [
-     [
-      6,
-      14,
-      144
-     ]
-    ],
-    "construct_len": 149,
-    "observed": 125,
-    "frac_observed": 0.839,
-    "unobserved_ranges": [
-     [
-      1,
-      4
-     ],
-     [
-      130,
-      149
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   }
-  ],
-  "ligands": [],
-  "ions": [
-   {
-    "code": "MG",
-    "count": 6
-   }
-  ],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 336,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 33
- },
- {
-  "class": "班4",
-  "category": "ligand",
-  "label": "蛋白 + 小分子配体",
-  "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
-  "id": "24UX",
-  "title": "Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH",
-  "resolution": 1.2,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2026-03-22",
-  "release": "2026-08-12",
-  "chains": [
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Methyltransferase domain protein",
-    "seq": "MNQPTIDHNHPLQPVTVRHGRALPYHVIRGAEVSGYEGKVVYTYQDDPEDWRKAIGDRLMFQFGVYDDPRSRPPISPDESGLRYFDRQMELAGYGRGDFGPVKRILDVGCGWGFGLKYLADRFPACPRLDGINISARQLEYCAKYHAEHRLSERINLYLCNAQDVDLLPHADEPYDLVTVRGVISHFPNDLYERSMAKLASRLRPGATVIISDNLYNLPLEQYRSDTADDVDRLACKHRKTPGYFRQVLEQCGLNVEDMRVLPENIDVARWFMDVKKNIETHFTPDTIPPPLEELRVMAVNVSVALIKDQFSTYSVIARHP",
-    "len": 321,
-    "copies": 2,
-    "source": "uniprot",
-    "uniprot": "A0AB33WVX4",
-    "regions": [
-     [
-      12,
-      22,
-      300
-     ]
-    ],
-    "construct_len": 311,
-    "observed": 292,
-    "frac_observed": 0.939,
-    "unobserved_ranges": [
-     [
-      1,
-      12
-     ],
-     [
-      214,
-      220
-     ]
-    ],
-    "homology": {
-     "bin": 0.0,
-     "n": 0
-    },
-    "reason_construct": null
-   }
-  ],
-  "ligands": [
-   {
-    "code": "SAH",
-    "count": 1,
-    "atoms": 26,
-    "name": "S-ADENOSYL-L-HOMOCYSTEINE",
-    "mw": 384.411
-   }
-  ],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [
-   [
-    "GOL",
-    1
-   ],
-   [
-    "IMD",
-    1
-   ]
-  ],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 668,
-  "assembly_note": "生物学装配按对称操作展开 ×2",
-  "ghosts": [],
-  "no": 34
- },
- {
-  "class": "班4",
-  "category": "ptm",
-  "label": "有翻译后修饰的蛋白",
-  "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
-  "id": "30TL",
-  "title": "14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation)",
-  "resolution": 1.2,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2026-05-13",
-  "release": "2026-08-26",
-  "chains": [
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "ERa peptide pT594 weak mutant",
-    "seq": "AAATV",
-    "len": 5,
-    "copies": 2,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 5,
-    "observed": 5,
-    "frac_observed": 1.0,
-    "unobserved_ranges": [],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "14-3-3 protein sigma",
-    "seq": "MERASLIQKAKLAEQAERYEDMAAFMKGAVEKGEELSCEERNLLSVAYKNVVGGQRAAWRVLSSIEQKSNEEGSEEKGPEVREYREKVETELQGVCDTVLGLLDSHLIKEAGDAESRVFYLKMKGDYYRYLAEVATGDDKKRIIDSARSAYQEAMDISKKEMPPTNPIRLGLALNFSVFHYEIANSPEEAISLAKTTFDEAMADLHTLSEDSYKDSTLIMQLLRDNLTLWTADNAGEEGGEAPQEPQS",
-    "len": 248,
-    "copies": 2,
-    "source": "uniprot",
-    "uniprot": "P31947",
-    "regions": [
-     [
-      6,
-      1,
-      231
-     ]
-    ],
-    "construct_len": 236,
-    "observed": 236,
-    "frac_observed": 1.0,
-    "unobserved_ranges": [],
-    "homology": {
-     "bin": 0.95,
-     "n": 278
-    },
-    "reason_construct": null
-   }
-  ],
-  "ligands": [],
-  "ions": [
-   {
-    "code": "CA",
-    "count": 1
-   },
-   {
-    "code": "CL",
-    "count": 1
-   },
-   {
-    "code": "MG",
-    "count": 1
-   }
-  ],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [
-   {
-    "entity": "2",
-    "code": "TPO",
-    "pos": 4,
-    "pos_construct": 4,
-    "parent": "T"
-   }
-  ],
-  "ptm_interface": {
-   "min_dist": 2.63,
-   "n_close": 34,
-   "code": "TPO"
-  },
-  "tokens": 509,
-  "assembly_note": "生物学装配按对称操作展开 ×2",
-  "ghosts": [],
-  "no": 35
- },
- {
-  "class": "班4",
-  "category": "memb",
-  "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
-  "id": "9O0I",
-  "title": "Cryo-EM structure of Local KwaA-KwaB complex",
-  "resolution": 3.86,
-  "method": "ELECTRON MICROSCOPY",
-  "deposit": "2025-04-02",
-  "release": "2025-08-06",
-  "chains": [
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "Kiwa protein KwaB",
-    "seq": "MTTQQLKEKISKIIDNFSGIRVVFTTTANELKLSRIEGSALNSIAEGFIDKIKEDIINNEDLTSPLLSNFDDRKNALFKFDYEQYPEEFNKITQAIAIPPNSQDYYNPLNKFTDVKGIIILISGDNKCLALYKNKTNLAVLRNSRKMFNLVPDPDGYLKQLPNEILRLDFNYDLFSIGEDFYIKNHKTLETQMKFHQVIEAQAVIALNSLRDSLLIEDISGLEKSSREISFARKLAKISKHSPVLGKIDTKTIIDYVSQHKYLSAILQINEAGDKLLIKTKTSQKHFIKLMSDDYLQSDLTKIIYMSIAKDRLDE",
-    "len": 315,
-    "copies": 2,
-    "source": "uniprot",
-    "uniprot": "P0DW46",
-    "regions": [
-     [
-      1,
-      1,
-      315
-     ]
-    ],
-    "construct_len": 321,
-    "observed": 315,
-    "frac_observed": 0.981,
-    "unobserved_ranges": [
-     [
-      316,
-      321
-     ]
-    ],
-    "homology": {
-     "bin": 0.0,
-     "n": 0
-    },
-    "reason_construct": null
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Kiwa protein KwaA",
-    "seq": "MQRNTYNKVGLYILSLAMLFVFIIILTAKIPFCFTSDCSFIGLKKLVLTNIVPIVCFVFFLFSIYFYNRLKNITKYNGQDSVKITSCQSESYESLTFLATYIVPFMGFSFEDMQKNIAYLLLVVVIGIIFIKTDKYYANPTLALFGFKLYRVNILHPGSGETKNLIAISNDVLKVDDNVYYSFFDEFVFIARKKI",
-    "len": 195,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "P0DW45",
-    "regions": [
-     [
-      1,
-      1,
-      195
-     ]
-    ],
-    "construct_len": 203,
-    "observed": 195,
-    "frac_observed": 0.961,
-    "unobserved_ranges": [
-     [
-      196,
-      203
-     ]
-    ],
-    "homology": {
-     "bin": 0.0,
-     "n": 0
-    },
-    "reason_construct": null
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 825,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 36
- },
- {
-  "class": "班4",
-  "category": "memb",
-  "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
-  "id": "9VEB",
-  "title": "Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C",
-  "resolution": 3.56,
-  "method": "ELECTRON MICROSCOPY",
-  "deposit": "2025-06-09",
-  "release": "2025-08-06",
-  "chains": [
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Aspartate/alanine antiporter",
-    "seq": "MNAIGNFLVGTPVFTIFICLALGYLLGKLKIGSFTLGATVGVLIVALLIGQLGVFPRDTLLGDIFFDFFMFAIGYRVGPSFISSMKKFGAKIVYATLIFLVSAFIVAYACFKMFHIGPGIAAGIIAGGLTQSAVIGSSLETISKLPISDHLKTLYSNQIPIVYTLTYVFGTIGVLIFLRDIMPKLMHIDLKKQAVKTAKELDMIPVPVIVASTHFYTINDGSSLIGQTLGTVNTKFAKGLVAAGLNDSADMASVINAGDVLAISGGIDEIGRAVQEFNLLEVTGKTKAYVSKQVVLKKNFSADVLKNAQDKGVLVATLAGDVMDPAQFSTLKPAESVTLVGQKDAVSEVQSQLGRLRAAENIINYSWFALGIALSAALGIVGTKVSGVPIALGGGTASLIVGLVQSIYRDKHAHMDTIPDSLLEFFQSIGLNLFIATVGLSAAKTFISAIQSMGISVLLIGAVISILPHIITFVICYYLMKMEPISIIGAQTGADTLSAALNDVSERVGSDASPFFAAAVAPAYAIGNIFLTLMGPIFIVLLS",
-    "len": 543,
-    "copies": 2,
-    "source": "uniprot",
-    "uniprot": "Q8L3K8",
-    "regions": [
-     [
-      1,
-      1,
-      331
-     ],
-     [
-      338,
-      332,
-      212
-     ]
-    ],
-    "construct_len": 549,
-    "observed": 543,
-    "frac_observed": 0.989,
-    "unobserved_ranges": [
-     [
-      332,
-      337
-     ]
-    ],
-    "homology": {
-     "bin": 0.0,
-     "n": 0
-    },
-    "reason_construct": null
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 1086,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 37
- },
- {
-  "class": "班4",
-  "category": "ab",
-  "label": "抗原抗体复合物",
-  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
-  "id": "9NCY",
-  "title": "Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum circumsporozoite protein",
-  "resolution": 1.63,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2025-02-17",
-  "release": "2026-03-11",
-  "chains": [
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Fab1392 heavy chain",
-    "seq": "QVQLQESGPGLVRSSETLSLTCTVSGDSMRRYFRNWIRQSPGRGLEWIGAIFDNGSTRYNPSLKSRVTMSVDVSKNQFSLRLSSVTAADTAVYYCARARDYYDFLTRTYRNFYFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSC",
-    "len": 230,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 230,
-    "observed": 228,
-    "frac_observed": 0.991,
-    "unobserved_ranges": [
-     [
-      229,
-      230
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "Fab1392 light chain",
-    "seq": "DIQMTQSPSSLSASVGERVIITCQASQDINHYLNWYQQKPGTAPKLLIYDASKLETGVPSRFSGSGSGTDFTFTIASLQPEDFATYYCQHYDLYPLFGGGTKVDVKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
-    "len": 213,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 213,
-    "observed": 212,
-    "frac_observed": 0.995,
-    "unobserved_ranges": [
-     [
-      213,
-      213
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "3",
-    "type": "Protein",
-    "desc": "Circumsporozoite protein",
-    "seq": "MMRKLAILSVSSFLFVEALFQEYQCYGSSSNTRVLNELNYDNAGTNLYNELEMNYYGKQENWYSLKKNSRSLGENDDGNNEDNEKLRKPKHKKLKQPADGNPDPNANPNVDPNANPNVDPNANPNVDPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNVDPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNANPNKNNQGNGQGHNMPNDPNRNVDENANANSAVKNNNNEEPSDKHIKEYLNKIQNSLSTEWSPCSVTCGNGIQVRIKPGSANKPKDELDYANDIEKKICKMEKCSSVFNVVNSSIGLIMVLSFLFLN",
-    "len": 397,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "Q7K740",
-    "regions": [
-     [
-      1,
-      310,
-      67
-     ]
-    ],
-    "construct_len": 73,
-    "observed": 65,
-    "frac_observed": 0.89,
-    "unobserved_ranges": [
-     [
-      66,
-      73
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [
-   [
-    "SO4",
-    2
-   ],
-   [
-    "GOL",
-    3
-   ],
-   [
-    "PEG",
-    3
-   ]
-  ],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 840,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 38
- },
- {
-  "class": "班4",
-  "category": "ab",
-  "label": "抗原抗体复合物",
-  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
-  "id": "9ULL",
-  "title": "Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)",
-  "resolution": 1.63,
-  "method": "X-RAY DIFFRACTION/SOLUTION SCATTERING",
-  "deposit": "2025-04-20",
-  "release": "2026-04-22",
-  "chains": [
-   {
-    "entity": "3",
-    "type": "Protein",
-    "desc": "C-C chemokine receptor type 4",
-    "seq": "MNPTDIADTTLDESIYSNYYLYESIPKPCTKEGIKAFGELFLPPLYSLVFVFGLLGNSVVVLVLFKYKRLRSMTDVYLLNLAISDLLFVFSLPFWGYYAADQWVFGLGLCKMISWMYLVGFYSGIFFVMLMSIDRYLAIVHAVFSLRARTLTYGVITSLATWSVAVFASLPGFLFSTCYTERNHTYCKTKYSLNSTTWKVLSSLEINILGLVIPLGIMLFCYSMIIRTLQHCKNEKKNKAVKMIFAVVVLFLGFWTPYNIVLFLETLVELEVLQDCTFERYLDYAIQATETLAFVHCCLNPIIYFFLGEKFRKYILQLFKTCRGLFVLCQYCGLLQIYSADTPSSSYTQSTMDHDLHDAL",
-    "len": 360,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "P51679",
-    "regions": [
-     [
-      1,
-      14,
-      11
-     ]
-    ],
-    "construct_len": 11,
-    "observed": 10,
-    "frac_observed": 0.909,
-    "unobserved_ranges": [
-     [
-      1,
-      1
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   },
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "light chain",
-    "seq": "DVLMTQSPLSLPVTPGEPASISCRSSRNIVHINGDTYLEWYLQKPGQSPQLLIYKVSNRFSGVPDRFSGSGSGTDFTLKISRVEAEDVGVYYCFQGSLLPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
-    "len": 219,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 219,
-    "observed": 217,
-    "frac_observed": 0.991,
-    "unobserved_ranges": [
-     [
-      218,
-      219
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "heavy chain",
-    "seq": "EVQLVESGGDLVQPGRSLRLSCAASGFIFSNYGMSWVRQAPGKGLEWVATISSASTYSYYPDSVKGRFTISRDNAKNSLYLQMNSLRVEDTALYYCGRHSDGNFAFGYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHH",
-    "len": 231,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 231,
-    "observed": 216,
-    "frac_observed": 0.935,
-    "unobserved_ranges": [
-     [
-      133,
-      136
-     ],
-     [
-      221,
-      231
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 810,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 39
- },
- {
-  "class": "班4",
-  "category": "ab",
-  "label": "抗原抗体复合物",
-  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
-  "id": "9ULM",
-  "title": "Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)",
-  "resolution": 2.01,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2025-04-20",
-  "release": "2026-04-22",
-  "chains": [
-   {
-    "entity": "4",
-    "type": "Protein",
-    "desc": "C-C chemokine receptor type 4",
-    "seq": "MNPTDIADTTLDESIYSNYYLYESIPKPCTKEGIKAFGELFLPPLYSLVFVFGLLGNSVVVLVLFKYKRLRSMTDVYLLNLAISDLLFVFSLPFWGYYAADQWVFGLGLCKMISWMYLVGFYSGIFFVMLMSIDRYLAIVHAVFSLRARTLTYGVITSLATWSVAVFASLPGFLFSTCYTERNHTYCKTKYSLNSTTWKVLSSLEINILGLVIPLGIMLFCYSMIIRTLQHCKNEKKNKAVKMIFAVVVLFLGFWTPYNIVLFLETLVELEVLQDCTFERYLDYAIQATETLAFVHCCLNPIIYFFLGEKFRKYILQLFKTCRGLFVLCQYCGLLQIYSADTPSSSYTQSTMDHDLHDAL",
-    "len": 360,
-    "copies": 1,
-    "source": "uniprot",
-    "uniprot": "P51679",
-    "regions": [
-     [
-      1,
-      2,
-      28
-     ]
-    ],
-    "construct_len": 28,
-    "observed": 11,
-    "frac_observed": 0.393,
-    "unobserved_ranges": [
-     [
-      1,
-      12
-     ],
-     [
-      24,
-      28
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   },
-   {
-    "entity": "3",
-    "type": "Protein",
-    "desc": "anti-kappa VHH",
-    "seq": "MQVQLQESGGGLVQPGGSLRLSCAASGRTISSYAMSWFRQAPGKEREFVATARRSGDGAFYADSVQGRFTVSRDNAKNTVYLQMNSLKPEDTAVYYCAVDSDTFYSGSYDYWGQGTQVTVSSLEHHHHHH",
-    "len": 130,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 130,
-    "observed": 120,
-    "frac_observed": 0.923,
-    "unobserved_ranges": [
-     [
-      1,
-      2
-     ],
-     [
-      123,
-      130
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "light chain",
-    "seq": "DVLMTQSPLSLPVTPGEPASISCRSSRNIVHINGDTYLEWYLQKPGQSPQLLIYKVSNRFSGVPDRFSGSGSGTDFTLKISRVEAEDVGVYYCFQGSLLPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
-    "len": 219,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 219,
-    "observed": 217,
-    "frac_observed": 0.991,
-    "unobserved_ranges": [
-     [
-      218,
-      219
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "heavy chain",
-    "seq": "EVQLVESGGDLVQPGRSLRLSCAASGFIFSNYGMSWVRQAPGKGLEWVATISSASTYSYYPDSVKGRFTISRDNAKNSLYLQMNSLRVEDTALYYCGRHSDGNFAFGYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHH",
-    "len": 231,
-    "copies": 1,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 231,
-    "observed": 214,
-    "frac_observed": 0.926,
-    "unobserved_ranges": [
-     [
-      134,
-      138
-     ],
-     [
-      220,
-      231
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 940,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 40
- },
- {
-  "class": "班4",
-  "category": "ab",
-  "label": "抗原抗体复合物",
-  "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
-  "id": "9Y3I",
-  "title": "Crystal Structure of PA14 Cif Bound to Nanobodies VHH108 and VHH219",
-  "resolution": 1.8,
-  "method": "X-RAY DIFFRACTION",
-  "deposit": "2025-09-02",
-  "release": "2026-09-09",
-  "chains": [
-   {
-    "entity": "3",
-    "type": "Protein",
-    "desc": "CFTR inhibitory factor",
-    "seq": "AEEFPVPNGFESAYREVDGVKLHYVKGGQGPLVMLVHGFGQTWYEWHQLMPELAKRFTVIAPDLPGLGQSEPPKTGYSGEQVAVYLHKLARQFSPDRPFDLVAHDIGIWNTYPMVVKNQADIARLVYMEAPIPDARIYRFPAFTAQGESLVWHFSFFAADDRLAETLIAGKERFFLEHFIKSHASNTEVFSERLLDLYARSYAKPHSLNASFEYYRALNESVRQNAELAKTRLQMPTMTLAGGGHGGMGTFQLEQMKAYAEDVEGHVLPGCGHWLPEECAAPMNRLVIDFLSRGRHHHHHH",
-    "len": 301,
-    "copies": 2,
-    "source": "uniprot",
-    "uniprot": "A0A0M3KL26",
-    "regions": [
-     [
-      1,
-      1,
-      295
-     ]
-    ],
-    "construct_len": 295,
-    "observed": 294,
-    "frac_observed": 0.997,
-    "unobserved_ranges": [
-     [
-      1,
-      1
-     ]
-    ],
-    "homology": null,
-    "reason_construct": null
-   },
-   {
-    "entity": "2",
-    "type": "Protein",
-    "desc": "Nanobody VHH108",
-    "seq": "MAEVQLVESGGGLVQPGGSLRLSCEATGNFDDRGIGWFRQAPGKEREGIACITTRGRTHYAESVEGRFTISTDIANNAVYLQMNSLKPEDTAVYYCAKAIRLTTDRTQCVAFPGVSWGRGTQVTVSSGQAGQ",
-    "len": 132,
-    "copies": 2,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 132,
-    "observed": 123,
-    "frac_observed": 0.932,
-    "unobserved_ranges": [
-     [
-      1,
-      4
-     ],
-     [
-      128,
-      132
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   },
-   {
-    "entity": "1",
-    "type": "Protein",
-    "desc": "Nanobody VHH219",
-    "seq": "MAEVQLVESGGGLVQPGGSLRLSCTTSTSLFSITTMGWYRQAPGKQRELVASIKRGGGTNYADSMKGRFTISRDNARNTVFLEMNNLTTEDTAVYYCNAAILAYTGEVTNYWGQGTQVTVSSGQAGQ",
-    "len": 127,
-    "copies": 2,
-    "source": "construct",
-    "uniprot": null,
-    "regions": [],
-    "construct_len": 127,
-    "observed": 119,
-    "frac_observed": 0.937,
-    "unobserved_ranges": [
-     [
-      1,
-      3
-     ],
-     [
-      123,
-      127
-     ]
-    ],
-    "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
-   }
-  ],
-  "ligands": [],
-  "ions": [],
-  "dropped": [],
-  "omitted_pdb": [
-   [
-    "FMT",
-    2
-   ]
-  ],
-  "ptms": [],
-  "ptm_interface": null,
-  "tokens": 1120,
-  "assembly_note": "",
-  "ghosts": [],
-  "no": 41
+  "no": 10,
+  "prefix": "ding"
  }
 ]

@@ -6,7 +6,7 @@ REPO = "/Users/lilindu/alphafold-homework-2026"
 recs = json.load(open(os.path.join(REPO, "targets.json")))
 bits = json.load(open("/tmp/afhw/bits7.json"))
 
-BAN = ["班1", "班2", "班3", "班4"]
+BAN = ["甲班", "乙班", "丙班", "丁班"]
 CAT_ORDER = ["hetero", "dna", "rna", "ligand", "ptm", "memb", "ab"]
 CAT_NUM = {k: i + 1 for i, k in enumerate(CAT_ORDER)}
 CAT_LABEL = {"hetero": "异源蛋白复合体", "dna": "蛋白 + DNA", "rna": "蛋白 + RNA",
@@ -60,11 +60,11 @@ A = L.append
 A("# AlphaFold 3 结构预测作业(41 题,四个班)")
 A("")
 A("每位学生一个 PDB 结构:在 [AlphaFold Server](https://alphafoldserver.com) 上做预测,")
-A("再与实验解出的结构比较。班1/班2/班3 各 10 题,班4 共 11 题。")
+A("再与实验解出的结构比较。甲班 11 题,乙班/丙班/丁班 各 10 题。")
 A("")
 A("## 七类构成")
 A("")
-A("| 类别 | 每班 | 班1 | 班2 | 班3 | 班4 |")
+A("| 类别 | 每班 | 甲班 | 乙班 | 丙班 | 丁班 |")
 A("|---|---|---|---|---|---|")
 for k in CAT_ORDER:
     row = []
@@ -72,10 +72,10 @@ for k in CAT_ORDER:
         ids = [r["id"] for r in by[b] if r["category"] == k]
         row.append(" ".join(ids) if ids else "—")
     n = PER_BAN[k]
-    extra = "3(班4 为 4)" if k == "ab" else str(n)
+    extra = "3(甲班 4)" if k == "ab" else str(n)
     A(f"| {CAT_NUM[k]}. {CAT_LABEL[k]} | {extra} | " + " | ".join(row) + " |")
-A(f"| **合计** | | **{len(by['班1'])}** | **{len(by['班2'])}** "
-  f"| **{len(by['班3'])}** | **{len(by['班4'])}** |")
+A(f"| **合计** | | **{len(by['甲班'])}** | **{len(by['乙班'])}** "
+  f"| **{len(by['丙班'])}** | **{len(by['丁班'])}** |")
 A("")
 A("四个班同类的结构取自不同体系,难度不刻意对齐 —— 班际差异本身有比较价值。")
 A("")
@@ -193,7 +193,7 @@ for b in BAN:
     for r in by[b]:
         d = bits[r["id"]]
         res = f"{r['resolution']:.2f} Å" if r["resolution"] else "—"
-        A(f"#### {r['no']}. {r['id']} — 第 {CAT_NUM[r['category']]} 类 "
+        A(f"#### {b} {r['no']}. {r['id']} — 第 {CAT_NUM[r['category']]} 类 "
           f"{CAT_LABEL[r['category']]}")
         A("")
         A(r["title"])
@@ -216,8 +216,8 @@ for b in BAN:
             for c in d["cautions"]:
                 A(f"- {c}")
         A("")
-        A(f"文件:`job_files/{r['no']:02d}_{r['id']}.json` · "
-          f"`sequences/{r['no']:02d}_{r['id']}.fasta`")
+        A(f"文件:`job_files/{r['prefix']}_{r['no']}_{r['id']}.json` · "
+          f"`sequences/{r['prefix']}_{r['no']}_{r['id']}.fasta`")
         A("")
 
 A("## 目录")

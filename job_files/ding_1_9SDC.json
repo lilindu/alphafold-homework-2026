@@ -1,0 +1,22 @@
+[
+ {
+  "name": "ding_1_9SDC",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "MEVRASARKHGINDDAMLHAYRNALRYVELEYHGEVQLLVIGPDQTGRLLELVIPADEPPRIIHANVLRPKFYDYLR",
+     "count": 4
+    }
+   },
+   {
+    "proteinChain": {
+     "sequence": "MKHKTDIDEWLDTIEPNPADAHDASHLRRIIAAKEAVQTAESELRAAVNAARAAGDTWAAIGVALGITRQAAFQRFGPHSTASP",
+     "count": 4
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]

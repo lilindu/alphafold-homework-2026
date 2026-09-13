@@ -1,0 +1,40 @@
+[
+ {
+  "name": "yi_4_9PV1",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "MEEHPFDNDFRVTPQHVEQFQRDGFVKLSGFFNPNVVRTLLNRVEVEMSRAPDNFKSEFSRLKYDFETEKTDIYELIAQPYFRKALTALVQKDLFLTFELCFELEKNVSKGFPWHVGVQSFGYQVADEFGCTIWAALHPVRKSGQRGGMAYVPERVVSGRFIYDQIEPAIISTLEAKEQAGEKTTMDDYFAMRSGILNSPTMGEILKNHQVEDDFEPGDVLVFNKYVVHRSIMLEDGPLPKRAAFVMRFVEDGSHYDLQRARNLEYPAEKYGHKAFTRSHMEIGLPDGALLTDSEYFTDRDKRFVRCDLA",
+     "count": 2
+    }
+   },
+   {
+    "ligand": {
+     "ligand": "AKG",
+     "count": 2
+    }
+   },
+   {
+    "ligand": {
+     "ligand": "BTN",
+     "count": 2
+    }
+   },
+   {
+    "ligand": {
+     "ligand": "FE2",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "CL",
+     "count": 1
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]
