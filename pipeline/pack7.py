@@ -23,7 +23,7 @@ def hom_label(h):
     b, n = h["bin"], h["n"]
     if b == 0:
         return "无同源体"
-    pct = ">=95%" if b >= 0.95 else ">=60%" if b >= 0.60 else ">=30%"
+    pct = "≥95%" if b >= 0.95 else "≥60%" if b >= 0.60 else "≥30%"
     return f"{pct}({n} 个)"
 
 
@@ -66,7 +66,7 @@ def inputs(rec):
         lab = {"Protein": "蛋白质链", "DNA": "DNA 链", "RNA": "RNA 链"}[c["type"]]
         cp = f" ×{c['copies']}" if c["copies"] > 1 else ""
         unit = "aa" if c["type"] == "Protein" else "nt"
-        line = f"{lab}{cp}:{c['len']} {unit} — {c['desc'] or '(未注明)'}"
+        line = f"{lab}{cp}：{c['len']} {unit} — {c['desc'] or '(未注明)'}"
         out.append(line)
         if c["type"] == "Protein":
             if c["source"] == "uniprot":

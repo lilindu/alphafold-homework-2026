@@ -1,6 +1,7 @@
 """Write README.md for the standalone 41-target repo."""
 import json
 import os
+import re
 
 REPO = "/Users/lilindu/alphafold-homework-2026"
 recs = json.load(open(os.path.join(REPO, "targets.json")))
@@ -13,6 +14,64 @@ CAT_LABEL = {"hetero": "异源蛋白复合体", "dna": "蛋白 + DNA", "rna": "�
              "ligand": "蛋白 + 小分子配体", "ptm": "有翻译后修饰的蛋白",
              "memb": "膜蛋白", "ab": "抗原抗体复合物"}
 PER_BAN = {"hetero": 1, "dna": 1, "rna": 1, "ligand": 1, "ptm": 1, "memb": 2, "ab": 3}
+
+# ---------------------------------------------------------------- 中文标点
+# 本文档用全角句读(。、——),但 , : ; ( ) 一直是半角,两者混排。这里统一:
+# 只在半角标点的**左右任一侧是中文**时换成全角,于是英文术语、URL、代码路径、
+# 千分位(15,831)都不受影响。三类东西先摘出来原样保留:
+#   `行内代码`  |  Markdown 链接语法 ](…)  |  裸 URL
+# 括号按**配对**决定,避免出现全角开、半角闭。
+HALF2FULL = {",": "，", ":": "：", ";": "；", "(": "（", ")": "）"}
+CJK = re.compile(r"[　-〿一-鿿＀-￯]")
+PROTECT = re.compile(r"`[^`]*`|\]\([^)]*\)|https?://\S+")
+
+
+def _cn_once(s):
+    pairs, stack = {}, []
+    for j, ch in enumerate(s):
+        if ch == "(":
+            stack.append(j)
+        elif ch == ")" and stack:
+            pairs[stack.pop()] = j
+    full = set()
+    for i, j in pairs.items():
+        if (CJK.search(s[i-1] if i else "") or CJK.search(s[j+1] if j + 1 < len(s) else "")
+                or CJK.search(s[i+1:j])):
+            full |= {i, j}
+    out = []
+    for j, ch in enumerate(s):
+        if ch in HALF2FULL:
+            prev = s[j-1] if j else ""
+            nxt = s[j+1] if j + 1 < len(s) else ""
+            if ch in "()":
+                if j in full:
+                    ch = HALF2FULL[ch]
+            elif CJK.search(prev) or CJK.search(nxt):
+                ch = HALF2FULL[ch]
+        out.append(ch)
+    return "".join(out)
+
+
+def _cn(s):
+    """迭代到稳定:括号转成全角后,紧跟其后的 , : ; 的邻居变了,需要重判一次
+    (如 `…(非内置 CCD):6FN` 里的冒号,首轮看到的左邻还是半角 `)`)。"""
+    for _ in range(4):
+        t = _cn_once(s)
+        if t == s:
+            return s
+        s = t
+    return s
+
+
+def cn_punct(line):
+    out, last = [], 0
+    for m in PROTECT.finditer(line):
+        out.append(_cn(line[last:m.start()]))
+        out.append(m.group(0))
+        last = m.end()
+    out.append(_cn(line[last:]))
+    return "".join(out)
+
 
 
 def hom_label(h):
@@ -77,7 +136,11 @@ for b in BAN:
     by[b].sort(key=lambda r: r["no"])
 
 L = []
-A = L.append
+
+
+def A(line):
+    L.append(cn_punct(line))       # 统一中文标点(见上面的说明)
+
 
 A("# AlphaFold 3 结构预测作业(41 题,四个班)")
 A("")
@@ -108,9 +171,9 @@ A(f"1. **全部已有正式论文或预印本**({_nj} 篇正式论文 + {_np} �
 A("2. **deposit 晚于 2025-02-03。** AlphaFold 3 训练数据截止 2021-09-30,而 Server 允许把")
 A("   模板截止日期最晚调到 2025-02-03;选在这条线之后,学生无论怎么设模板选项,都不可能")
 A("   把答案本身当模板调进来。")
-A("3. **每条链 ≥ 4 个残基/碱基,且只含标准残基/碱基。** 更短的链、以及未知残基 `X`,")
+A("3. **每条链 ≥ 4 个残基/碱基,且只含标准残基/碱基。** 更短的链、以及未知残基 `X`，")
 A("   Server 都拒收。")
-A("4. **配体都在冻结的 CCD 字典(version 2024_10_28)里。** 之后新登记的代码会被判 invalid;")
+A("4. **配体都在冻结的 CCD 字典(version 2024_10_28)里。** 之后新登记的代码会被判 invalid；")
 A("   这一条淘汰了 762 个候选(占被剔除总数 73%)—— 结构越新,配体越可能是新登记的。")
 A("5. **token ≤ 5,000。** 按 FAQ 算法:蛋白 1/残基、核酸 1/碱基、配体 1/原子、离子 1/个。")
 A("6. **生物学单元 ≤ 12 条链。** 上百条链的生物学单元里,「正确答案」不是学生会提交的那几条链。")
@@ -159,8 +222,8 @@ A("**DNA / RNA / 抗体三类未做筛查**,理由:核酸端没有「训练同�
 A("必然 ≥80%(免疫球蛋白高度保守),无法规避 —— 但抗原端往往查不到同源体,而表位识别")
 A("正是这类要考的东西。")
 A("")
-A("**这对完成作业的要求:** 同源度高的题请分开回答两个问题 —— (1) 单体折叠预测得怎样")
-A("(若同源度 ≥95%,这一项接近查表);(2) 相互作用预测得怎样(界面/配体/修饰)。")
+A("**这对完成作业的要求:** 同源度高的题请分开回答两个问题 —— （1）单体折叠预测得怎样")
+A("(若同源度 ≥95%,这一项接近查表)；（2）相互作用预测得怎样(界面/配体/修饰)。")
 A("后者才是该题的实际考点,也是 AlphaFold 目前真正的弱项。")
 A("")
 
@@ -228,7 +291,7 @@ for b in BAN:
         A(f"- 评估重点:{d['metric']}")
         if r.get("ptm_interface"):
             e = r["ptm_interface"]
-            A(f"- 修饰介导互作的实测证据:{e['code']} 到对方链最近 {e['min_dist']} Å,"
+            A(f"- 修饰介导互作的实测证据:{e['code']} 到对方链最近 {e['min_dist']} Å，"
               f"4 Å 内接触原子 {e['n_close']} 个")
         A("")
         A("输入:")

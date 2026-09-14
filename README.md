@@ -1,7 +1,7 @@
-# AlphaFold 3 结构预测作业(41 题,四个班)
+# AlphaFold 3 结构预测作业（41 题，四个班）
 
-每位学生一个 PDB 结构:在 [AlphaFold Server](https://alphafoldserver.com) 上做预测,
-再与实验解出的结构比较。甲班 11 题,乙班/丙班/丁班 各 10 题。
+每位学生一个 PDB 结构：在 [AlphaFold Server](https://alphafoldserver.com) 上做预测，
+再与实验解出的结构比较。甲班 11 题，乙班/丙班/丁班 各 10 题。
 
 ## 七类构成
 
@@ -13,39 +13,39 @@
 | 4. 蛋白 + 小分子配体 | 1 | 24UX | 9PV1 | 9P9O | 21ZG |
 | 5. 有翻译后修饰的蛋白 | 1 | 30TL | 9S1S | 9T9W | 9QNG |
 | 6. 膜蛋白 | 2 | 9O0I 9VEB | 9MAU 9PS4 | 9M0S 9UET | 9M2H 9N93 |
-| 7. 抗原抗体复合物 | 3(甲班 4) | 10ZO 9NCY 9ULL 9ULM | 9NJY 9NN9 9P4C | 9NKZ 9VDY 9ZRO | 9IA3 9PWN 9Q1L |
+| 7. 抗原抗体复合物 | 3（甲班 4） | 10ZO 9NCY 9ULL 9ULM | 9NJY 9NN9 9P4C | 9NKZ 9VDY 9ZRO | 9IA3 9PWN 9Q1L |
 | **合计** | | **11** | **10** | **10** | **10** |
 
 ## 这些结构满足以下要求
 
-1. **全部已有正式论文或预印本**(38 篇正式论文 + 3 篇预印本),每题都给出引用。
-2. **deposit 晚于 2025-02-03。** AlphaFold 3 训练数据截止 2021-09-30,而 Server 允许把
-   模板截止日期最晚调到 2025-02-03;选在这条线之后,学生无论怎么设模板选项,都不可能
+1. **全部已有正式论文或预印本**（38 篇正式论文 + 3 篇预印本），每题都给出引用。
+2. **deposit 晚于 2025-02-03。** AlphaFold 3 训练数据截止 2021-09-30，而 Server 允许把
+   模板截止日期最晚调到 2025-02-03；选在这条线之后，学生无论怎么设模板选项，都不可能
    把答案本身当模板调进来。
-3. **每条链 ≥ 4 个残基/碱基,且只含标准残基/碱基。** 更短的链、以及未知残基 `X`,
+3. **每条链 ≥ 4 个残基/碱基，且只含标准残基/碱基。** 更短的链、以及未知残基 `X`，
    Server 都拒收。
-4. **配体都在冻结的 CCD 字典(version 2024_10_28)里。** 之后新登记的代码会被判 invalid;
-   这一条淘汰了 762 个候选(占被剔除总数 73%)—— 结构越新,配体越可能是新登记的。
-5. **token ≤ 5,000。** 按 FAQ 算法:蛋白 1/残基、核酸 1/碱基、配体 1/原子、离子 1/个。
-6. **生物学单元 ≤ 12 条链。** 上百条链的生物学单元里,「正确答案」不是学生会提交的那几条链。
+4. **配体都在冻结的 CCD 字典（version 2024_10_28）里。** 之后新登记的代码会被判 invalid；
+   这一条淘汰了 762 个候选（占被剔除总数 73%）—— 结构越新，配体越可能是新登记的。
+5. **token ≤ 5,000。** 按 FAQ 算法：蛋白 1/残基、核酸 1/碱基、配体 1/原子、离子 1/个。
+6. **生物学单元 ≤ 12 条链。** 上百条链的生物学单元里，「正确答案」不是学生会提交的那几条链。
 
-从 PDB 中 deposit 晚于 2025-02-03 的 15,831 个实验结构出发,按类定向检索并合并去重得
-3,126 个,过完上面这些限制剩 2,082 个,再从中选出这 41 个。
+从 PDB 中 deposit 晚于 2025-02-03 的 15,831 个实验结构出发，按类定向检索并合并去重得
+3,126 个，过完上面这些限制剩 2,082 个，再从中选出这 41 个。
 
-**另外逐个核对过四件事:**
+**另外逐个核对过四件事：**
 
-- **拷贝数按生物学单元算,不是晶体学不对称单位。** 两者常不同:曾发现某条目不对称
-  单位里每种链 6 份(晶体堆积),生物学单元其实是 1:1。
-- **空拷贝已剔除。** 装配成员若只有极少数残基有坐标,那是晶格占位而非真实亚基
-  (曾发现某条目声明 3 份胰蛋白酶,其中两份各只有 3 个残基)。
+- **拷贝数按生物学单元算，不是晶体学不对称单位。** 两者常不同：曾发现某条目不对称
+  单位里每种链 6 份（晶体堆积），生物学单元其实是 1:1。
+- **空拷贝已剔除。** 装配成员若只有极少数残基有坐标，那是晶格占位而非真实亚基
+  （曾发现某条目声明 3 份胰蛋白酶，其中两份各只有 3 个残基）。
 - **去垢剂、结晶助剂、缓冲盐不作为配体输入。** 每题都列出「不要输入」清单。
-- **翻译后修饰用 `modifications` 字段,不是配体。** 已核对每个修饰落在正确的母体
-  氨基酸上(SEP 在 Ser、TPO 在 Thr、ALY 在 Lys)。
+- **翻译后修饰用 `modifications` 字段，不是配体。** 已核对每个修饰落在正确的母体
+  氨基酸上（SEP 在 Ser、TPO 在 Thr、ALY 在 Lys）。
 
-### 一个需要先知道的现实:多数结构在训练截止前已有同源体
+### 一个需要先知道的现实：多数结构在训练截止前已有同源体
 
-deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋白不在。我们对四类做过同源
-筛查(检索训练截止 2021-09-30 前发布的 PDB 结构):
+deposit 日期只保证「这个条目」不在训练集里，不保证同源蛋白不在。我们对四类做过同源
+筛查（检索训练截止 2021-09-30 前发布的 PDB 结构）：
 
 | 类别 | 筛查结构数 | 所有链同源度 <60% |
 |---|---|---|
@@ -54,38 +54,38 @@ deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋�
 | 5. 翻译后修饰 | 34 | **0** |
 | 6. 膜蛋白 | 74 | **23** |
 
-据此:**异源复合体 4/4 题、膜蛋白 8/8 题选用训练截止前查不到同源体的结构**,是真正的从头预测测试。
-配体类 2/4 题无同源,其余 2 题的同源体数为 1 个、8 个。
+据此：**异源复合体 4/4 题、膜蛋白 8/8 题选用训练截止前查不到同源体的结构**，是真正的从头预测测试。
+配体类 2/4 题无同源，其余 2 题的同源体数为 1 个、8 个。
 
-**翻译后修饰类找不到干净的,这是结构性的**:被 Server 支持的修饰主要出现在 14-3-3、β-TrCP 这类反复研究的识别模块上 —— 本作业 4 道 PTM 题都已有同源体,数量从 3 个到 278 个,泄漏程度差很多。
+**翻译后修饰类找不到干净的，这是结构性的**：被 Server 支持的修饰主要出现在 14-3-3、β-TrCP 这类反复研究的识别模块上 —— 本作业 4 道 PTM 题都已有同源体，数量从 3 个到 278 个，泄漏程度差很多。
 
-**DNA / RNA / 抗体三类未做筛查**,理由:核酸端没有「训练同源」概念;抗体骨架实测
-必然 ≥80%(免疫球蛋白高度保守),无法规避 —— 但抗原端往往查不到同源体,而表位识别
+**DNA / RNA / 抗体三类未做筛查**，理由：核酸端没有「训练同源」概念；抗体骨架实测
+必然 ≥80%（免疫球蛋白高度保守），无法规避 —— 但抗原端往往查不到同源体，而表位识别
 正是这类要考的东西。
 
-**这对完成作业的要求:** 同源度高的题请分开回答两个问题 —— (1) 单体折叠预测得怎样
-(若同源度 ≥95%,这一项接近查表);(2) 相互作用预测得怎样(界面/配体/修饰)。
-后者才是该题的实际考点,也是 AlphaFold 目前真正的弱项。
+**这对完成作业的要求：** 同源度高的题请分开回答两个问题 —— （1）单体折叠预测得怎样
+（若同源度 ≥95%，这一项接近查表）；（2）相互作用预测得怎样（界面/配体/修饰）。
+后者才是该题的实际考点，也是 AlphaFold 目前真正的弱项。
 
-## 输入用全长序列,但实验结构往往只是一部分
+## 输入用全长序列，但实验结构往往只是一部分
 
-PDB 里其实有三条不同的序列,常被混为一谈:
+PDB 里其实有三条不同的序列，常被混为一谈：
 
 | | 含义 | 性质 |
 |---|---|---|
-| A 全长 | UniProt 规范序列,完整基因产物 | — |
-| B 构建体 | 实验者实际放进管子里的东西 | 主动截短:为结晶只表达某个结构域,可能带标签 |
-| C 观测到的 | 真正有坐标的残基 | 被动损失:无序区、柔性末端看不到 |
+| A 全长 | UniProt 规范序列，完整基因产物 | — |
+| B 构建体 | 实验者实际放进管子里的东西 | 主动截短：为结晶只表达某个结构域，可能带标签 |
+| C 观测到的 | 真正有坐标的残基 | 被动损失：无序区、柔性末端看不到 |
 
-**本作业输入 A(全长)**,因为研究者在真实场景里手上只有全长序列。表达标签因此自动
-消失(UniProt 序列不含 His-tag)。代价是:预测模型里会有实验结构中根本不存在的部分。
+**本作业输入 A（全长）**，因为研究者在真实场景里手上只有全长序列。表达标签因此自动
+消失（UniProt 序列不含 His-tag）。代价是：预测模型里会有实验结构中根本不存在的部分。
 
 **所以比较时必须只对齐两者共有的残基。** 每题都标出了该链的全长长度、构建体长度和
-实际解出的残基数;若直接拿全长模型和实验结构算整体 RMSD,数字没有意义。
+实际解出的残基数；若直接拿全长模型和实验结构算整体 RMSD，数字没有意义。
 
 ## 分班清单
 
-### 甲班(11 题)
+### 甲班（11 题）
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
@@ -101,7 +101,7 @@ PDB 里其实有三条不同的序列,常被混为一谈:
 | 10 | [9ULL](https://www.rcsb.org/structure/9ULL) | 7 | 1.63 | 810 | 蛋白360 + 蛋白219 + 蛋白231 | 未筛查 | Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24) |
 | 11 | [9ULM](https://www.rcsb.org/structure/9ULM) | 7 | 2.01 | 940 | 蛋白360 + 蛋白130 + 蛋白219 + 蛋白231 | 未筛查 | Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29) |
 
-### 乙班(10 题)
+### 乙班（10 题）
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
@@ -116,7 +116,7 @@ PDB 里其实有三条不同的序列,常被混为一谈:
 | 9 | [9NN9](https://www.rcsb.org/structure/9NN9) | 7 | 2.59 | 314 | 蛋白165 + 蛋白149 | 未筛查 | ISG15 complexed with nanobody |
 | 10 | [9P4C](https://www.rcsb.org/structure/9P4C) | 7 | 1.52 | 1049 | 蛋白622 + 蛋白211 + 蛋白216 | 未筛查 | Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex |
 
-### 丙班(10 题)
+### 丙班（10 题）
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
@@ -131,7 +131,7 @@ PDB 里其实有三条不同的序列,常被混为一谈:
 | 9 | [9VDY](https://www.rcsb.org/structure/9VDY) | 7 | 2.28 | 1523 | 蛋白218 + 蛋白232 + 蛋白1073 | 未筛查 | hA5-6 Fab bound to SFTSV glycoprotein Gn |
 | 10 | [9ZRO](https://www.rcsb.org/structure/9ZRO) | 7 | 1.40 | 3871 | 蛋白3433 + 蛋白214 + 蛋白224 | 未筛查 | Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII |
 
-### 丁班(10 题)
+### 丁班（10 题）
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
@@ -148,12 +148,12 @@ PDB 里其实有三条不同的序列,常被混为一谈:
 
 ## 逐题输入规格
 
-`job_files/` 下有对应 JSON,可用 Server 的 “Upload JSON” 直接导入;`sequences/` 是
+`job_files/` 下有对应 JSON，可用 Server 的 “Upload JSON” 直接导入；`sequences/` 是
 同样内容的 FASTA。下面是人读版本。
 
 **上传 JSON 后不需要手输任何东西** —— 序列、配体的 CCD 代码、离子、翻译后修饰都会
-自动填进 request builder(点 “Open draft” 即可核对)。下面标「非内置 CCD」的配体只是
-说它不在下拉菜单的 19 种内置辅因子里,不是说要自己敲。
+自动填进 request builder（点 “Open draft” 即可核对）。下面标「非内置 CCD」的配体只是
+说它不在下拉菜单的 19 种内置辅因子里，不是说要自己敲。
 
 ### 甲班
 
@@ -161,252 +161,252 @@ PDB 里其实有三条不同的序列,常被混为一谈:
 
 Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus subtilis 6633.
 
-- 论文:[*Nucleic Acids Res.* 2025](https://doi.org/10.1093/nar/gkaf1321)
+- 论文：[*Nucleic Acids Res.* 2025](https://doi.org/10.1093/nar/gkaf1321)
 - X-RAY DIFFRACTION / 1.70 Å · deposit 2025-05-29 · release 2025-12-24 · 估算 token 644
-- 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：两条以上不同蛋白链的复合体（不含抗体链、不含核酸、非膜蛋白）。考察跨链共进化信号能否把界面摆对
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:534 aa — YxiDCTD
-- 　└ 全长序列 E0TXK9(构建体 141 aa,实验结构里只解出 107 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 蛋白质链:110 aa — YxxD
-- 　└ 全长序列 A0A9Q4H945(构建体 110 aa,实验结构里只解出 108 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链：534 aa — YxiDCTD
+- 　└ 全长序列 E0TXK9（构建体 141 aa，实验结构里只解出 107 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 蛋白质链：110 aa — YxxD
+- 　└ 全长序列 A0A9Q4H945（构建体 110 aa，实验结构里只解出 108 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- 以下链在实验结构里并未全部解出(YxiDCTD 75%),比较时只对齐两者共有的残基
+注意：
+- 以下链在实验结构里并未全部解出（YxiDCTD 75%），比较时只对齐两者共有的残基
 
-文件:`job_files/jia_1_9V8I.json` · `sequences/jia_1_9V8I.fasta`
+文件：`job_files/jia_1_9V8I.json` · `sequences/jia_1_9V8I.fasta`
 
 #### 甲班 2. 36BT — 第 2 类 蛋白 + DNA
 
 HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated ISL-triphosphate
 
-- 论文:[*Acs Infect Dis.* 2026](https://doi.org/10.1021/acsinfecdis.6c00431)
+- 论文：[*Acs Infect Dis.* 2026](https://doi.org/10.1021/acsinfecdis.6c00431)
 - ELECTRON MICROSCOPY / 1.85 Å · deposit 2026-05-29 · release 2026-09-02 · 估算 token 2942
-- 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：只含标准 A/C/G/T；双链须分别输入两条互补链
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- DNA 链:38 nt — DNAddG (38-MER)
-- 蛋白质链:1435 aa — p51 RT
-- 　└ 全长序列 P04585(构建体 455 aa,实验结构里只解出 375 个残基)
-- 蛋白质链:1435 aa — Reverse transcriptase/ribonuclease H
-- 　└ 全长序列 P04585(构建体 562 aa,实验结构里只解出 530 个残基)
-- 配体(非内置 CCD):6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
-- 离子:MG ×1
+输入：
+- DNA 链：38 nt — DNAddG (38-MER)
+- 蛋白质链：1435 aa — p51 RT
+- 　└ 全长序列 P04585（构建体 455 aa，实验结构里只解出 375 个残基）
+- 蛋白质链：1435 aa — Reverse transcriptase/ribonuclease H
+- 　└ 全长序列 P04585（构建体 562 aa，实验结构里只解出 530 个残基）
+- 配体（非内置 CCD）：6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
+- 离子：MG ×1
 
-注意:
-- 以下配体是非内置 CCD 代码:6FN。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 以下链在实验结构里并未全部解出(p51 RT 82%、Reverse transcri 94%),比较时只对齐两者共有的残基
+注意：
+- 以下配体是非内置 CCD 代码：6FN。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
+- 以下链在实验结构里并未全部解出（p51 RT 82%、Reverse transcri 94%），比较时只对齐两者共有的残基
 
-文件:`job_files/jia_2_36BT.json` · `sequences/jia_2_36BT.fasta`
+文件：`job_files/jia_2_36BT.json` · `sequences/jia_2_36BT.fasta`
 
 #### 甲班 3. 9QS9 — 第 3 类 蛋白 + RNA
 
 Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Crn4
 
-- 论文:[*Nat Commun* 2025](https://doi.org/10.1038/s41467-025-67607-6)
+- 论文：[*Nat Commun* 2025](https://doi.org/10.1038/s41467-025-67607-6)
 - X-RAY DIFFRACTION / 1.44 Å · deposit 2025-04-04 · release 2025-12-03 · 估算 token 336
-- 这一类考察什么:RNA 构象自由度大,是公认较难的一类
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：RNA 构象自由度大，是公认较难的一类
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- RNA 链:6 nt — Cyclic polyA
-- 蛋白质链 ×2:162 aa — Crn4 H15A
-- 　└ 全长序列 A0A1H0EUC2(构建体 149 aa,实验结构里只解出 125 个残基)
-- 离子:MG ×6
+输入：
+- RNA 链：6 nt — Cyclic polyA
+- 蛋白质链 ×2：162 aa — Crn4 H15A
+- 　└ 全长序列 A0A1H0EUC2（构建体 149 aa，实验结构里只解出 125 个残基）
+- 离子：MG ×6
 
-注意:
-- 以下链在实验结构里并未全部解出(Crn4 H15A 83%),比较时只对齐两者共有的残基
+注意：
+- 以下链在实验结构里并未全部解出（Crn4 H15A 83%），比较时只对齐两者共有的残基
 
-文件:`job_files/jia_3_9QS9.json` · `sequences/jia_3_9QS9.fasta`
+文件：`job_files/jia_3_9QS9.json` · `sequences/jia_3_9QS9.fasta`
 
 #### 甲班 4. 24UX — 第 4 类 蛋白 + 小分子配体
 
 Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH
 
-- 论文:[*Int J Biol Macromol* 2026](https://doi.org/10.1016/j.ijbiomac.2026.153837)
+- 论文：[*Int J Biol Macromol* 2026](https://doi.org/10.1016/j.ijbiomac.2026.153837)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-03-22 · release 2026-08-12 · 估算 token 668
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：配体不在 Server 的 19 种内置辅因子里，走非内置 CCD 代码那条路；代码已核实在冻结的 CCD 2024_10_28 字典中
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×2:321 aa — Methyltransferase domain protein
-- 　└ 全长序列 A0AB33WVX4(构建体 311 aa,实验结构里只解出 292 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 配体(非内置 CCD):SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
+输入：
+- 蛋白质链 ×2：321 aa — Methyltransferase domain protein
+- 　└ 全长序列 A0AB33WVX4（构建体 311 aa，实验结构里只解出 292 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 配体（非内置 CCD）：SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
 
-注意:
-- 以下配体是非内置 CCD 代码:SAH。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+注意：
+- 以下配体是非内置 CCD 代码：SAH。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
 - 生物学单元按对称操作展开 ×2
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×1、IMD×1
-- 以下链在实验结构里并未全部解出(Methyltransferas 93%),比较时只对齐两者共有的残基
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：GOL×1、IMD×1
+- 以下链在实验结构里并未全部解出（Methyltransferas 93%），比较时只对齐两者共有的残基
 
-文件:`job_files/jia_4_24UX.json` · `sequences/jia_4_24UX.fasta`
+文件：`job_files/jia_4_24UX.json` · `sequences/jia_4_24UX.fasta`
 
 #### 甲班 5. 30TL — 第 5 类 有翻译后修饰的蛋白
 
 14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation)
 
-- 论文:[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.6c00427)
+- 论文：[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.6c00427)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-05-13 · release 2026-08-26 · 估算 token 509
-- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
-- 修饰介导互作的实测证据:TPO 到对方链最近 2.63 Å,4 Å 内接触原子 34 个
+- 这一类考察什么：修饰残基由坐标实测确认介导蛋白-蛋白互作（最近距离 2.2–3.0 Å，4 Å 内接触原子 ≥ 20）。该类受体多为反复研究的识别模块，同源体无法避免
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
+- 修饰介导互作的实测证据：TPO 到对方链最近 2.63 Å，4 Å 内接触原子 34 个
 
-输入:
-- 蛋白质链 ×2:5 aa — ERa peptide pT594 weak mutant
-- 　└ 直接输入 PDB 里提交的序列:合成肽 / 人工设计蛋白,无天然全长序列
-- 　└ 翻译后修饰:TPO 加在第 4 位(T,构建体编号 4)
-- 蛋白质链 ×2:248 aa — 14-3-3 protein sigma
-- 　└ 全长序列 P31947(构建体 236 aa,实验结构里只解出 236 个残基)
-- 　└ 训练截止前同源体:>=95%(278 个)
-- 离子:CA ×1
-- 离子:CL ×1
-- 离子:MG ×1
+输入：
+- 蛋白质链 ×2：5 aa — ERa peptide pT594 weak mutant
+- 　└ 直接输入 PDB 里提交的序列：合成肽 / 人工设计蛋白，无天然全长序列
+- 　└ 翻译后修饰：TPO 加在第 4 位（T，构建体编号 4）
+- 蛋白质链 ×2：248 aa — 14-3-3 protein sigma
+- 　└ 全长序列 P31947（构建体 236 aa，实验结构里只解出 236 个残基）
+- 　└ 训练截止前同源体：≥95%（278 个）
+- 离子：CA ×1
+- 离子：CL ×1
+- 离子：MG ×1
 
-注意:
-- 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
+注意：
+- 修饰用 proteinChain 的 modifications 字段（ptmType + ptmPosition），位置已换算为全长编号
 - 生物学单元按对称操作展开 ×2
-- 含极短肽链(ERa peptide pT594 weak mutant 5 aa):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM
+- 含极短肽链（ERa peptide pT594 weak mutant 5 aa）：FAQ 明示 pTM 对短于 16 残基的链系统性偏低，该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主；要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格，不要用整体 ipTM
 
-文件:`job_files/jia_5_30TL.json` · `sequences/jia_5_30TL.fasta`
+文件：`job_files/jia_5_30TL.json` · `sequences/jia_5_30TL.fasta`
 
 #### 甲班 6. 9O0I — 第 6 类 膜蛋白
 
 Cryo-EM structure of Local KwaA-KwaB complex
 
-- 论文:[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.07.002)
+- 论文：[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.07.002)
 - ELECTRON MICROSCOPY / 3.86 Å · deposit 2025-04-02 · release 2025-08-06 · 估算 token 825
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×2:315 aa — Kiwa protein KwaB
-- 　└ 全长序列 P0DW46(构建体 321 aa)
-- 　└ 训练截止前同源体:无同源体
-- 蛋白质链:195 aa — Kiwa protein KwaA
-- 　└ 全长序列 P0DW45(构建体 203 aa)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链 ×2：315 aa — Kiwa protein KwaB
+- 　└ 全长序列 P0DW46（构建体 321 aa）
+- 　└ 训练截止前同源体：无同源体
+- 蛋白质链：195 aa — Kiwa protein KwaA
+- 　└ 全长序列 P0DW45（构建体 203 aa）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/jia_6_9O0I.json` · `sequences/jia_6_9O0I.fasta`
+文件：`job_files/jia_6_9O0I.json` · `sequences/jia_6_9O0I.fasta`
 
 #### 甲班 7. 9VEB — 第 6 类 膜蛋白
 
 Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C
 
-- 论文:[*Commun Biol* 2025](https://doi.org/10.1038/s42003-025-08676-7)
+- 论文：[*Commun Biol* 2025](https://doi.org/10.1038/s42003-025-08676-7)
 - ELECTRON MICROSCOPY / 3.56 Å · deposit 2025-06-09 · release 2025-08-06 · 估算 token 1086
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×2:543 aa — Aspartate/alanine antiporter
-- 　└ 全长序列 Q8L3K8(构建体 549 aa)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链 ×2：543 aa — Aspartate/alanine antiporter
+- 　└ 全长序列 Q8L3K8（构建体 549 aa）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/jia_7_9VEB.json` · `sequences/jia_7_9VEB.fasta`
+文件：`job_files/jia_7_9VEB.json` · `sequences/jia_7_9VEB.fasta`
 
 #### 甲班 8. 10ZO — 第 7 类 抗原抗体复合物
 
 Crystal structure of Mengla virus nucleoprotein bound by a cross-reactive anti-Marburg virus nanobody
 
-- 论文:[*Acs Infect Dis.* 2026](https://doi.org/10.1021/acsinfecdis.5c00920)
+- 论文：[*Acs Infect Dis.* 2026](https://doi.org/10.1021/acsinfecdis.5c00920)
 - X-RAY DIFFRACTION / 1.65 Å · deposit 2026-02-12 · release 2026-03-25 · 估算 token 815
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:697 aa — Nucleoprotein
-- 　└ 全长序列 A0A1Q1NMU1(构建体 106 aa,实验结构里只解出 68 个残基)
-- 蛋白质链:118 aa — Anti-Marburgvirus Nucleoprotein Single Domain Antibody A
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：697 aa — Nucleoprotein
+- 　└ 全长序列 A0A1Q1NMU1（构建体 106 aa，实验结构里只解出 68 个残基）
+- 蛋白质链：118 aa — Anti-Marburgvirus Nucleoprotein Single Domain Antibody A
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 以下链在实验结构里并未全部解出(Nucleoprotein 64%、Anti-Marburgviru 92%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 以下链在实验结构里并未全部解出（Nucleoprotein 64%、Anti-Marburgviru 92%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/jia_8_10ZO.json` · `sequences/jia_8_10ZO.fasta`
+文件：`job_files/jia_8_10ZO.json` · `sequences/jia_8_10ZO.fasta`
 
 #### 甲班 9. 9NCY — 第 7 类 抗原抗体复合物
 
 Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum circumsporozoite protein
 
-- 预印本:[*bioRxiv* 2026](https://doi.org/10.64898/2026.06.06.730512)
+- 预印本：[*bioRxiv* 2026](https://doi.org/10.64898/2026.06.06.730512)
 - X-RAY DIFFRACTION / 1.63 Å · deposit 2025-02-17 · release 2026-03-11 · 估算 token 840
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:230 aa — Fab1392 heavy chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:213 aa — Fab1392 light chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:397 aa — Circumsporozoite protein
-- 　└ 全长序列 Q7K740(构建体 73 aa,实验结构里只解出 65 个残基)
+输入：
+- 蛋白质链：230 aa — Fab1392 heavy chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：213 aa — Fab1392 light chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：397 aa — Circumsporozoite protein
+- 　└ 全长序列 Q7K740（构建体 73 aa，实验结构里只解出 65 个残基）
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:SO4×2、GOL×3、PEG×3
-- 以下链在实验结构里并未全部解出(Circumsporozoite 89%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：SO4×2、GOL×3、PEG×3
+- 以下链在实验结构里并未全部解出（Circumsporozoite 89%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/jia_9_9NCY.json` · `sequences/jia_9_9NCY.fasta`
+文件：`job_files/jia_9_9NCY.json` · `sequences/jia_9_9NCY.fasta`
 
 #### 甲班 10. 9ULL — 第 7 类 抗原抗体复合物
 
 Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)
 
-- 论文:[*Int J Mol Sci* 2025](https://doi.org/10.3390/ijms26125500)
+- 论文：[*Int J Mol Sci* 2025](https://doi.org/10.3390/ijms26125500)
 - X-RAY DIFFRACTION/SOLUTION SCATTERING / 1.63 Å · deposit 2025-04-20 · release 2026-04-22 · 估算 token 810
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:360 aa — C-C chemokine receptor type 4
-- 　└ 全长序列 P51679(构建体 11 aa,实验结构里只解出 10 个残基)
-- 蛋白质链:219 aa — light chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:231 aa — heavy chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：360 aa — C-C chemokine receptor type 4
+- 　└ 全长序列 P51679（构建体 11 aa，实验结构里只解出 10 个残基）
+- 蛋白质链：219 aa — light chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：231 aa — heavy chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 以下链在实验结构里并未全部解出(C-C chemokine re 90%、heavy chain 93%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 以下链在实验结构里并未全部解出（C-C chemokine re 90%、heavy chain 93%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/jia_10_9ULL.json` · `sequences/jia_10_9ULL.fasta`
+文件：`job_files/jia_10_9ULL.json` · `sequences/jia_10_9ULL.fasta`
 
 #### 甲班 11. 9ULM — 第 7 类 抗原抗体复合物
 
 Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)
 
-- 论文:[*Int J Mol Sci* 2025](https://doi.org/10.3390/ijms26125500)
+- 论文：[*Int J Mol Sci* 2025](https://doi.org/10.3390/ijms26125500)
 - X-RAY DIFFRACTION / 2.01 Å · deposit 2025-04-20 · release 2026-04-22 · 估算 token 940
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:360 aa — C-C chemokine receptor type 4
-- 　└ 全长序列 P51679(构建体 28 aa,实验结构里只解出 11 个残基)
-- 蛋白质链:130 aa — anti-kappa VHH
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:219 aa — light chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:231 aa — heavy chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：360 aa — C-C chemokine receptor type 4
+- 　└ 全长序列 P51679（构建体 28 aa，实验结构里只解出 11 个残基）
+- 蛋白质链：130 aa — anti-kappa VHH
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：219 aa — light chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：231 aa — heavy chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 以下链在实验结构里并未全部解出(C-C chemokine re 39%、anti-kappa VHH 92%、heavy chain 92%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 以下链在实验结构里并未全部解出（C-C chemokine re 39%、anti-kappa VHH 92%、heavy chain 92%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/jia_11_9ULM.json` · `sequences/jia_11_9ULM.fasta`
+文件：`job_files/jia_11_9ULM.json` · `sequences/jia_11_9ULM.fasta`
 
 ### 乙班
 
@@ -414,224 +414,224 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)
 
 Crystal structure of the Caenorhabditis elegans telomeric POT-1-TEBP-1 complex interface
 
-- 论文:[*Sci Adv* 2026](https://doi.org/10.1126/sciadv.aeg8967)
+- 论文：[*Sci Adv* 2026](https://doi.org/10.1126/sciadv.aeg8967)
 - X-RAY DIFFRACTION / 1.48 Å · deposit 2026-03-02 · release 2026-08-12 · 估算 token 1182
-- 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：两条以上不同蛋白链的复合体（不含抗体链、不含核酸、非膜蛋白）。考察跨链共进化信号能否把界面摆对
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:837 aa — Double-strand telomeric DNA-binding proteins 1
-- 　└ 全长序列 O62329(构建体 111 aa,实验结构里只解出 110 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 蛋白质链:345 aa — Protection of telomeres homolog 1
-- 　└ 全长序列 A0A7R7JK61(构建体 172 aa,实验结构里只解出 165 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链：837 aa — Double-strand telomeric DNA-binding proteins 1
+- 　└ 全长序列 O62329（构建体 111 aa，实验结构里只解出 110 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 蛋白质链：345 aa — Protection of telomeres homolog 1
+- 　└ 全长序列 A0A7R7JK61（构建体 172 aa，实验结构里只解出 165 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-文件:`job_files/yi_1_11KP.json` · `sequences/yi_1_11KP.fasta`
+文件：`job_files/yi_1_11KP.json` · `sequences/yi_1_11KP.fasta`
 
 #### 乙班 2. 9NYI — 第 2 类 蛋白 + DNA
 
 Structure of HalA in complex with oligodeoxyadenylate
 
-- 论文:[*Nature* 2025](https://doi.org/10.1038/s41586-025-09058-z)
+- 论文：[*Nature* 2025](https://doi.org/10.1038/s41586-025-09058-z)
 - ELECTRON MICROSCOPY / 1.98 Å · deposit 2025-03-27 · release 2025-05-07 · 估算 token 1508
-- 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：只含标准 A/C/G/T；双链须分别输入两条互补链
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- DNA 链 ×4:6 nt — DNA (5'-D(*AP*AP*AP*AP*AP*A)-3')
-- 蛋白质链 ×4:371 aa — Structure of HalA in complex with oligodeoxyadenylate
-- 　└ 直接输入 PDB 里提交的序列:合成肽 / 人工设计蛋白,无天然全长序列
+输入：
+- DNA 链 ×4：6 nt — DNA (5'-D(*AP*AP*AP*AP*AP*A)-3')
+- 蛋白质链 ×4：371 aa — Structure of HalA in complex with oligodeoxyadenylate
+- 　└ 直接输入 PDB 里提交的序列：合成肽 / 人工设计蛋白，无天然全长序列
 
-注意:
-- 以下链在实验结构里并未全部解出(Structure of Hal 89%),比较时只对齐两者共有的残基
+注意：
+- 以下链在实验结构里并未全部解出（Structure of Hal 89%），比较时只对齐两者共有的残基
 
-文件:`job_files/yi_2_9NYI.json` · `sequences/yi_2_9NYI.fasta`
+文件：`job_files/yi_2_9NYI.json` · `sequences/yi_2_9NYI.fasta`
 
 #### 乙班 3. 9SIT — 第 3 类 蛋白 + RNA
 
 Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position
 
-- 论文:[*Nucleic Acids Res.* 2026](https://doi.org/10.1093/nar/gkag053)
+- 论文：[*Nucleic Acids Res.* 2026](https://doi.org/10.1093/nar/gkag053)
 - ELECTRON MICROSCOPY / 1.75 Å · deposit 2025-08-29 · release 2026-02-18 · 估算 token 2942
-- 这一类考察什么:RNA 构象自由度大,是公认较难的一类
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：RNA 构象自由度大，是公认较难的一类
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- RNA 链:60 nt — crRNA
-- DNA 链:46 nt — Target strand
-- 蛋白质链 ×6:335 aa — Cas7f
-- 　└ 全长序列 A0AAX7FM28(构建体 335 aa,实验结构里只解出 324 个残基)
-- DNA 链:46 nt — Non-target strand
-- 蛋白质链:181 aa — Cas6f
-- 　└ 全长序列 A0AAX7FM27(构建体 181 aa,实验结构里只解出 178 个残基)
-- 蛋白质链:255 aa — Cas5f
-- 　└ 全长序列 A0AAX7FM22(构建体 255 aa,实验结构里只解出 252 个残基)
-- 蛋白质链:344 aa — Cas8f fusion with HNH
-- 　└ 全长序列 A0AAX7FM29(构建体 344 aa,实验结构里只解出 340 个残基)
+输入：
+- RNA 链：60 nt — crRNA
+- DNA 链：46 nt — Target strand
+- 蛋白质链 ×6：335 aa — Cas7f
+- 　└ 全长序列 A0AAX7FM28（构建体 335 aa，实验结构里只解出 324 个残基）
+- DNA 链：46 nt — Non-target strand
+- 蛋白质链：181 aa — Cas6f
+- 　└ 全长序列 A0AAX7FM27（构建体 181 aa，实验结构里只解出 178 个残基）
+- 蛋白质链：255 aa — Cas5f
+- 　└ 全长序列 A0AAX7FM22（构建体 255 aa，实验结构里只解出 252 个残基）
+- 蛋白质链：344 aa — Cas8f fusion with HNH
+- 　└ 全长序列 A0AAX7FM29（构建体 344 aa，实验结构里只解出 340 个残基）
 
-注意:
-- 两条 DNA 链互为反向互补,是同一段双链的两股,必须都输入
+注意：
+- 两条 DNA 链互为反向互补，是同一段双链的两股，必须都输入
 
-文件:`job_files/yi_3_9SIT.json` · `sequences/yi_3_9SIT.fasta`
+文件：`job_files/yi_3_9SIT.json` · `sequences/yi_3_9SIT.fasta`
 
 #### 乙班 4. 9PV1 — 第 4 类 蛋白 + 小分子配体
 
 Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketoglutarate, chloride
 
-- 论文:[*Nature* 2026](https://doi.org/10.1038/s41586-026-10716-z)
+- 论文：[*Nature* 2026](https://doi.org/10.1038/s41586-026-10716-z)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2025-07-31 · release 2026-06-24 · 估算 token 674
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：配体不在 Server 的 19 种内置辅因子里，走非内置 CCD 代码那条路；代码已核实在冻结的 CCD 2024_10_28 字典中
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×2:310 aa — Biotin halogenase BtnX
-- 　└ 全长序列 A8LT50(构建体 312 aa)
-- 　└ 训练截止前同源体:无同源体
-- 配体(非内置 CCD):AKG ×2 — 2-OXOGLUTARIC ACID
-- 配体(非内置 CCD):BTN ×2 — BIOTIN
-- 配体(非内置 CCD):FE2 ×1 — FE (II) ION
-- 离子:CL ×1
+输入：
+- 蛋白质链 ×2：310 aa — Biotin halogenase BtnX
+- 　└ 全长序列 A8LT50（构建体 312 aa）
+- 　└ 训练截止前同源体：无同源体
+- 配体（非内置 CCD）：AKG ×2 — 2-OXOGLUTARIC ACID
+- 配体（非内置 CCD）：BTN ×2 — BIOTIN
+- 配体（非内置 CCD）：FE2 ×1 — FE (II) ION
+- 离子：CL ×1
 
-注意:
-- 以下配体是非内置 CCD 代码:AKG、BTN、FE2。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×2、PEG×1、SO4×1
+注意：
+- 以下配体是非内置 CCD 代码：AKG、BTN、FE2。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：EDO×2、PEG×1、SO4×1
 
-文件:`job_files/yi_4_9PV1.json` · `sequences/yi_4_9PV1.fasta`
+文件：`job_files/yi_4_9PV1.json` · `sequences/yi_4_9PV1.fasta`
 
 #### 乙班 5. 9S1S — 第 5 类 有翻译后修饰的蛋白
 
 Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosphopeptide
 
-- 论文:[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110982)
+- 论文：[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110982)
 - X-RAY DIFFRACTION / 1.62 Å · deposit 2025-07-21 · release 2025-12-10 · 估算 token 1212
-- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
-- 修饰介导互作的实测证据:SEP 到对方链最近 2.67 Å,4 Å 内接触原子 56 个
+- 这一类考察什么：修饰残基由坐标实测确认介导蛋白-蛋白互作（最近距离 2.2–3.0 Å，4 Å 内接触原子 ≥ 20）。该类受体多为反复研究的识别模块，同源体无法避免
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
+- 修饰介导互作的实测证据：SEP 到对方链最近 2.67 Å，4 Å 内接触原子 56 个
 
-输入:
-- 蛋白质链:6 aa — Model phosphohexapeptide
-- 　└ 直接输入 PDB 里提交的序列:合成肽 / 人工设计蛋白,无天然全长序列
-- 　└ 翻译后修饰:SEP 加在第 2 位(S,构建体编号 2)
-- 蛋白质链 ×2:603 aa — Dual specificity protein phosphatase CDC14A
-- 　└ 全长序列 Q6GQT0(构建体 344 aa,实验结构里只解出 339 个残基)
-- 　└ 训练截止前同源体:>=60%(3 个)
+输入：
+- 蛋白质链：6 aa — Model phosphohexapeptide
+- 　└ 直接输入 PDB 里提交的序列：合成肽 / 人工设计蛋白，无天然全长序列
+- 　└ 翻译后修饰：SEP 加在第 2 位（S，构建体编号 2）
+- 蛋白质链 ×2：603 aa — Dual specificity protein phosphatase CDC14A
+- 　└ 全长序列 Q6GQT0（构建体 344 aa，实验结构里只解出 339 个残基）
+- 　└ 训练截止前同源体：≥60%（3 个）
 
-注意:
-- 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×2、SO4×2
-- 以下链在实验结构里并未全部解出(Model phosphohex 66%),比较时只对齐两者共有的残基
-- 含极短肽链(Model phosphohexapeptide 6 aa):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM
+注意：
+- 修饰用 proteinChain 的 modifications 字段（ptmType + ptmPosition），位置已换算为全长编号
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：GOL×2、SO4×2
+- 以下链在实验结构里并未全部解出（Model phosphohex 66%），比较时只对齐两者共有的残基
+- 含极短肽链（Model phosphohexapeptide 6 aa）：FAQ 明示 pTM 对短于 16 残基的链系统性偏低，该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主；要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格，不要用整体 ipTM
 
-文件:`job_files/yi_5_9S1S.json` · `sequences/yi_5_9S1S.fasta`
+文件：`job_files/yi_5_9S1S.json` · `sequences/yi_5_9S1S.fasta`
 
 #### 乙班 6. 9MAU — 第 6 类 膜蛋白
 
 Cryo-EM structure of human OAT1 in the apo state
 
-- 论文:[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.115975)
+- 论文：[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.115975)
 - ELECTRON MICROSCOPY / 2.87 Å · deposit 2025-03-14 · release 2025-06-18 · 估算 token 563
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:单链:pLDDT + Cα RMSD / TM-score
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：单链：pLDDT + Cα RMSD / TM-score
 
-输入:
-- 蛋白质链:563 aa — Isoform 2 of Solute carrier family 22 member 6
-- 　└ 全长序列 Q4U2R8(构建体 572 aa,实验结构里只解出 506 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链：563 aa — Isoform 2 of Solute carrier family 22 member 6
+- 　└ 全长序列 Q4U2R8（构建体 572 aa，实验结构里只解出 506 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- 以下链在实验结构里并未全部解出(Isoform 2 of Sol 88%),比较时只对齐两者共有的残基
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- 以下链在实验结构里并未全部解出（Isoform 2 of Sol 88%），比较时只对齐两者共有的残基
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/yi_6_9MAU.json` · `sequences/yi_6_9MAU.fasta`
+文件：`job_files/yi_6_9MAU.json` · `sequences/yi_6_9MAU.fasta`
 
 #### 乙班 7. 9PS4 — 第 6 类 膜蛋白
 
 Cryo-EM structure of NCLX without calcium (class 1)
 
-- 论文:[*Nature* 2025](https://doi.org/10.1038/s41586-025-09491-0)
+- 论文：[*Nature* 2025](https://doi.org/10.1038/s41586-025-09491-0)
 - ELECTRON MICROSCOPY / 3.29 Å · deposit 2025-07-24 · release 2025-09-10 · 估算 token 1755
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×3:585 aa — NCLX
-- 　└ 全长序列 Q6AXS0(构建体 585 aa,实验结构里只解出 490 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链 ×3：585 aa — NCLX
+- 　└ 全长序列 Q6AXS0（构建体 585 aa，实验结构里只解出 490 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- 以下链在实验结构里并未全部解出(NCLX 83%),比较时只对齐两者共有的残基
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- 以下链在实验结构里并未全部解出（NCLX 83%），比较时只对齐两者共有的残基
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/yi_7_9PS4.json` · `sequences/yi_7_9PS4.fasta`
+文件：`job_files/yi_7_9PS4.json` · `sequences/yi_7_9PS4.fasta`
 
 #### 乙班 8. 9NJY — 第 7 类 抗原抗体复合物
 
 Terminal two domains of ClfA002 with bound Fab of AZD7745
 
-- 论文:[*J.Infect.Dis.* 2025](https://doi.org/10.1093/infdis/jiaf357)
+- 论文：[*J.Infect.Dis.* 2025](https://doi.org/10.1093/infdis/jiaf357)
 - X-RAY DIFFRACTION / 1.58 Å · deposit 2025-02-28 · release 2025-07-30 · 估算 token 1428
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:989 aa — Clumping factor A
-- 　└ 全长序列 Q99VJ4(构建体 302 aa,实验结构里只解出 302 个残基)
-- 蛋白质链:225 aa — Human antibody, heavy chain fragment, antigen binding
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:214 aa — Human antibody, light chain, antigen binding
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：989 aa — Clumping factor A
+- 　└ 全长序列 Q99VJ4（构建体 302 aa，实验结构里只解出 302 个残基）
+- 蛋白质链：225 aa — Human antibody, heavy chain fragment, antigen binding
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：214 aa — Human antibody, light chain, antigen binding
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×2
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：GOL×2
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/yi_8_9NJY.json` · `sequences/yi_8_9NJY.fasta`
+文件：`job_files/yi_8_9NJY.json` · `sequences/yi_8_9NJY.fasta`
 
 #### 乙班 9. 9NN9 — 第 7 类 抗原抗体复合物
 
 ISG15 complexed with nanobody
 
-- 论文:[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110564)
+- 论文：[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110564)
 - X-RAY DIFFRACTION / 2.59 Å · deposit 2025-03-05 · release 2025-10-01 · 估算 token 314
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:165 aa — Ubiquitin-like protein ISG15
-- 　└ 全长序列 P05161(构建体 165 aa,实验结构里只解出 153 个残基)
-- 蛋白质链:149 aa — Nanobody
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：165 aa — Ubiquitin-like protein ISG15
+- 　└ 全长序列 P05161（构建体 165 aa，实验结构里只解出 153 个残基）
+- 蛋白质链：149 aa — Nanobody
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×3、SO4×1
-- 以下链在实验结构里并未全部解出(Ubiquitin-like p 92%、Nanobody 80%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：EDO×3、SO4×1
+- 以下链在实验结构里并未全部解出（Ubiquitin-like p 92%、Nanobody 80%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/yi_9_9NN9.json` · `sequences/yi_9_9NN9.fasta`
+文件：`job_files/yi_9_9NN9.json` · `sequences/yi_9_9NN9.fasta`
 
 #### 乙班 10. 9P4C — 第 7 类 抗原抗体复合物
 
 Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex
 
-- 论文:[*Antib Ther* 2026](https://doi.org/10.1093/abt/tbaf022)
+- 论文：[*Antib Ther* 2026](https://doi.org/10.1093/abt/tbaf022)
 - X-RAY DIFFRACTION / 1.52 Å · deposit 2025-06-16 · release 2025-11-12 · 估算 token 1049
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:622 aa — Mesothelin, cleaved form
-- 　└ 全长序列 Q13421(构建体 17 aa,实验结构里只解出 17 个残基)
-- 蛋白质链:211 aa — Heavy chain of the RO4 fab fragment
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:216 aa — Light chain of the RO4 Fab fragment
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：622 aa — Mesothelin, cleaved form
+- 　└ 全长序列 Q13421（构建体 17 aa，实验结构里只解出 17 个残基）
+- 蛋白质链：211 aa — Heavy chain of the RO4 fab fragment
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：216 aa — Light chain of the RO4 Fab fragment
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×1
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：GOL×1
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/yi_10_9P4C.json` · `sequences/yi_10_9P4C.fasta`
+文件：`job_files/yi_10_9P4C.json` · `sequences/yi_10_9P4C.fasta`
 
 ### 丙班
 
@@ -639,227 +639,227 @@ Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex
 
 Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1
 
-- 预印本:[*bioRxiv* 2025](https://doi.org/10.64898/2025.12.17.694969)
+- 预印本：[*bioRxiv* 2025](https://doi.org/10.64898/2025.12.17.694969)
 - X-RAY DIFFRACTION / 1.61 Å · deposit 2025-08-10 · release 2026-08-05 · 估算 token 1051
-- 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：两条以上不同蛋白链的复合体（不含抗体链、不含核酸、非膜蛋白）。考察跨链共进化信号能否把界面摆对
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:341 aa — Uncharacterized WD repeat-containing protein C824.04
-- 　└ 全长序列 Q9UT39(构建体 341 aa,实验结构里只解出 339 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 蛋白质链:710 aa — Cleavage and polyadenylation factor complex subunit C74.02c
-- 　└ 全长序列 O74535(构建体 87 aa,实验结构里只解出 87 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链：341 aa — Uncharacterized WD repeat-containing protein C824.04
+- 　└ 全长序列 Q9UT39（构建体 341 aa，实验结构里只解出 339 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 蛋白质链：710 aa — Cleavage and polyadenylation factor complex subunit C74.02c
+- 　└ 全长序列 O74535（构建体 87 aa，实验结构里只解出 87 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-文件:`job_files/bing_1_9SCE.json` · `sequences/bing_1_9SCE.fasta`
+文件：`job_files/bing_1_9SCE.json` · `sequences/bing_1_9SCE.fasta`
 
 #### 丙班 2. 9U19 — 第 2 类 蛋白 + DNA
 
 Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex containing a CACG motif variant
 
-- 预印本:[*Biorxiv* 2026](https://doi.org/10.64898/2026.02.27.708450)
+- 预印本：[*Biorxiv* 2026](https://doi.org/10.64898/2026.02.27.708450)
 - X-RAY DIFFRACTION / 1.18 Å · deposit 2026-01-29 · release 2026-03-11 · 估算 token 396
-- 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：只含标准 A/C/G/T；双链须分别输入两条互补链
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:371 aa — Homeobox protein Nkx-2.1
-- 　└ 全长序列 P43699(构建体 59 aa,实验结构里只解出 59 个残基)
-- DNA 链:12 nt — 12bp reverse complementary
-- DNA 链:12 nt — CACG-containing 12bp forward strand
-- 离子:MG ×1
+输入：
+- 蛋白质链：371 aa — Homeobox protein Nkx-2.1
+- 　└ 全长序列 P43699（构建体 59 aa，实验结构里只解出 59 个残基）
+- DNA 链：12 nt — 12bp reverse complementary
+- DNA 链：12 nt — CACG-containing 12bp forward strand
+- 离子：MG ×1
 
-注意:
-- 两条 DNA 链互为反向互补,是同一段双链的两股,必须都输入
+注意：
+- 两条 DNA 链互为反向互补，是同一段双链的两股，必须都输入
 
-文件:`job_files/bing_2_9U19.json` · `sequences/bing_2_9U19.fasta`
+文件：`job_files/bing_2_9U19.json` · `sequences/bing_2_9U19.fasta`
 
 #### 丙班 3. 9VHE — 第 3 类 蛋白 + RNA
 
 cryoEM structure of retron-Eco7 complex
 
-- 论文:[*Nucleic Acids Res.* 2025](https://doi.org/10.1093/nar/gkaf1173)
+- 论文：[*Nucleic Acids Res.* 2025](https://doi.org/10.1093/nar/gkaf1173)
 - ELECTRON MICROSCOPY / 2.50 Å · deposit 2025-06-16 · release 2025-12-31 · 估算 token 2960
-- 这一类考察什么:RNA 构象自由度大,是公认较难的一类
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：RNA 构象自由度大，是公认较难的一类
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- DNA 链:74 nt — msdDNA
-- RNA 链:65 nt — msrRNA
-- 蛋白质链:216 aa — Retron Ec78 putative HNH endonuclease
-- 　└ 全长序列 P0DV92(构建体 216 aa,实验结构里只解出 210 个残基)
-- 蛋白质链 ×4:550 aa — Retron Ec78 probable ATPase
-- 　└ 全长序列 P0DV91(构建体 550 aa,实验结构里只解出 447 个残基)
-- 蛋白质链:311 aa — Retron Ec78 reverse transcriptase
-- 　└ 全长序列 Q46666(构建体 311 aa,实验结构里只解出 273 个残基)
-- 配体(下拉菜单内置):ATP ×3 — ADENOSINE-5'-TRIPHOSPHATE
-- 离子:MG ×1
+输入：
+- DNA 链：74 nt — msdDNA
+- RNA 链：65 nt — msrRNA
+- 蛋白质链：216 aa — Retron Ec78 putative HNH endonuclease
+- 　└ 全长序列 P0DV92（构建体 216 aa，实验结构里只解出 210 个残基）
+- 蛋白质链 ×4：550 aa — Retron Ec78 probable ATPase
+- 　└ 全长序列 P0DV91（构建体 550 aa，实验结构里只解出 447 个残基）
+- 蛋白质链：311 aa — Retron Ec78 reverse transcriptase
+- 　└ 全长序列 Q46666（构建体 311 aa，实验结构里只解出 273 个残基）
+- 配体（下拉菜单内置）：ATP ×3 — ADENOSINE-5'-TRIPHOSPHATE
+- 离子：MG ×1
 
-注意:
-- 以下链在实验结构里并未全部解出(Retron Ec78 prob 81%、Retron Ec78 reve 87%),比较时只对齐两者共有的残基
+注意：
+- 以下链在实验结构里并未全部解出（Retron Ec78 prob 81%、Retron Ec78 reve 87%），比较时只对齐两者共有的残基
 
-文件:`job_files/bing_3_9VHE.json` · `sequences/bing_3_9VHE.fasta`
+文件：`job_files/bing_3_9VHE.json` · `sequences/bing_3_9VHE.fasta`
 
 #### 丙班 4. 9P9O — 第 4 类 蛋白 + 小分子配体
 
 Crystal structure of Rv0097 with Fe and CADA bound
 
-- 论文:[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-68588-w)
+- 论文：[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-68588-w)
 - X-RAY DIFFRACTION / 1.12 Å · deposit 2025-06-24 · release 2026-03-11 · 估算 token 614
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：配体不在 Server 的 19 种内置辅因子里，走非内置 CCD 代码那条路；代码已核实在冻结的 CCD 2024_10_28 字典中
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×2:289 aa — (3R)-3-[(carboxymethyl)amino]fatty acid oxygenase/decarboxylase
-- 　└ 全长序列 P9WG83(构建体 302 aa)
-- 　└ 训练截止前同源体:>=30%(8 个)
-- 配体(非内置 CCD):VY9 ×2 — (3R)-3-(2-hydroxy-2-oxoethylamino)decanoic acid
-- 离子:FE ×2
+输入：
+- 蛋白质链 ×2：289 aa — (3R)-3-[(carboxymethyl)amino]fatty acid oxygenase/decarboxylase
+- 　└ 全长序列 P9WG83（构建体 302 aa）
+- 　└ 训练截止前同源体：≥30%（8 个）
+- 配体（非内置 CCD）：VY9 ×2 — (3R)-3-(2-hydroxy-2-oxoethylamino)decanoic acid
+- 离子：FE ×2
 
-注意:
-- 以下配体是非内置 CCD 代码:VY9。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+注意：
+- 以下配体是非内置 CCD 代码：VY9。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
 
-文件:`job_files/bing_4_9P9O.json` · `sequences/bing_4_9P9O.fasta`
+文件：`job_files/bing_4_9P9O.json` · `sequences/bing_4_9P9O.fasta`
 
 #### 丙班 5. 9T9W — 第 5 类 有翻译后修饰的蛋白
 
 Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron peptide
 
-- 论文:[*Acs Chem.Biol.* 2026](https://doi.org/10.1021/acschembio.5c01007)
+- 论文：[*Acs Chem.Biol.* 2026](https://doi.org/10.1021/acschembio.5c01007)
 - X-RAY DIFFRACTION / 1.16 Å · deposit 2025-11-17 · release 2026-04-08 · 估算 token 922
-- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
-- 修饰介导互作的实测证据:SEP 到对方链最近 2.61 Å,4 Å 内接触原子 32 个
+- 这一类考察什么：修饰残基由坐标实测确认介导蛋白-蛋白互作（最近距离 2.2–3.0 Å，4 Å 内接触原子 ≥ 20）。该类受体多为反复研究的识别模块，同源体无法避免
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
+- 修饰介导互作的实测证据：SEP 到对方链最近 2.61 Å，4 Å 内接触原子 32 个
 
-输入:
-- 蛋白质链:317 aa — NF-kappa-B inhibitor alpha
-- 　└ 全长序列 P25963(构建体 12 aa,实验结构里只解出 10 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 　└ 翻译后修饰:SEP 加在第 32 位(S,构建体编号 5)
-- 　└ 翻译后修饰:SEP 加在第 36 位(S,构建体编号 9)
-- 蛋白质链:605 aa — F-box/WD repeat-containing protein 1A
-- 　└ 全长序列 Q9Y297(构建体 365 aa,实验结构里只解出 355 个残基)
-- 　└ 训练截止前同源体:>=95%(7 个)
+输入：
+- 蛋白质链：317 aa — NF-kappa-B inhibitor alpha
+- 　└ 全长序列 P25963（构建体 12 aa，实验结构里只解出 10 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 　└ 翻译后修饰：SEP 加在第 32 位（S，构建体编号 5）
+- 　└ 翻译后修饰：SEP 加在第 36 位（S，构建体编号 9）
+- 蛋白质链：605 aa — F-box/WD repeat-containing protein 1A
+- 　└ 全长序列 Q9Y297（构建体 365 aa，实验结构里只解出 355 个残基）
+- 　└ 训练截止前同源体：≥95%（7 个）
 
-注意:
-- 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×1
-- 以下链在实验结构里并未全部解出(NF-kappa-B inhib 83%),比较时只对齐两者共有的残基
+注意：
+- 修饰用 proteinChain 的 modifications 字段（ptmType + ptmPosition），位置已换算为全长编号
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：EDO×1
+- 以下链在实验结构里并未全部解出（NF-kappa-B inhib 83%），比较时只对齐两者共有的残基
 
-文件:`job_files/bing_5_9T9W.json` · `sequences/bing_5_9T9W.fasta`
+文件：`job_files/bing_5_9T9W.json` · `sequences/bing_5_9T9W.fasta`
 
 #### 丙班 6. 9M0S — 第 6 类 膜蛋白
 
 Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation
 
-- 论文:[*Cell Discov* 2025](https://doi.org/10.1038/s41421-025-00793-1)
+- 论文：[*Cell Discov* 2025](https://doi.org/10.1038/s41421-025-00793-1)
 - ELECTRON MICROSCOPY / 3.50 Å · deposit 2025-02-25 · release 2025-04-23 · 估算 token 600
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:单链:pLDDT + Cα RMSD / TM-score
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：单链：pLDDT + Cα RMSD / TM-score
 
-输入:
-- 蛋白质链:549 aa — Acetyl-coenzyme A transporter 1
-- 　└ 全长序列 O00400(构建体 560 aa,实验结构里只解出 424 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 配体(非内置 CCD):ACO ×1 — ACETYL COENZYME *A
+输入：
+- 蛋白质链：549 aa — Acetyl-coenzyme A transporter 1
+- 　└ 全长序列 O00400（构建体 560 aa，实验结构里只解出 424 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 配体（非内置 CCD）：ACO ×1 — ACETYL COENZYME *A
 
-注意:
-- 以下配体是非内置 CCD 代码:ACO。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 以下链在实验结构里并未全部解出(Acetyl-coenzyme  75%),比较时只对齐两者共有的残基
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- 以下配体是非内置 CCD 代码：ACO。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
+- 以下链在实验结构里并未全部解出（Acetyl-coenzyme  75%），比较时只对齐两者共有的残基
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/bing_6_9M0S.json` · `sequences/bing_6_9M0S.fasta`
+文件：`job_files/bing_6_9M0S.json` · `sequences/bing_6_9M0S.fasta`
 
 #### 丙班 7. 9UET — 第 6 类 膜蛋白
 
 Cryo-EM structure of human choline-phosphotransferase 1
 
-- 论文:[*Biochem.Biophys.Res.Commun.* 2025](https://doi.org/10.1016/j.bbrc.2025.152082)
+- 论文：[*Biochem.Biophys.Res.Commun.* 2025](https://doi.org/10.1016/j.bbrc.2025.152082)
 - ELECTRON MICROSCOPY / 3.68 Å · deposit 2025-04-09 · release 2025-06-18 · 估算 token 814
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×2:406 aa — Cholinephosphotransferase 1
-- 　└ 全长序列 Q8WUD6(构建体 406 aa,实验结构里只解出 368 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 离子:MG ×2
+输入：
+- 蛋白质链 ×2：406 aa — Cholinephosphotransferase 1
+- 　└ 全长序列 Q8WUD6（构建体 406 aa，实验结构里只解出 368 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 离子：MG ×2
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:POV×2
-- 以下链在实验结构里并未全部解出(Cholinephosphotr 90%),比较时只对齐两者共有的残基
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：POV×2
+- 以下链在实验结构里并未全部解出（Cholinephosphotr 90%），比较时只对齐两者共有的残基
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/bing_7_9UET.json` · `sequences/bing_7_9UET.fasta`
+文件：`job_files/bing_7_9UET.json` · `sequences/bing_7_9UET.fasta`
 
 #### 丙班 8. 9NKZ — 第 7 类 抗原抗体复合物
 
 Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoite protein
 
-- 论文:[*Protein Sci.* 2026](https://doi.org/10.1002/pro.70738)
+- 论文：[*Protein Sci.* 2026](https://doi.org/10.1002/pro.70738)
 - X-RAY DIFFRACTION / 1.48 Å · deposit 2025-03-02 · release 2026-03-04 · 估算 token 844
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:230 aa — Heavy Chain of Fab MAM01
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:217 aa — Light Chain of Fab MAM01
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:397 aa — Circumsporozoite protein
-- 　└ 全长序列 Q7K740(构建体 24 aa,实验结构里只解出 15 个残基)
+输入：
+- 蛋白质链：230 aa — Heavy Chain of Fab MAM01
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：217 aa — Light Chain of Fab MAM01
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：397 aa — Circumsporozoite protein
+- 　└ 全长序列 Q7K740（构建体 24 aa，实验结构里只解出 15 个残基）
 
-注意:
-- 以下链在实验结构里并未全部解出(Circumsporozoite 62%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 以下链在实验结构里并未全部解出（Circumsporozoite 62%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/bing_8_9NKZ.json` · `sequences/bing_8_9NKZ.fasta`
+文件：`job_files/bing_8_9NKZ.json` · `sequences/bing_8_9NKZ.fasta`
 
 #### 丙班 9. 9VDY — 第 7 类 抗原抗体复合物
 
 hA5-6 Fab bound to SFTSV glycoprotein Gn
 
-- 论文:[*Cell Rep* 2026](https://doi.org/10.1016/j.celrep.2026.116936)
+- 论文：[*Cell Rep* 2026](https://doi.org/10.1016/j.celrep.2026.116936)
 - X-RAY DIFFRACTION / 2.28 Å · deposit 2025-06-09 · release 2026-01-07 · 估算 token 1523
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:218 aa — hA5-6 Fab light chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:232 aa — hA5-6 Fab heavy chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:1073 aa — Envelopment polyprotein
-- 　└ 全长序列 W5VWE0(构建体 338 aa,实验结构里只解出 314 个残基)
+输入：
+- 蛋白质链：218 aa — hA5-6 Fab light chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：232 aa — hA5-6 Fab heavy chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：1073 aa — Envelopment polyprotein
+- 　└ 全长序列 W5VWE0（构建体 338 aa，实验结构里只解出 314 个残基）
 
-注意:
-- 以下链在实验结构里并未全部解出(hA5-6 Fab heavy  92%、Envelopment poly 92%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 以下链在实验结构里并未全部解出（hA5-6 Fab heavy  92%、Envelopment poly 92%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/bing_9_9VDY.json` · `sequences/bing_9_9VDY.fasta`
+文件：`job_files/bing_9_9VDY.json` · `sequences/bing_9_9VDY.fasta`
 
 #### 丙班 10. 9ZRO — 第 7 类 抗原抗体复合物
 
 Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII
 
-- 论文:[*Immunity* 2026](https://doi.org/10.1016/j.immuni.2026.05.013)
+- 论文：[*Immunity* 2026](https://doi.org/10.1016/j.immuni.2026.05.013)
 - X-RAY DIFFRACTION / 1.40 Å · deposit 2025-12-20 · release 2026-07-29 · 估算 token 3871
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:3433 aa — Envelope protein E
-- 　└ 全长序列 Q9Q6P4(构建体 102 aa,实验结构里只解出 99 个残基)
-- 蛋白质链:214 aa — W037 Fab Light Chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:224 aa — W037 Fab Heavy Chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：3433 aa — Envelope protein E
+- 　└ 全长序列 Q9Q6P4（构建体 102 aa，实验结构里只解出 99 个残基）
+- 蛋白质链：214 aa — W037 Fab Light Chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：224 aa — W037 Fab Heavy Chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/bing_10_9ZRO.json` · `sequences/bing_10_9ZRO.fasta`
+文件：`job_files/bing_10_9ZRO.json` · `sequences/bing_10_9ZRO.fasta`
 
 ### 丁班
 
@@ -867,232 +867,232 @@ Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII
 
 RelSI toxin-antitoxin complex
 
-- 论文:[*Nucleic Acids Res.* 2026](https://doi.org/10.1093/nar/gkag571)
+- 论文：[*Nucleic Acids Res.* 2026](https://doi.org/10.1093/nar/gkag571)
 - X-RAY DIFFRACTION / 1.70 Å · deposit 2025-08-13 · release 2026-07-22 · 估算 token 644
-- 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：两条以上不同蛋白链的复合体（不含抗体链、不含核酸、非膜蛋白）。考察跨链共进化信号能否把界面摆对
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链 ×4:77 aa — Toxin
-- 　└ 全长序列 I6X520(构建体 77 aa)
-- 　└ 训练截止前同源体:无同源体
-- 蛋白质链 ×4:84 aa — RelI
-- 　└ 全长序列 I6Y9Z5(构建体 84 aa,实验结构里只解出 77 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链 ×4：77 aa — Toxin
+- 　└ 全长序列 I6X520（构建体 77 aa）
+- 　└ 训练截止前同源体：无同源体
+- 蛋白质链 ×4：84 aa — RelI
+- 　└ 全长序列 I6Y9Z5（构建体 84 aa，实验结构里只解出 77 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- 以下链在实验结构里并未全部解出(RelI 91%),比较时只对齐两者共有的残基
+注意：
+- 以下链在实验结构里并未全部解出（RelI 91%），比较时只对齐两者共有的残基
 
-文件:`job_files/ding_1_9SDC.json` · `sequences/ding_1_9SDC.fasta`
+文件：`job_files/ding_1_9SDC.json` · `sequences/ding_1_9SDC.fasta`
 
 #### 丁班 2. 9Y1J — 第 2 类 蛋白 + DNA
 
 S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp
 
-- 论文:[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.5c00628)
+- 论文：[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.5c00628)
 - X-RAY DIFFRACTION / 1.55 Å · deposit 2025-08-29 · release 2026-01-28 · 估算 token 398
-- 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：只含标准 A/C/G/T；双链须分别输入两条互补链
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- DNA 链:5 nt — Downstream
-- DNA 链:10 nt — Primer strand
-- DNA 链:16 nt — Template strand
-- 蛋白质链:335 aa — DNA polymerase beta
-- 　└ 全长序列 P06746(构建体 335 aa,实验结构里只解出 326 个残基)
-- 配体(非内置 CCD):F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
-- 离子:NA ×1
-- 离子:MG ×1
+输入：
+- DNA 链：5 nt — Downstream
+- DNA 链：10 nt — Primer strand
+- DNA 链：16 nt — Template strand
+- 蛋白质链：335 aa — DNA polymerase beta
+- 　└ 全长序列 P06746（构建体 335 aa，实验结构里只解出 326 个残基）
+- 配体（非内置 CCD）：F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
+- 离子：NA ×1
+- 离子：MG ×1
 
-注意:
-- 以下配体是非内置 CCD 代码:F2A。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+注意：
+- 以下配体是非内置 CCD 代码：F2A。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
 
-文件:`job_files/ding_2_9Y1J.json` · `sequences/ding_2_9Y1J.fasta`
+文件：`job_files/ding_2_9Y1J.json` · `sequences/ding_2_9Y1J.fasta`
 
 #### 丁班 3. 9NYB — 第 3 类 蛋白 + RNA
 
 Crystal structure of the pre-reactive state of porcine OAS1 in complex with dsRNA, two ApCpp substrate analogs, three catalytic Mn2+ ions.
 
-- 论文:[*Acs Omega* 2026](https://doi.org/10.1021/acsomega.5c13236)
+- 论文：[*Acs Omega* 2026](https://doi.org/10.1021/acsomega.5c13236)
 - X-RAY DIFFRACTION / 1.60 Å · deposit 2025-03-27 · release 2026-04-08 · 估算 token 421
-- 这一类考察什么:RNA 构象自由度大,是公认较难的一类
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：RNA 构象自由度大，是公认较难的一类
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- RNA 链:19 nt — RNA (5'-R(*UP*UP*CP*AP*UP*AP*AP*AP*GP*GP*UP*CP*AP*AP*AP*AP*GP*CP*C)-3')
-- RNA 链:19 nt — RNA (5'-R(*GP*GP*CP*UP*UP*UP*UP*GP*AP*CP*CP*UP*UP*UP*AP*UP*GP*AP*A)-3')
-- 蛋白质链:349 aa — 2'-5'-oligoadenylate synthase 1
-- 　└ 全长序列 Q29599(构建体 357 aa)
-- 配体(非内置 CCD):APC ×1 — DIPHOSPHOMETHYLPHOSPHONIC ACID ADENOSYL ESTER
-- 离子:MN ×3
+输入：
+- RNA 链：19 nt — RNA (5'-R(*UP*UP*CP*AP*UP*AP*AP*AP*GP*GP*UP*CP*AP*AP*AP*AP*GP*CP*C)-3')
+- RNA 链：19 nt — RNA (5'-R(*GP*GP*CP*UP*UP*UP*UP*GP*AP*CP*CP*UP*UP*UP*AP*UP*GP*AP*A)-3')
+- 蛋白质链：349 aa — 2'-5'-oligoadenylate synthase 1
+- 　└ 全长序列 Q29599（构建体 357 aa）
+- 配体（非内置 CCD）：APC ×1 — DIPHOSPHOMETHYLPHOSPHONIC ACID ADENOSYL ESTER
+- 离子：MN ×3
 
-注意:
-- 以下配体是非内置 CCD 代码:APC。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×1
+注意：
+- 以下配体是非内置 CCD 代码：APC。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：EDO×1
 
-文件:`job_files/ding_3_9NYB.json` · `sequences/ding_3_9NYB.fasta`
+文件：`job_files/ding_3_9NYB.json` · `sequences/ding_3_9NYB.fasta`
 
 #### 丁班 4. 21ZG — 第 4 类 蛋白 + 小分子配体
 
 Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus complexed with ferric siderophore mimic, Fe(3,4-DHB)2
 
-- 论文:[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-72127-y)
+- 论文：[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-72127-y)
 - X-RAY DIFFRACTION / 1.40 Å · deposit 2026-01-04 · release 2026-04-22 · 估算 token 350
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
-- 评估重点:单链:pLDDT + Cα RMSD / TM-score
+- 这一类考察什么：配体不在 Server 的 19 种内置辅因子里，走非内置 CCD 代码那条路；代码已核实在冻结的 CCD 2024_10_28 字典中
+- 评估重点：单链：pLDDT + Cα RMSD / TM-score
 
-输入:
-- 蛋白质链:338 aa — Ferric anguibactin-binding protein
-- 　└ 全长序列 Q815N5(构建体 302 aa,实验结构里只解出 295 个残基)
-- 　└ 训练截止前同源体:>=30%(1 个)
-- 配体(非内置 CCD):DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
-- 离子:FE ×1
+输入：
+- 蛋白质链：338 aa — Ferric anguibactin-binding protein
+- 　└ 全长序列 Q815N5（构建体 302 aa，实验结构里只解出 295 个残基）
+- 　└ 训练截止前同源体：≥30%（1 个）
+- 配体（非内置 CCD）：DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
+- 离子：FE ×1
 
-注意:
-- 以下配体是非内置 CCD 代码:DHB。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:IPA×1、EDO×1
+注意：
+- 以下配体是非内置 CCD 代码：DHB。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：IPA×1、EDO×1
 
-文件:`job_files/ding_4_21ZG.json` · `sequences/ding_4_21ZG.fasta`
+文件：`job_files/ding_4_21ZG.json` · `sequences/ding_4_21ZG.fasta`
 
 #### 丁班 5. 9QNG — 第 5 类 有翻译后修饰的蛋白
 
 FOXO3 pS413 phosphopeptide binding to 14-3-3sigma
 
-- 论文:[*Digit Discov* 2025](https://doi.org/10.1039/d5dd00132c)
+- 论文：[*Digit Discov* 2025](https://doi.org/10.1039/d5dd00132c)
 - X-RAY DIFFRACTION / 1.35 Å · deposit 2025-03-25 · release 2025-09-03 · 估算 token 1845
-- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
-- 修饰介导互作的实测证据:SEP 到对方链最近 2.65 Å,4 Å 内接触原子 31 个
+- 这一类考察什么：修饰残基由坐标实测确认介导蛋白-蛋白互作（最近距离 2.2–3.0 Å，4 Å 内接触原子 ≥ 20）。该类受体多为反复研究的识别模块，同源体无法避免
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
+- 修饰介导互作的实测证据：SEP 到对方链最近 2.65 Å，4 Å 内接触原子 31 个
 
-输入:
-- 蛋白质链 ×2:673 aa — Forkhead box protein O3
-- 　└ 全长序列 O43524(构建体 9 aa,实验结构里只解出 9 个残基)
-- 　└ 翻译后修饰:SEP 加在第 413 位(S,构建体编号 4)
-- 蛋白质链 ×2:248 aa — 14-3-3 protein sigma
-- 　└ 全长序列 P31947(构建体 236 aa,实验结构里只解出 236 个残基)
-- 　└ 训练截止前同源体:>=95%(278 个)
-- 离子:CA ×2
-- 离子:CL ×1
+输入：
+- 蛋白质链 ×2：673 aa — Forkhead box protein O3
+- 　└ 全长序列 O43524（构建体 9 aa，实验结构里只解出 9 个残基）
+- 　└ 翻译后修饰：SEP 加在第 413 位（S，构建体编号 4）
+- 蛋白质链 ×2：248 aa — 14-3-3 protein sigma
+- 　└ 全长序列 P31947（构建体 236 aa，实验结构里只解出 236 个残基）
+- 　└ 训练截止前同源体：≥95%（278 个）
+- 离子：CA ×2
+- 离子：CL ×1
 
-注意:
-- 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
+注意：
+- 修饰用 proteinChain 的 modifications 字段（ptmType + ptmPosition），位置已换算为全长编号
 - 生物学单元按对称操作展开 ×2
 
-文件:`job_files/ding_5_9QNG.json` · `sequences/ding_5_9QNG.fasta`
+文件：`job_files/ding_5_9QNG.json` · `sequences/ding_5_9QNG.fasta`
 
 #### 丁班 6. 9M2H — 第 6 类 膜蛋白
 
 Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound state
 
-- 论文:[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.04.028)
+- 论文：[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.04.028)
 - ELECTRON MICROSCOPY / 3.40 Å · deposit 2025-02-27 · release 2025-05-28 · 估算 token 497
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:单链:pLDDT + Cα RMSD / TM-score
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：单链：pLDDT + Cα RMSD / TM-score
 
-输入:
-- 蛋白质链:485 aa — Auxin transporter protein 1
-- 　└ 全长序列 Q96247(构建体 485 aa,实验结构里只解出 431 个残基)
-- 　└ 训练截止前同源体:无同源体
-- 配体(非内置 CCD):3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
+输入：
+- 蛋白质链：485 aa — Auxin transporter protein 1
+- 　└ 全长序列 Q96247（构建体 485 aa，实验结构里只解出 431 个残基）
+- 　└ 训练截止前同源体：无同源体
+- 配体（非内置 CCD）：3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
 
-注意:
-- 以下配体是非内置 CCD 代码:3C4。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 以下链在实验结构里并未全部解出(Auxin transporte 88%),比较时只对齐两者共有的残基
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- 以下配体是非内置 CCD 代码：3C4。上传 job JSON 会自动填入 “CCD Code” 栏；只有从零手工搭建输入时才需自己敲
+- 以下链在实验结构里并未全部解出（Auxin transporte 88%），比较时只对齐两者共有的残基
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/ding_6_9M2H.json` · `sequences/ding_6_9M2H.fasta`
+文件：`job_files/ding_6_9M2H.json` · `sequences/ding_6_9M2H.fasta`
 
 #### 丁班 7. 9N93 — 第 6 类 膜蛋白
 
 Human TMEM63A mutant V53M lipid-open state
 
-- 论文:[*Neuron* 2025](https://doi.org/10.1016/j.neuron.2025.05.009)
+- 论文：[*Neuron* 2025](https://doi.org/10.1016/j.neuron.2025.05.009)
 - ELECTRON MICROSCOPY / 2.95 Å · deposit 2025-02-10 · release 2025-06-11 · 估算 token 807
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
-- 评估重点:单链:pLDDT + Cα RMSD / TM-score
+- 这一类考察什么：带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面，跨膜螺旋排布与构象态最易错；本类优先选训练截止前查不到同源体的
+- 评估重点：单链：pLDDT + Cα RMSD / TM-score
 
-输入:
-- 蛋白质链:807 aa — CSC1-like protein 1
-- 　└ 全长序列 O94886(构建体 807 aa,实验结构里只解出 650 个残基)
-- 　└ 训练截止前同源体:无同源体
+输入：
+- 蛋白质链：807 aa — CSC1-like protein 1
+- 　└ 全长序列 O94886（构建体 807 aa，实验结构里只解出 650 个残基）
+- 　└ 训练截止前同源体：无同源体
 
-注意:
-- 以下链在实验结构里并未全部解出(CSC1-like protei 80%),比较时只对齐两者共有的残基
-- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
+注意：
+- 以下链在实验结构里并未全部解出（CSC1-like protei 80%），比较时只对齐两者共有的残基
+- Server 不建模膜平面，跨膜螺旋之间的相对排布只能靠模型自行推断，是本题最可能出错的地方
 
-文件:`job_files/ding_7_9N93.json` · `sequences/ding_7_9N93.fasta`
+文件：`job_files/ding_7_9N93.json` · `sequences/ding_7_9N93.fasta`
 
 #### 丁班 8. 9IA3 — 第 7 类 抗原抗体复合物
 
 Bc8.108 Fab bound to preS2 peptide
 
-- 论文:[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.116705)
+- 论文：[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.116705)
 - X-RAY DIFFRACTION / 1.11 Å · deposit 2025-02-07 · release 2025-11-26 · 估算 token 634
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:191 aa — Large S protein
-- 　└ 全长序列 B2Y6K4(构建体 23 aa,实验结构里只解出 23 个残基)
-- 蛋白质链:228 aa — Fab Bc8.108 heavy chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:215 aa — Fab Bc8.108 light chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：191 aa — Large S protein
+- 　└ 全长序列 B2Y6K4（构建体 23 aa，实验结构里只解出 23 个残基）
+- 蛋白质链：228 aa — Fab Bc8.108 heavy chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：215 aa — Fab Bc8.108 light chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:PEG×1、EDO×2
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：PEG×1、EDO×2
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/ding_8_9IA3.json` · `sequences/ding_8_9IA3.fasta`
+文件：`job_files/ding_8_9IA3.json` · `sequences/ding_8_9IA3.fasta`
 
 #### 丁班 9. 9PWN — 第 7 类 抗原抗体复合物
 
 Crystal structure of Fabs 7411 in complex with TREM2 peptide
 
-- 论文:[*Mabs* 2025](https://doi.org/10.1080/19420862.2025.2546554)
+- 论文：[*Mabs* 2025](https://doi.org/10.1080/19420862.2025.2546554)
 - X-RAY DIFFRACTION / 1.80 Å · deposit 2025-08-04 · release 2025-09-10 · 估算 token 663
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:230 aa — TREM-2 stalk peptide
-- 　└ 全长序列 Q9NZC2(构建体 18 aa,实验结构里只解出 17 个残基)
-- 蛋白质链:212 aa — 7411 Fab Light Chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:221 aa — 7411 Fab Heavy Chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
+输入：
+- 蛋白质链：230 aa — TREM-2 stalk peptide
+- 　└ 全长序列 Q9NZC2（构建体 18 aa，实验结构里只解出 17 个残基）
+- 蛋白质链：212 aa — 7411 Fab Light Chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：221 aa — 7411 Fab Heavy Chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:PEG×1、GOL×1、SO4×2、EDO×2
-- 以下链在实验结构里并未全部解出(TREM-2 stalk pep 94%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：PEG×1、GOL×1、SO4×2、EDO×2
+- 以下链在实验结构里并未全部解出（TREM-2 stalk pep 94%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/ding_9_9PWN.json` · `sequences/ding_9_9PWN.fasta`
+文件：`job_files/ding_9_9PWN.json` · `sequences/ding_9_9PWN.fasta`
 
 #### 丁班 10. 9Q1L — 第 7 类 抗原抗体复合物
 
 Crystal structure of the walnut allergen Jug r 2 bound to the human-derived Fab 6D12
 
-- 论文:[*Allergy* 2025](https://doi.org/10.1111/all.70201)
+- 论文：[*Allergy* 2025](https://doi.org/10.1111/all.70201)
 - X-RAY DIFFRACTION / 1.56 Å · deposit 2025-08-14 · release 2026-01-21 · 估算 token 1038
-- 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
-- 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
+- 这一类考察什么：抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守（实测 ≥80%），无法规避，真正未知的是表位识别；建议跑多个 seed 按 ipTM 排序
+- 评估重点：多链：ipTM 与 chain_pair_iptm 看界面，pLDDT 看各链自身
 
-输入:
-- 蛋白质链:214 aa — 6D12 Fab light chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:230 aa — 6D12 Fab Heavy Chain
-- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
-- 蛋白质链:593 aa — Vicilin Jug r 2.0102 hairpinin alpha 4
-- 　└ 全长序列 Q9SEW4(构建体 47 aa,实验结构里只解出 39 个残基)
-- 离子:CL ×1
+输入：
+- 蛋白质链：214 aa — 6D12 Fab light chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：230 aa — 6D12 Fab Heavy Chain
+- 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
+- 蛋白质链：593 aa — Vicilin Jug r 2.0102 hairpinin alpha 4
+- 　└ 全长序列 Q9SEW4（构建体 47 aa，实验结构里只解出 39 个残基）
+- 离子：CL ×1
 
-注意:
-- 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×4
-- 以下链在实验结构里并未全部解出(Vicilin Jug r 2. 83%),比较时只对齐两者共有的残基
-- 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
+注意：
+- 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：EDO×4
+- 以下链在实验结构里并未全部解出（Vicilin Jug r 2. 83%），比较时只对齐两者共有的残基
+- 建议跑 3–5 个不同 seed，按 ranking_score / chain_pair_iptm 选最优模型
 
-文件:`job_files/ding_10_9Q1L.json` · `sequences/ding_10_9Q1L.fasta`
+文件：`job_files/ding_10_9Q1L.json` · `sequences/ding_10_9Q1L.fasta`
 
 ## 目录
 
@@ -1102,15 +1102,15 @@ targets.json       41 题的结构化数据
 job_files/         41 个可直接 Upload JSON 导入的作业文件
 sequences/         41 个 FASTA
 all_41_jobs.json   一次性导入全部 41 题
-pipeline/          筛选流程的全部脚本(可复现)
-evidence/          筛选依据与出处:同源筛查、界面实测、装配拷贝数等原始结果,
-                   以及逐题的论文引用(publications.json)
+pipeline/          筛选流程的全部脚本（可复现）
+evidence/          筛选依据与出处：同源筛查、界面实测、装配拷贝数等原始结果，
+                   以及逐题的论文引用（publications.json）
 ```
 
 ## 数据来源
 
-结构数据来自 [RCSB PDB](https://www.rcsb.org)(CC0)。
+结构数据来自 [RCSB PDB](https://www.rcsb.org)（CC0）。
 AlphaFold Server 的限制依据其 [FAQ](https://alphafoldserver.com/faq) 与
 [Release Updates](https://alphafoldserver.com/release-updates);
 非内置 CCD 配体输入自 2026-08-19 起开放。
-模型见 Abramson et al., *Nature* 630:493–500 (2024)。
+模型见 Abramson et al., *Nature* 630:493–500 （2024）。
