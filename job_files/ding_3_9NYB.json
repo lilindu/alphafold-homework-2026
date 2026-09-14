@@ -1,0 +1,40 @@
+[
+ {
+  "name": "ding_3_9NYB",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "rnaSequence": {
+     "sequence": "UUCAUAAAGGUCAAAAGCC",
+     "count": 1
+    }
+   },
+   {
+    "rnaSequence": {
+     "sequence": "GGCUUUUGACCUUUAUGAA",
+     "count": 1
+    }
+   },
+   {
+    "proteinChain": {
+     "sequence": "MELRHTPARDLDKFIEDHLLPNTCFRTQVKEAIDIVCRFLKERCFQGTADPVRVSKVVKGGSSGKGTTLRGRSDADLVVFLTKLTSFEDQLRRRGEFIQEIRRQLEACQREQKFKVTFEVQSPRRENPRALSFVLSSPQLQQEVEFDVLPAFDALGQWTPGYKPNPEIYVQLIKECKSRGKEGEFSTCFTELQRDFLRNRPTKLKSLIRLVKHWYQTCKKTHGNKLPPQYALELLTVYAWEQGSRKTDFSTAQGFQTVLELVLKHQKLCIFWEAYYDFTNPVVGRCMLQQLKKPRPVILDPADPTGNVGGGDTHSWQRLAQEARVWLGYPCCKNLDGSLVGAWTMLQKI",
+     "count": 1
+    }
+   },
+   {
+    "ligand": {
+     "ligand": "APC",
+     "count": 1
+    }
+   },
+   {
+    "ion": {
+     "ion": "MN",
+     "count": 3
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]

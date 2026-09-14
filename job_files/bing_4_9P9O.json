@@ -1,0 +1,28 @@
+[
+ {
+  "name": "bing_4_9P9O",
+  "modelSeeds": [],
+  "sequences": [
+   {
+    "proteinChain": {
+     "sequence": "MTLKVKGEGLGAQVTGVDPKNLDDITTDEIRDIVYTNKLVVLKDVHPSPREFIKLGRIIGQIVPYYEPMYHHEDHPEIFVSSTEEGQGVPKTGAFWHIDYMFMPEPFAFSMVLPLAVPGHDRGTYFIDLARVWQSLPAAKRDPARGTVSTHDPRRHIKIRPSDVYRPIGEVWDEINRTTPPIKWPTVIRHPKTGQEILYICATGTTKIEDKDGNPVDPEVLQELMAATGQLDPEYQSPFIHTQHYQVGDIILWDNRVLMHRAKHGSAAGTLTTYRLTMLDGLKTPGYAA",
+     "count": 2
+    }
+   },
+   {
+    "ligand": {
+     "ligand": "VY9",
+     "count": 2
+    }
+   },
+   {
+    "ion": {
+     "ion": "FE",
+     "count": 2
+    }
+   }
+  ],
+  "dialect": "alphafoldserver",
+  "version": 1
+ }
+]
