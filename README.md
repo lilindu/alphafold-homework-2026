@@ -1120,7 +1120,8 @@ job_files/         41 个可直接 Upload JSON 导入的作业文件
 sequences/         41 个 FASTA
 all_41_jobs.json   一次性导入全部 41 题
 pipeline/          筛选流程的全部脚本(可复现)
-evidence/          筛选依据:同源筛查、界面实测、装配拷贝数等原始结果
+evidence/          筛选依据与出处:同源筛查、界面实测、装配拷贝数等原始结果,
+                   以及逐题的论文引用(publications.json)
 ```
 
 ## 数据来源
