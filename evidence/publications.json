@@ -1,0 +1,330 @@
+{
+ "10ZO": {
+  "doi": "10.1021/acsinfecdis.5c00920",
+  "journal": "Acs Infect Dis.",
+  "pmid": 41760080,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "11KP": {
+  "doi": "10.1126/sciadv.aeg8967",
+  "journal": "Sci Adv",
+  "pmid": "42715327",
+  "source": "verified",
+  "type": "journal",
+  "year": 2026
+ },
+ "21ZG": {
+  "doi": "10.1038/s41467-026-72127-y",
+  "journal": "Nat Commun",
+  "pmid": 42000734,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "24UX": {
+  "doi": "10.1016/j.ijbiomac.2026.153837",
+  "journal": "Int J Biol Macromol",
+  "pmid": "42526570",
+  "source": "matched",
+  "type": "journal",
+  "year": 2026
+ },
+ "30TL": {
+  "doi": "10.1021/acs.biochem.6c00427",
+  "journal": "Biochemistry",
+  "pmid": "42689535",
+  "source": "matched",
+  "type": "journal",
+  "year": 2026
+ },
+ "36BT": {
+  "doi": "10.1021/acsinfecdis.6c00431",
+  "journal": "Acs Infect Dis.",
+  "pmid": null,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9IA3": {
+  "doi": "10.1016/j.celrep.2025.116705",
+  "journal": "Cell Rep",
+  "pmid": 41405995,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9M0S": {
+  "doi": "10.1038/s41421-025-00793-1",
+  "journal": "Cell Discov",
+  "pmid": 40204708,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9M2H": {
+  "doi": "10.1016/j.cell.2025.04.028",
+  "journal": "Cell",
+  "pmid": 40378849,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9MAU": {
+  "doi": "10.1016/j.celrep.2025.115975",
+  "journal": "Cell Rep",
+  "pmid": "40638392",
+  "source": "matched",
+  "type": "journal",
+  "year": 2025
+ },
+ "9N93": {
+  "doi": "10.1016/j.neuron.2025.05.009",
+  "journal": "Neuron",
+  "pmid": 40480214,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9NCY": {
+  "doi": "10.64898/2026.06.06.730512",
+  "journal": "bioRxiv",
+  "pmid": null,
+  "source": "verified",
+  "type": "preprint",
+  "year": 2026
+ },
+ "9NJY": {
+  "doi": "10.1093/infdis/jiaf357",
+  "journal": "J.Infect.Dis.",
+  "pmid": 40632825,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9NKZ": {
+  "doi": "10.1002/pro.70738",
+  "journal": "Protein Sci.",
+  "pmid": 42560026,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9NN9": {
+  "doi": "10.1016/j.jbc.2025.110564",
+  "journal": "J.Biol.Chem.",
+  "pmid": 40774387,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9NYB": {
+  "doi": "10.1021/acsomega.5c13236",
+  "journal": "Acs Omega",
+  "pmid": 42077911,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9NYI": {
+  "doi": "10.1038/s41586-025-09058-z",
+  "journal": "Nature",
+  "pmid": 40306316,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9O0I": {
+  "doi": "10.1016/j.cell.2025.07.002",
+  "journal": "Cell",
+  "pmid": 40730155,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9P4C": {
+  "doi": "10.1093/abt/tbaf022",
+  "journal": "Antib Ther",
+  "pmid": 41550974,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9P9O": {
+  "doi": "10.1038/s41467-026-68588-w",
+  "journal": "Nat Commun",
+  "pmid": 41587996,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9PS4": {
+  "doi": "10.1038/s41586-025-09491-0",
+  "journal": "Nature",
+  "pmid": 40931067,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9PV1": {
+  "doi": "10.1038/s41586-026-10716-z",
+  "journal": "Nature",
+  "pmid": 42386972,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9PWN": {
+  "doi": "10.1080/19420862.2025.2546554",
+  "journal": "Mabs",
+  "pmid": 40803893,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9Q1L": {
+  "doi": "10.1111/all.70201",
+  "journal": "Allergy",
+  "pmid": 41476027,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9QNG": {
+  "doi": "10.1039/d5dd00132c",
+  "journal": "Digit Discov",
+  "pmid": 40837623,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9QS9": {
+  "doi": "10.1038/s41467-025-67607-6",
+  "journal": "Nat Commun",
+  "pmid": 41398410,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9S1S": {
+  "doi": "10.1016/j.jbc.2025.110982",
+  "journal": "J.Biol.Chem.",
+  "pmid": 41308992,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9SCE": {
+  "doi": "10.64898/2025.12.17.694969",
+  "journal": "bioRxiv",
+  "pmid": null,
+  "source": "verified",
+  "type": "preprint",
+  "year": 2025
+ },
+ "9SDC": {
+  "doi": "10.1093/nar/gkag571",
+  "journal": "Nucleic Acids Res.",
+  "pmid": 42328793,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9SIT": {
+  "doi": "10.1093/nar/gkag053",
+  "journal": "Nucleic Acids Res.",
+  "pmid": 41603736,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9T9W": {
+  "doi": "10.1021/acschembio.5c01007",
+  "journal": "Acs Chem.Biol.",
+  "pmid": 41891920,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9U19": {
+  "doi": "10.64898/2026.02.27.708450",
+  "journal": "Biorxiv",
+  "pmid": null,
+  "source": "rcsb",
+  "type": "preprint",
+  "year": 2026
+ },
+ "9UET": {
+  "doi": "10.1016/j.bbrc.2025.152082",
+  "journal": "Biochem.Biophys.Res.Commun.",
+  "pmid": 40435706,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9ULL": {
+  "doi": "10.3390/ijms26125500",
+  "journal": "Int J Mol Sci",
+  "pmid": "40564964",
+  "source": "verified",
+  "type": "journal",
+  "year": 2025
+ },
+ "9ULM": {
+  "doi": "10.3390/ijms26125500",
+  "journal": "Int J Mol Sci",
+  "pmid": "40564964",
+  "source": "verified",
+  "type": "journal",
+  "year": 2025
+ },
+ "9V8I": {
+  "doi": "10.1093/nar/gkaf1321",
+  "journal": "Nucleic Acids Res.",
+  "pmid": 41385326,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9VDY": {
+  "doi": "10.1016/j.celrep.2026.116936",
+  "journal": "Cell Rep",
+  "pmid": 41671090,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9VEB": {
+  "doi": "10.1038/s42003-025-08676-7",
+  "journal": "Commun Biol",
+  "pmid": "40998974",
+  "source": "verified",
+  "type": "journal",
+  "year": 2025
+ },
+ "9VHE": {
+  "doi": "10.1093/nar/gkaf1173",
+  "journal": "Nucleic Acids Res.",
+  "pmid": 41277685,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2025
+ },
+ "9Y1J": {
+  "doi": "10.1021/acs.biochem.5c00628",
+  "journal": "Biochemistry",
+  "pmid": 41524291,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ },
+ "9ZRO": {
+  "doi": "10.1016/j.immuni.2026.05.013",
+  "journal": "Immunity",
+  "pmid": 42330958,
+  "source": "rcsb",
+  "type": "journal",
+  "year": 2026
+ }
+}

@@ -6,6 +6,14 @@
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
   "id": "9V8I",
   "title": "Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus subtilis 6633.",
+  "publication": {
+   "doi": "10.1093/nar/gkaf1321",
+   "journal": "Nucleic Acids Res.",
+   "pmid": 41385326,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.7,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-05-29",
@@ -97,6 +105,14 @@
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
   "id": "36BT",
   "title": "HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated ISL-triphosphate",
+  "publication": {
+   "doi": "10.1021/acsinfecdis.6c00431",
+   "journal": "Acs Infect Dis.",
+   "pmid": null,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.85,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2026-05-29",
@@ -237,6 +253,14 @@
   "note": "RNA 构象自由度大,是公认较难的一类",
   "id": "9QS9",
   "title": "Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Crn4",
+  "publication": {
+   "doi": "10.1038/s41467-025-67607-6",
+   "journal": "Nat Commun",
+   "pmid": 41398410,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.441,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-04-04",
@@ -316,6 +340,14 @@
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "24UX",
   "title": "Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH",
+  "publication": {
+   "doi": "10.1016/j.ijbiomac.2026.153837",
+   "journal": "Int J Biol Macromol",
+   "pmid": "42526570",
+   "source": "matched",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.2,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2026-03-22",
@@ -393,6 +425,14 @@
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
   "id": "30TL",
   "title": "14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation)",
+  "publication": {
+   "doi": "10.1021/acs.biochem.6c00427",
+   "journal": "Biochemistry",
+   "pmid": "42689535",
+   "source": "matched",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.2,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2026-05-13",
@@ -486,6 +526,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9O0I",
   "title": "Cryo-EM structure of Local KwaA-KwaB complex",
+  "publication": {
+   "doi": "10.1016/j.cell.2025.07.002",
+   "journal": "Cell",
+   "pmid": 40730155,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 3.86,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-04-02",
@@ -573,6 +621,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9VEB",
   "title": "Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C",
+  "publication": {
+   "doi": "10.1038/s42003-025-08676-7",
+   "journal": "Commun Biol",
+   "pmid": "40998974",
+   "source": "verified",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 3.56,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-06-09",
@@ -634,6 +690,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "10ZO",
   "title": "Crystal structure of Mengla virus nucleoprotein bound by a cross-reactive anti-Marburg virus nanobody",
+  "publication": {
+   "doi": "10.1021/acsinfecdis.5c00920",
+   "journal": "Acs Infect Dis.",
+   "pmid": 41760080,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.65,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2026-02-12",
@@ -709,6 +773,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9NCY",
   "title": "Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum circumsporozoite protein",
+  "publication": {
+   "doi": "10.64898/2026.06.06.730512",
+   "journal": "bioRxiv",
+   "pmid": null,
+   "source": "verified",
+   "type": "preprint",
+   "year": 2026
+  },
   "resolution": 1.63,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-02-17",
@@ -819,6 +891,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9ULL",
   "title": "Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)",
+  "publication": {
+   "doi": "10.3390/ijms26125500",
+   "journal": "Int J Mol Sci",
+   "pmid": "40564964",
+   "source": "verified",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.63,
   "method": "X-RAY DIFFRACTION/SOLUTION SCATTERING",
   "deposit": "2025-04-20",
@@ -920,6 +1000,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9ULM",
   "title": "Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)",
+  "publication": {
+   "doi": "10.3390/ijms26125500",
+   "journal": "Int J Mol Sci",
+   "pmid": "40564964",
+   "source": "verified",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 2.01,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-04-20",
@@ -1051,6 +1139,14 @@
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
   "id": "11KP",
   "title": "Crystal structure of the Caenorhabditis elegans telomeric POT-1-TEBP-1 complex interface",
+  "publication": {
+   "doi": "10.1126/sciadv.aeg8967",
+   "journal": "Sci Adv",
+   "pmid": "42715327",
+   "source": "verified",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.48,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2026-03-02",
@@ -1138,6 +1234,14 @@
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
   "id": "9NYI",
   "title": "Structure of HalA in complex with oligodeoxyadenylate",
+  "publication": {
+   "doi": "10.1038/s41586-025-09058-z",
+   "journal": "Nature",
+   "pmid": 40306316,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.98,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-03-27",
@@ -1210,6 +1314,14 @@
   "note": "RNA 构象自由度大,是公认较难的一类",
   "id": "9SIT",
   "title": "Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position",
+  "publication": {
+   "doi": "10.1093/nar/gkag053",
+   "journal": "Nucleic Acids Res.",
+   "pmid": 41603736,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.75,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-08-29",
@@ -1416,6 +1528,14 @@
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "9PV1",
   "title": "Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketoglutarate, chloride",
+  "publication": {
+   "doi": "10.1038/s41586-026-10716-z",
+   "journal": "Nature",
+   "pmid": 42386972,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.2,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-07-31",
@@ -1512,6 +1632,14 @@
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
   "id": "9S1S",
   "title": "Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosphopeptide",
+  "publication": {
+   "doi": "10.1016/j.jbc.2025.110982",
+   "journal": "J.Biol.Chem.",
+   "pmid": 41308992,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.62,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-07-21",
@@ -1611,6 +1739,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9MAU",
   "title": "Cryo-EM structure of human OAT1 in the apo state",
+  "publication": {
+   "doi": "10.1016/j.celrep.2025.115975",
+   "journal": "Cell Rep",
+   "pmid": "40638392",
+   "source": "matched",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 2.87,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-03-14",
@@ -1675,6 +1811,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9PS4",
   "title": "Cryo-EM structure of NCLX without calcium (class 1)",
+  "publication": {
+   "doi": "10.1038/s41586-025-09491-0",
+   "journal": "Nature",
+   "pmid": 40931067,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 3.29,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-07-24",
@@ -1739,6 +1883,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9NJY",
   "title": "Terminal two domains of ClfA002 with bound Fab of AZD7745",
+  "publication": {
+   "doi": "10.1093/infdis/jiaf357",
+   "journal": "J.Infect.Dis.",
+   "pmid": 40632825,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.58,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-02-28",
@@ -1836,6 +1988,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9NN9",
   "title": "ISG15 complexed with nanobody",
+  "publication": {
+   "doi": "10.1016/j.jbc.2025.110564",
+   "journal": "J.Biol.Chem.",
+   "pmid": 40774387,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 2.59,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-03-05",
@@ -1924,6 +2084,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9P4C",
   "title": "Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex",
+  "publication": {
+   "doi": "10.1093/abt/tbaf022",
+   "journal": "Antib Ther",
+   "pmid": 41550974,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.52,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-06-16",
@@ -2011,6 +2179,14 @@
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
   "id": "9SCE",
   "title": "Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1",
+  "publication": {
+   "doi": "10.64898/2025.12.17.694969",
+   "journal": "bioRxiv",
+   "pmid": null,
+   "source": "verified",
+   "type": "preprint",
+   "year": 2025
+  },
   "resolution": 1.61,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-08-10",
@@ -2093,6 +2269,14 @@
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
   "id": "9U19",
   "title": "Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex containing a CACG motif variant",
+  "publication": {
+   "doi": "10.64898/2026.02.27.708450",
+   "journal": "Biorxiv",
+   "pmid": null,
+   "source": "rcsb",
+   "type": "preprint",
+   "year": 2026
+  },
   "resolution": 1.18,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2026-01-29",
@@ -2180,6 +2364,14 @@
   "note": "RNA 构象自由度大,是公认较难的一类",
   "id": "9VHE",
   "title": "cryoEM structure of retron-Eco7 complex",
+  "publication": {
+   "doi": "10.1093/nar/gkaf1173",
+   "journal": "Nucleic Acids Res.",
+   "pmid": 41277685,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 2.5,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-06-16",
@@ -2370,6 +2562,14 @@
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "9P9O",
   "title": "Crystal structure of Rv0097 with Fe and CADA bound",
+  "publication": {
+   "doi": "10.1038/s41467-026-68588-w",
+   "journal": "Nat Commun",
+   "pmid": 41587996,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.12,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-06-24",
@@ -2443,6 +2643,14 @@
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
   "id": "9T9W",
   "title": "Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron peptide",
+  "publication": {
+   "doi": "10.1021/acschembio.5c01007",
+   "journal": "Acs Chem.Biol.",
+   "pmid": 41891920,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.162,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-11-17",
@@ -2562,6 +2770,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9M0S",
   "title": "Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation",
+  "publication": {
+   "doi": "10.1038/s41421-025-00793-1",
+   "journal": "Cell Discov",
+   "pmid": 40204708,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 3.5,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-02-25",
@@ -2638,6 +2854,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9UET",
   "title": "Cryo-EM structure of human choline-phosphotransferase 1",
+  "publication": {
+   "doi": "10.1016/j.bbrc.2025.152082",
+   "journal": "Biochem.Biophys.Res.Commun.",
+   "pmid": 40435706,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 3.68,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-04-09",
@@ -2708,6 +2932,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9NKZ",
   "title": "Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoite protein",
+  "publication": {
+   "doi": "10.1002/pro.70738",
+   "journal": "Protein Sci.",
+   "pmid": 42560026,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.48,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-03-02",
@@ -2804,6 +3036,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9VDY",
   "title": "hA5-6 Fab bound to SFTSV glycoprotein Gn",
+  "publication": {
+   "doi": "10.1016/j.celrep.2026.116936",
+   "journal": "Cell Rep",
+   "pmid": 41671090,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 2.28,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-06-09",
@@ -2909,6 +3149,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9ZRO",
   "title": "Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII",
+  "publication": {
+   "doi": "10.1016/j.immuni.2026.05.013",
+   "journal": "Immunity",
+   "pmid": 42330958,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.4,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-12-20",
@@ -3006,6 +3254,14 @@
   "note": "两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对",
   "id": "9SDC",
   "title": "RelSI toxin-antitoxin complex",
+  "publication": {
+   "doi": "10.1093/nar/gkag571",
+   "journal": "Nucleic Acids Res.",
+   "pmid": 42328793,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.7,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-08-13",
@@ -3092,6 +3348,14 @@
   "note": "只含标准 A/C/G/T;双链须分别输入两条互补链",
   "id": "9Y1J",
   "title": "S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp",
+  "publication": {
+   "doi": "10.1021/acs.biochem.5c00628",
+   "journal": "Biochemistry",
+   "pmid": 41524291,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.55,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-08-29",
@@ -3213,6 +3477,14 @@
   "note": "RNA 构象自由度大,是公认较难的一类",
   "id": "9NYB",
   "title": "Crystal structure of the pre-reactive state of porcine OAS1 in complex with dsRNA, two ApCpp substrate analogs, three catalytic Mn2+ ions.",
+  "publication": {
+   "doi": "10.1021/acsomega.5c13236",
+   "journal": "Acs Omega",
+   "pmid": 42077911,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.6,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-03-27",
@@ -3318,6 +3590,14 @@
   "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "21ZG",
   "title": "Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus complexed with ferric siderophore mimic, Fe(3,4-DHB)2",
+  "publication": {
+   "doi": "10.1038/s41467-026-72127-y",
+   "journal": "Nat Commun",
+   "pmid": 42000734,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2026
+  },
   "resolution": 1.4,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2026-01-04",
@@ -3400,6 +3680,14 @@
   "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低",
   "id": "9QNG",
   "title": "FOXO3 pS413 phosphopeptide binding to 14-3-3sigma",
+  "publication": {
+   "doi": "10.1039/d5dd00132c",
+   "journal": "Digit Discov",
+   "pmid": 40837623,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.35,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-03-25",
@@ -3495,6 +3783,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9M2H",
   "title": "Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound state",
+  "publication": {
+   "doi": "10.1016/j.cell.2025.04.028",
+   "journal": "Cell",
+   "pmid": 40378849,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 3.4,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-02-27",
@@ -3563,6 +3859,14 @@
   "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
   "id": "9N93",
   "title": "Human TMEM63A mutant V53M lipid-open state",
+  "publication": {
+   "doi": "10.1016/j.neuron.2025.05.009",
+   "journal": "Neuron",
+   "pmid": 40480214,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 2.95,
   "method": "ELECTRON MICROSCOPY",
   "deposit": "2025-02-10",
@@ -3631,6 +3935,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9IA3",
   "title": "Bc8.108 Fab bound to preS2 peptide",
+  "publication": {
+   "doi": "10.1016/j.celrep.2025.116705",
+   "journal": "Cell Rep",
+   "pmid": 41405995,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.11,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-02-07",
@@ -3722,6 +4034,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9PWN",
   "title": "Crystal structure of Fabs 7411 in complex with TREM2 peptide",
+  "publication": {
+   "doi": "10.1080/19420862.2025.2546554",
+   "journal": "Mabs",
+   "pmid": 40803893,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.8,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-08-04",
@@ -3831,6 +4151,14 @@
   "note": "抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序",
   "id": "9Q1L",
   "title": "Crystal structure of the walnut allergen Jug r 2 bound to the human-derived Fab 6D12",
+  "publication": {
+   "doi": "10.1111/all.70201",
+   "journal": "Allergy",
+   "pmid": 41476027,
+   "source": "rcsb",
+   "type": "journal",
+   "year": 2025
+  },
   "resolution": 1.56,
   "method": "X-RAY DIFFRACTION",
   "deposit": "2025-08-14",

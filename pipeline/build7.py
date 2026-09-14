@@ -59,6 +59,10 @@ raw = json.load(open("fin7_raw.json"))
 alloc = json.load(open("alloc7.json"))
 screen = json.load(open("screen.json"))
 iface = json.load(open("iface.json"))
+# 每题对应论文,来自 evidence/publications.json(随 repo 版本化,不是临时缓存)。
+# 缺引用直接报错:作业的一个硬要求是「41 个结构全部已有论文或预印本」,
+# 让它在生成阶段就卡住,而不是等到 handout 里出现空行才发现。
+PUB = json.load(open(os.path.join(REPO, "evidence", "publications.json")))
 
 # ---- re-apply the allocation fix (13th antibody -> 班4) ----
 by_cat = {}
@@ -235,6 +239,9 @@ for b in BAN:
             ptms.append({"entity": p["entity"], "code": p["code"], "pos": pos,
                          "pos_construct": p["pos"], "parent": aa})
 
+        if eid not in PUB:
+            raise SystemExit(f"evidence/publications.json 里没有 {eid} 的引用")
+
         ligs, ions, dropped = [], [], []
         for l in r["ligands"]:
             (dropped if l["code"] in EXTRA_IGNORE else ligs).append(l)
@@ -259,6 +266,7 @@ for b in BAN:
         records.append({
             "class": RENAME[b], "category": it["category"], "label": it["label"],
             "note": it["note"], "id": eid, "title": r["title"],
+            "publication": PUB[eid],
             "resolution": r["resolution"], "method": r["method"],
             "deposit": r["deposit"], "release": r["release"],
             "chains": chains, "ligands": ligs, "ions": ions,

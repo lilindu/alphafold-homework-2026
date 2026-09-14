@@ -62,6 +62,11 @@ A("")
 A("每位学生一个 PDB 结构:在 [AlphaFold Server](https://alphafoldserver.com) 上做预测,")
 A("再与实验解出的结构比较。甲班 11 题,乙班/丙班/丁班 各 10 题。")
 A("")
+_nj = sum(1 for r in recs if (r.get("publication") or {}).get("type") == "journal")
+_np = len(recs) - _nj
+A(f"**{len(recs)} 个结构全部已有正式论文或预印本**({_nj} 篇正式论文 + {_np} 篇预印本),"
+  f"每题都给出了文献引用。")
+A("")
 A("## 七类构成")
 A("")
 A("| 类别 | 每班 | 甲班 | 乙班 | 丙班 | 丁班 |")
@@ -198,6 +203,12 @@ for b in BAN:
         A("")
         A(r["title"])
         A("")
+        pub = r.get("publication") or {}
+        if pub:
+            kind = "预印本" if pub.get("type") == "preprint" else "论文"
+            link = (f"https://doi.org/{pub['doi']}" if pub.get("doi")
+                    else f"https://www.rcsb.org/structure/{r['id']}")
+            A(f"- {kind}:[*{pub['journal']}* {pub['year']}]({link})")
         A(f"- {r['method']} / {res} · deposit {r['deposit']} · release {r['release']} "
           f"· 估算 token {r['tokens']}")
         A(f"- 这一类考察什么:{r['note']}")

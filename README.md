@@ -3,6 +3,8 @@
 每位学生一个 PDB 结构:在 [AlphaFold Server](https://alphafoldserver.com) 上做预测,
 再与实验解出的结构比较。甲班 11 题,乙班/丙班/丁班 各 10 题。
 
+**41 个结构全部已有正式论文或预印本**(38 篇正式论文 + 3 篇预印本),每题都给出了文献引用。
+
 ## 七类构成
 
 | 类别 | 每班 | 甲班 | 乙班 | 丙班 | 丁班 |
@@ -177,6 +179,7 @@ deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋�
 
 Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus subtilis 6633.
 
+- 论文:[*Nucleic Acids Res.* 2025](https://doi.org/10.1093/nar/gkaf1321)
 - X-RAY DIFFRACTION / 1.70 Å · deposit 2025-05-29 · release 2025-12-24 · 估算 token 644
 - 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -198,6 +201,7 @@ Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus sub
 
 HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated ISL-triphosphate
 
+- 论文:[*Acs Infect Dis.* 2026](https://doi.org/10.1021/acsinfecdis.6c00431)
 - ELECTRON MICROSCOPY / 1.85 Å · deposit 2026-05-29 · release 2026-09-02 · 估算 token 2942
 - 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -221,6 +225,7 @@ HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated IS
 
 Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Crn4
 
+- 论文:[*Nat Commun* 2025](https://doi.org/10.1038/s41467-025-67607-6)
 - X-RAY DIFFRACTION / 1.44 Å · deposit 2025-04-04 · release 2025-12-03 · 估算 token 336
 - 这一类考察什么:RNA 构象自由度大,是公认较难的一类
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -240,6 +245,7 @@ Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Cr
 
 Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH
 
+- 论文:[*Int J Biol Macromol* 2026](https://doi.org/10.1016/j.ijbiomac.2026.153837)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-03-22 · release 2026-08-12 · 估算 token 668
 - 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -262,6 +268,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation)
 
+- 论文:[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.6c00427)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-05-13 · release 2026-08-26 · 估算 token 509
 - 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -289,6 +296,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 Cryo-EM structure of Local KwaA-KwaB complex
 
+- 论文:[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.07.002)
 - ELECTRON MICROSCOPY / 3.86 Å · deposit 2025-04-02 · release 2025-08-06 · 估算 token 825
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -310,6 +318,7 @@ Cryo-EM structure of Local KwaA-KwaB complex
 
 Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C
 
+- 论文:[*Commun Biol* 2025](https://doi.org/10.1038/s42003-025-08676-7)
 - ELECTRON MICROSCOPY / 3.56 Å · deposit 2025-06-09 · release 2025-08-06 · 估算 token 1086
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -328,6 +337,7 @@ Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C
 
 Crystal structure of Mengla virus nucleoprotein bound by a cross-reactive anti-Marburg virus nanobody
 
+- 论文:[*Acs Infect Dis.* 2026](https://doi.org/10.1021/acsinfecdis.5c00920)
 - X-RAY DIFFRACTION / 1.65 Å · deposit 2026-02-12 · release 2026-03-25 · 估算 token 815
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -348,6 +358,7 @@ Crystal structure of Mengla virus nucleoprotein bound by a cross-reactive anti-M
 
 Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum circumsporozoite protein
 
+- 预印本:[*bioRxiv* 2026](https://doi.org/10.64898/2026.06.06.730512)
 - X-RAY DIFFRACTION / 1.63 Å · deposit 2025-02-17 · release 2026-03-11 · 估算 token 840
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -371,6 +382,7 @@ Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum cir
 
 Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)
 
+- 论文:[*Int J Mol Sci* 2025](https://doi.org/10.3390/ijms26125500)
 - X-RAY DIFFRACTION/SOLUTION SCATTERING / 1.63 Å · deposit 2025-04-20 · release 2026-04-22 · 估算 token 810
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -393,6 +405,7 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)
 
 Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)
 
+- 论文:[*Int J Mol Sci* 2025](https://doi.org/10.3390/ijms26125500)
 - X-RAY DIFFRACTION / 2.01 Å · deposit 2025-04-20 · release 2026-04-22 · 估算 token 940
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -419,6 +432,7 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)
 
 Crystal structure of the Caenorhabditis elegans telomeric POT-1-TEBP-1 complex interface
 
+- 论文:[*Sci Adv* 2026](https://doi.org/10.1126/sciadv.aeg8967)
 - X-RAY DIFFRACTION / 1.48 Å · deposit 2026-03-02 · release 2026-08-12 · 估算 token 1182
 - 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -437,6 +451,7 @@ Crystal structure of the Caenorhabditis elegans telomeric POT-1-TEBP-1 complex i
 
 Structure of HalA in complex with oligodeoxyadenylate
 
+- 论文:[*Nature* 2025](https://doi.org/10.1038/s41586-025-09058-z)
 - ELECTRON MICROSCOPY / 1.98 Å · deposit 2025-03-27 · release 2025-05-07 · 估算 token 1508
 - 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -455,6 +470,7 @@ Structure of HalA in complex with oligodeoxyadenylate
 
 Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position
 
+- 论文:[*Nucleic Acids Res.* 2026](https://doi.org/10.1093/nar/gkag053)
 - ELECTRON MICROSCOPY / 1.75 Å · deposit 2025-08-29 · release 2026-02-18 · 估算 token 2942
 - 这一类考察什么:RNA 构象自由度大,是公认较难的一类
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -481,6 +497,7 @@ Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position
 
 Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketoglutarate, chloride
 
+- 论文:[*Nature* 2026](https://doi.org/10.1038/s41586-026-10716-z)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2025-07-31 · release 2026-06-24 · 估算 token 674
 - 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -504,6 +521,7 @@ Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketogluta
 
 Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosphopeptide
 
+- 论文:[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110982)
 - X-RAY DIFFRACTION / 1.62 Å · deposit 2025-07-21 · release 2025-12-10 · 估算 token 1212
 - 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -529,6 +547,7 @@ Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosph
 
 Cryo-EM structure of human OAT1 in the apo state
 
+- 论文:[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.115975)
 - ELECTRON MICROSCOPY / 2.87 Å · deposit 2025-03-14 · release 2025-06-18 · 估算 token 563
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
@@ -548,6 +567,7 @@ Cryo-EM structure of human OAT1 in the apo state
 
 Cryo-EM structure of NCLX without calcium (class 1)
 
+- 论文:[*Nature* 2025](https://doi.org/10.1038/s41586-025-09491-0)
 - ELECTRON MICROSCOPY / 3.29 Å · deposit 2025-07-24 · release 2025-09-10 · 估算 token 1755
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -567,6 +587,7 @@ Cryo-EM structure of NCLX without calcium (class 1)
 
 Terminal two domains of ClfA002 with bound Fab of AZD7745
 
+- 论文:[*J.Infect.Dis.* 2025](https://doi.org/10.1093/infdis/jiaf357)
 - X-RAY DIFFRACTION / 1.58 Å · deposit 2025-02-28 · release 2025-07-30 · 估算 token 1428
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -589,6 +610,7 @@ Terminal two domains of ClfA002 with bound Fab of AZD7745
 
 ISG15 complexed with nanobody
 
+- 论文:[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110564)
 - X-RAY DIFFRACTION / 2.59 Å · deposit 2025-03-05 · release 2025-10-01 · 估算 token 314
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -610,6 +632,7 @@ ISG15 complexed with nanobody
 
 Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex
 
+- 论文:[*Antib Ther* 2026](https://doi.org/10.1093/abt/tbaf022)
 - X-RAY DIFFRACTION / 1.52 Å · deposit 2025-06-16 · release 2025-11-12 · 估算 token 1049
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -634,6 +657,7 @@ Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex
 
 Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1
 
+- 预印本:[*bioRxiv* 2025](https://doi.org/10.64898/2025.12.17.694969)
 - X-RAY DIFFRACTION / 1.61 Å · deposit 2025-08-10 · release 2026-08-05 · 估算 token 1051
 - 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -652,6 +676,7 @@ Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1
 
 Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex containing a CACG motif variant
 
+- 预印本:[*Biorxiv* 2026](https://doi.org/10.64898/2026.02.27.708450)
 - X-RAY DIFFRACTION / 1.18 Å · deposit 2026-01-29 · release 2026-03-11 · 估算 token 396
 - 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -672,6 +697,7 @@ Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex c
 
 cryoEM structure of retron-Eco7 complex
 
+- 论文:[*Nucleic Acids Res.* 2025](https://doi.org/10.1093/nar/gkaf1173)
 - ELECTRON MICROSCOPY / 2.50 Å · deposit 2025-06-16 · release 2025-12-31 · 估算 token 2960
 - 这一类考察什么:RNA 构象自由度大,是公认较难的一类
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -697,6 +723,7 @@ cryoEM structure of retron-Eco7 complex
 
 Crystal structure of Rv0097 with Fe and CADA bound
 
+- 论文:[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-68588-w)
 - X-RAY DIFFRACTION / 1.12 Å · deposit 2025-06-24 · release 2026-03-11 · 估算 token 614
 - 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -717,6 +744,7 @@ Crystal structure of Rv0097 with Fe and CADA bound
 
 Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron peptide
 
+- 论文:[*Acs Chem.Biol.* 2026](https://doi.org/10.1021/acschembio.5c01007)
 - X-RAY DIFFRACTION / 1.16 Å · deposit 2025-11-17 · release 2026-04-08 · 估算 token 922
 - 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -743,6 +771,7 @@ Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron 
 
 Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation
 
+- 论文:[*Cell Discov* 2025](https://doi.org/10.1038/s41421-025-00793-1)
 - ELECTRON MICROSCOPY / 3.50 Å · deposit 2025-02-25 · release 2025-04-23 · 估算 token 600
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
@@ -764,6 +793,7 @@ Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation
 
 Cryo-EM structure of human choline-phosphotransferase 1
 
+- 论文:[*Biochem.Biophys.Res.Commun.* 2025](https://doi.org/10.1016/j.bbrc.2025.152082)
 - ELECTRON MICROSCOPY / 3.68 Å · deposit 2025-04-09 · release 2025-06-18 · 估算 token 814
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -785,6 +815,7 @@ Cryo-EM structure of human choline-phosphotransferase 1
 
 Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoite protein
 
+- 论文:[*Protein Sci.* 2026](https://doi.org/10.1002/pro.70738)
 - X-RAY DIFFRACTION / 1.48 Å · deposit 2025-03-02 · release 2026-03-04 · 估算 token 844
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -807,6 +838,7 @@ Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoi
 
 hA5-6 Fab bound to SFTSV glycoprotein Gn
 
+- 论文:[*Cell Rep* 2026](https://doi.org/10.1016/j.celrep.2026.116936)
 - X-RAY DIFFRACTION / 2.28 Å · deposit 2025-06-09 · release 2026-01-07 · 估算 token 1523
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -829,6 +861,7 @@ hA5-6 Fab bound to SFTSV glycoprotein Gn
 
 Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII
 
+- 论文:[*Immunity* 2026](https://doi.org/10.1016/j.immuni.2026.05.013)
 - X-RAY DIFFRACTION / 1.40 Å · deposit 2025-12-20 · release 2026-07-29 · 估算 token 3871
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -852,6 +885,7 @@ Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII
 
 RelSI toxin-antitoxin complex
 
+- 论文:[*Nucleic Acids Res.* 2026](https://doi.org/10.1093/nar/gkag571)
 - X-RAY DIFFRACTION / 1.70 Å · deposit 2025-08-13 · release 2026-07-22 · 估算 token 644
 - 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -873,6 +907,7 @@ RelSI toxin-antitoxin complex
 
 S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp
 
+- 论文:[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.5c00628)
 - X-RAY DIFFRACTION / 1.55 Å · deposit 2025-08-29 · release 2026-01-28 · 估算 token 398
 - 这一类考察什么:只含标准 A/C/G/T;双链须分别输入两条互补链
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -896,6 +931,7 @@ S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp
 
 Crystal structure of the pre-reactive state of porcine OAS1 in complex with dsRNA, two ApCpp substrate analogs, three catalytic Mn2+ ions.
 
+- 论文:[*Acs Omega* 2026](https://doi.org/10.1021/acsomega.5c13236)
 - X-RAY DIFFRACTION / 1.60 Å · deposit 2025-03-27 · release 2026-04-08 · 估算 token 421
 - 这一类考察什么:RNA 构象自由度大,是公认较难的一类
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -918,6 +954,7 @@ Crystal structure of the pre-reactive state of porcine OAS1 in complex with dsRN
 
 Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus complexed with ferric siderophore mimic, Fe(3,4-DHB)2
 
+- 论文:[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-72127-y)
 - X-RAY DIFFRACTION / 1.40 Å · deposit 2026-01-04 · release 2026-04-22 · 估算 token 350
 - 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
@@ -939,6 +976,7 @@ Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus c
 
 FOXO3 pS413 phosphopeptide binding to 14-3-3sigma
 
+- 论文:[*Digit Discov* 2025](https://doi.org/10.1039/d5dd00132c)
 - X-RAY DIFFRACTION / 1.35 Å · deposit 2025-03-25 · release 2025-09-03 · 估算 token 1845
 - 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免,已在同源体数量上取最低
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -964,6 +1002,7 @@ FOXO3 pS413 phosphopeptide binding to 14-3-3sigma
 
 Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound state
 
+- 论文:[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.04.028)
 - ELECTRON MICROSCOPY / 3.40 Å · deposit 2025-02-27 · release 2025-05-28 · 估算 token 497
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
@@ -985,6 +1024,7 @@ Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound 
 
 Human TMEM63A mutant V53M lipid-open state
 
+- 论文:[*Neuron* 2025](https://doi.org/10.1016/j.neuron.2025.05.009)
 - ELECTRON MICROSCOPY / 2.95 Å · deposit 2025-02-10 · release 2025-06-11 · 估算 token 807
 - 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
@@ -1004,6 +1044,7 @@ Human TMEM63A mutant V53M lipid-open state
 
 Bc8.108 Fab bound to preS2 peptide
 
+- 论文:[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.116705)
 - X-RAY DIFFRACTION / 1.11 Å · deposit 2025-02-07 · release 2025-11-26 · 估算 token 634
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -1026,6 +1067,7 @@ Bc8.108 Fab bound to preS2 peptide
 
 Crystal structure of Fabs 7411 in complex with TREM2 peptide
 
+- 论文:[*Mabs* 2025](https://doi.org/10.1080/19420862.2025.2546554)
 - X-RAY DIFFRACTION / 1.80 Å · deposit 2025-08-04 · release 2025-09-10 · 估算 token 663
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
@@ -1049,6 +1091,7 @@ Crystal structure of Fabs 7411 in complex with TREM2 peptide
 
 Crystal structure of the walnut allergen Jug r 2 bound to the human-derived Fab 6D12
 
+- 论文:[*Allergy* 2025](https://doi.org/10.1111/all.70201)
 - X-RAY DIFFRACTION / 1.56 Å · deposit 2025-08-14 · release 2026-01-21 · 估算 token 1038
 - 这一类考察什么:抗体 CDR 环构象 + 表位定位。抗体骨架本身高度保守(实测 ≥80%),无法规避,真正未知的是表位识别;建议跑多个 seed 按 ipTM 排序
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
