@@ -102,7 +102,8 @@ def inputs(rec):
             if c["source"] == "uniprot":
                 obs = c.get("observed")
                 sp = full_span(c["regions"])
-                loc = f":对应全长第 {sp[0]}–{sp[1]} 位" if sp else ""
+                loc = (f"构建体 {c['construct_len']} aa 对应其中第 {sp[0]}–{sp[1]} 位"
+                       if sp else f"构建体 {c['construct_len']} aa")
                 if obs is None:
                     cnt = ""
                 elif c["regions"]:
@@ -111,15 +112,15 @@ def inputs(rec):
                     # 用构建体长度当分母会让人以为母体区间里也少了那几个。
                     n_aln = sum(g[2] for g in c["regions"])
                     gaps = full_gaps(c["regions"], c.get("unobserved_ranges"))
-                    cnt = f",解出 {n_aln - sum(b - a + 1 for a, b in gaps)}/{n_aln}"
+                    cnt = f"解出 {n_aln - sum(b - a + 1 for a, b in gaps)}/{n_aln}"
                     if gaps:
                         shown = "、".join(f"{a}–{b}" if a != b else f"{a}" for a, b in gaps[:3])
                         cnt += (f";缺 {shown} 等 {len(gaps)} 段" if len(gaps) > 3
                                 else f";缺 {shown}")
                 else:
-                    cnt = f",解出 {obs}/{c['construct_len']}"
-                out.append(f"　└ 全长序列 {c['uniprot']}{loc}"
-                           f"(构建体 {c['construct_len']} aa{cnt})")
+                    cnt = f"解出 {obs}/{c['construct_len']}"
+                out.append(f"　└ UniProt 全长序列 {c['uniprot']}:{loc}"
+                           + (f"({cnt})" if cnt else ""))
             else:
                 out.append(f"　└ 直接输入 PDB 里提交的序列:{c['reason_construct']}")
             h = c.get("homology")

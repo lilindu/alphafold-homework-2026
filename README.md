@@ -169,10 +169,10 @@ Crystal structure for YxiD-YxxD toxin-immunity protein complex from Bacillus sub
 
 输入：
 - 蛋白质链：534 aa — YxiDCTD
-- 　└ 全长序列 E0TXK9：对应全长第 408–534 位（构建体 141 aa，解出 107/127；缺 408–427）
+- 　└ UniProt 全长序列 E0TXK9：构建体 141 aa 对应其中第 408–534 位（解出 107/127；缺 408–427）
 - 　└ 训练截止前同源体：无同源体
 - 蛋白质链：110 aa — YxxD
-- 　└ 全长序列 A0A9Q4H945：对应全长第 1–110 位（构建体 110 aa，解出 108/110；缺 1、110）
+- 　└ UniProt 全长序列 A0A9Q4H945：构建体 110 aa 对应其中第 1–110 位（解出 108/110；缺 1、110）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -192,9 +192,9 @@ HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated IS
 输入：
 - DNA 链：38 nt — DNAddG (38-MER)
 - 蛋白质链：1435 aa — p51 RT
-- 　└ 全长序列 P04585：对应全长第 588–1027 位（构建体 455 aa，解出 375/440；缺 588–593、672–681、798–820 等 5 段）
+- 　└ UniProt 全长序列 P04585：构建体 455 aa 对应其中第 588–1027 位（解出 375/440；缺 588–593、672–681、798–820 等 5 段）
 - 蛋白质链：1435 aa — Reverse transcriptase/ribonuclease H
-- 　└ 全长序列 P04585：对应全长第 588–1147 位（构建体 562 aa，解出 530/560；缺 588–590、722–726、1126–1147）
+- 　└ UniProt 全长序列 P04585：构建体 562 aa 对应其中第 588–1147 位（解出 530/560；缺 588–590、722–726、1126–1147）
 - 配体（非内置 CCD）：6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
 - 离子：MG ×1
 
@@ -216,7 +216,7 @@ Structure and mechanism of the broad spectrum CRISPR-associated ring nuclease Cr
 输入：
 - RNA 链：6 nt — Cyclic polyA
 - 蛋白质链 ×2：162 aa — Crn4 H15A
-- 　└ 全长序列 A0A1H0EUC2：对应全长第 14–157 位（构建体 149 aa，解出 124/144；缺 138–157）
+- 　└ UniProt 全长序列 A0A1H0EUC2：构建体 149 aa 对应其中第 14–157 位（解出 124/144；缺 138–157）
 - 离子：MG ×6
 
 注意：
@@ -235,7 +235,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 输入：
 - 蛋白质链 ×2：321 aa — Methyltransferase domain protein
-- 　└ 全长序列 A0AB33WVX4：对应全长第 22–321 位（构建体 311 aa，解出 292/300；缺 22、224–230）
+- 　└ UniProt 全长序列 A0AB33WVX4：构建体 311 aa 对应其中第 22–321 位（解出 292/300；缺 22、224–230）
 - 　└ 训练截止前同源体：无同源体
 - 配体（非内置 CCD）：SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
 
@@ -262,7 +262,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 - 　└ 直接输入 PDB 里提交的序列：合成肽 / 人工设计蛋白，无天然全长序列
 - 　└ 翻译后修饰：TPO 加在第 4 位（T，构建体编号 4）
 - 蛋白质链 ×2：248 aa — 14-3-3 protein sigma
-- 　└ 全长序列 P31947：对应全长第 1–231 位（构建体 236 aa，解出 231/231）
+- 　└ UniProt 全长序列 P31947：构建体 236 aa 对应其中第 1–231 位（解出 231/231）
 - 　└ 训练截止前同源体：≥95%（278 个）
 - 离子：CA ×1
 - 离子：CL ×1
@@ -286,10 +286,10 @@ Cryo-EM structure of Local KwaA-KwaB complex
 
 输入：
 - 蛋白质链 ×2：315 aa — Kiwa protein KwaB
-- 　└ 全长序列 P0DW46：对应全长第 1–315 位（构建体 321 aa，解出 315/315）
+- 　└ UniProt 全长序列 P0DW46：构建体 321 aa 对应其中第 1–315 位（解出 315/315）
 - 　└ 训练截止前同源体：无同源体
 - 蛋白质链：195 aa — Kiwa protein KwaA
-- 　└ 全长序列 P0DW45：对应全长第 1–195 位（构建体 203 aa，解出 195/195）
+- 　└ UniProt 全长序列 P0DW45：构建体 203 aa 对应其中第 1–195 位（解出 195/195）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -308,7 +308,7 @@ Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C
 
 输入：
 - 蛋白质链 ×2：543 aa — Aspartate/alanine antiporter
-- 　└ 全长序列 Q8L3K8：对应全长第 1–543 位（构建体 549 aa，解出 543/543）
+- 　└ UniProt 全长序列 Q8L3K8：构建体 549 aa 对应其中第 1–543 位（解出 543/543）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -327,7 +327,7 @@ Crystal structure of Mengla virus nucleoprotein bound by a cross-reactive anti-M
 
 输入：
 - 蛋白质链：697 aa — Nucleoprotein
-- 　└ 全长序列 A0A1Q1NMU1：对应全长第 604–697 位（构建体 106 aa，解出 68/94；缺 604–629）
+- 　└ UniProt 全长序列 A0A1Q1NMU1：构建体 106 aa 对应其中第 604–697 位（解出 68/94；缺 604–629）
 - 蛋白质链：118 aa — Anti-Marburgvirus Nucleoprotein Single Domain Antibody A
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
@@ -352,7 +352,7 @@ Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum cir
 - 蛋白质链：213 aa — Fab1392 light chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：397 aa — Circumsporozoite protein
-- 　└ 全长序列 Q7K740：对应全长第 310–376 位（构建体 73 aa，解出 65/67；缺 375–376）
+- 　└ UniProt 全长序列 Q7K740：构建体 73 aa 对应其中第 310–376 位（解出 65/67；缺 375–376）
 
 注意：
 - 去垢剂/结晶助剂/不支持的重原子已剔除，不要输入：SO4×2、GOL×3、PEG×3
@@ -372,7 +372,7 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)
 
 输入：
 - 蛋白质链：360 aa — C-C chemokine receptor type 4
-- 　└ 全长序列 P51679：对应全长第 14–24 位（构建体 11 aa，解出 10/11；缺 14）
+- 　└ UniProt 全长序列 P51679：构建体 11 aa 对应其中第 14–24 位（解出 10/11；缺 14）
 - 蛋白质链：219 aa — light chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：231 aa — heavy chain
@@ -395,7 +395,7 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)
 
 输入：
 - 蛋白质链：360 aa — C-C chemokine receptor type 4
-- 　└ 全长序列 P51679：对应全长第 2–29 位（构建体 28 aa，解出 11/28；缺 2–13、25–29）
+- 　└ UniProt 全长序列 P51679：构建体 28 aa 对应其中第 2–29 位（解出 11/28；缺 2–13、25–29）
 - 蛋白质链：130 aa — anti-kappa VHH
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：219 aa — light chain
@@ -422,10 +422,10 @@ Crystal structure of the Caenorhabditis elegans telomeric POT-1-TEBP-1 complex i
 
 输入：
 - 蛋白质链：837 aa — Double-strand telomeric DNA-binding proteins 1
-- 　└ 全长序列 O62329：对应全长第 728–837 位（构建体 111 aa，解出 110/110）
+- 　└ UniProt 全长序列 O62329：构建体 111 aa 对应其中第 728–837 位（解出 110/110）
 - 　└ 训练截止前同源体：无同源体
 - 蛋白质链：345 aa — Protection of telomeres homolog 1
-- 　└ 全长序列 A0A7R7JK61：对应全长第 1–171 位（构建体 172 aa，解出 164/171；缺 131–137）
+- 　└ UniProt 全长序列 A0A7R7JK61：构建体 172 aa 对应其中第 1–171 位（解出 164/171；缺 131–137）
 - 　└ 训练截止前同源体：无同源体
 
 文件：`job_files/yi_1_11KP.json` · `sequences/yi_1_11KP.fasta`
@@ -462,14 +462,14 @@ Type I-F_HNH variant Cascade bound to dsDNA, HNH domain in inwards position
 - RNA 链：60 nt — crRNA
 - DNA 链：46 nt — Target strand
 - 蛋白质链 ×6：335 aa — Cas7f
-- 　└ 全长序列 A0AAX7FM28：对应全长第 1–335 位（构建体 335 aa，解出 324/335；缺 1–11）
+- 　└ UniProt 全长序列 A0AAX7FM28：构建体 335 aa 对应其中第 1–335 位（解出 324/335；缺 1–11）
 - DNA 链：46 nt — Non-target strand
 - 蛋白质链：181 aa — Cas6f
-- 　└ 全长序列 A0AAX7FM27：对应全长第 1–181 位（构建体 181 aa，解出 178/181；缺 179–181）
+- 　└ UniProt 全长序列 A0AAX7FM27：构建体 181 aa 对应其中第 1–181 位（解出 178/181；缺 179–181）
 - 蛋白质链：255 aa — Cas5f
-- 　└ 全长序列 A0AAX7FM22：对应全长第 1–255 位（构建体 255 aa，解出 252/255；缺 1–2、255）
+- 　└ UniProt 全长序列 A0AAX7FM22：构建体 255 aa 对应其中第 1–255 位（解出 252/255；缺 1–2、255）
 - 蛋白质链：344 aa — Cas8f fusion with HNH
-- 　└ 全长序列 A0AAX7FM29：对应全长第 1–344 位（构建体 344 aa，解出 340/344；缺 1–2、343–344）
+- 　└ UniProt 全长序列 A0AAX7FM29：构建体 344 aa 对应其中第 1–344 位（解出 340/344；缺 1–2、343–344）
 
 注意：
 - 两条 DNA 链互为反向互补，是同一段双链的两股，必须都输入
@@ -487,7 +487,7 @@ Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketogluta
 
 输入：
 - 蛋白质链 ×2：310 aa — Biotin halogenase BtnX
-- 　└ 全长序列 A8LT50：对应全长第 1–310 位（构建体 312 aa，解出 308/310；缺 309–310）
+- 　└ UniProt 全长序列 A8LT50：构建体 312 aa 对应其中第 1–310 位（解出 308/310；缺 309–310）
 - 　└ 训练截止前同源体：无同源体
 - 配体（非内置 CCD）：AKG ×2 — 2-OXOGLUTARIC ACID
 - 配体（非内置 CCD）：BTN ×2 — BIOTIN
@@ -515,7 +515,7 @@ Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosph
 - 　└ 直接输入 PDB 里提交的序列：合成肽 / 人工设计蛋白，无天然全长序列
 - 　└ 翻译后修饰：SEP 加在第 2 位（S，构建体编号 2）
 - 蛋白质链 ×2：603 aa — Dual specificity protein phosphatase CDC14A
-- 　└ 全长序列 Q6GQT0：对应全长第 2–345 位（构建体 344 aa，解出 339/344；缺 2–6）
+- 　└ UniProt 全长序列 Q6GQT0：构建体 344 aa 对应其中第 2–345 位（解出 339/344；缺 2–6）
 - 　└ 训练截止前同源体：≥60%（3 个）
 
 注意：
@@ -537,7 +537,7 @@ Cryo-EM structure of human OAT1 in the apo state
 
 输入：
 - 蛋白质链：563 aa — Isoform 2 of Solute carrier family 22 member 6
-- 　└ 全长序列 Q4U2R8：对应全长第 1–550 位（构建体 572 aa，解出 506/550；缺 88–98、318–322、523–550）
+- 　└ UniProt 全长序列 Q4U2R8：构建体 572 aa 对应其中第 1–550 位（解出 506/550；缺 88–98、318–322、523–550）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -557,7 +557,7 @@ Cryo-EM structure of NCLX without calcium (class 1)
 
 输入：
 - 蛋白质链 ×3：585 aa — NCLX
-- 　└ 全长序列 Q6AXS0：对应全长第 1–585 位（构建体 585 aa，解出 490/585；缺 1–49、257–299、583–585）
+- 　└ UniProt 全长序列 Q6AXS0：构建体 585 aa 对应其中第 1–585 位（解出 490/585；缺 1–49、257–299、583–585）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -577,7 +577,7 @@ Terminal two domains of ClfA002 with bound Fab of AZD7745
 
 输入：
 - 蛋白质链：989 aa — Clumping factor A
-- 　└ 全长序列 Q99VJ4：对应全长第 228–529 位（构建体 302 aa，解出 302/302）
+- 　└ UniProt 全长序列 Q99VJ4：构建体 302 aa 对应其中第 228–529 位（解出 302/302）
 - 蛋白质链：225 aa — Human antibody, heavy chain fragment, antigen binding
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：214 aa — Human antibody, light chain, antigen binding
@@ -600,7 +600,7 @@ ISG15 complexed with nanobody
 
 输入：
 - 蛋白质链：165 aa — Ubiquitin-like protein ISG15
-- 　└ 全长序列 P05161：对应全长第 1–157 位（构建体 165 aa，解出 153/157；缺 1–2、156–157）
+- 　└ UniProt 全长序列 P05161：构建体 165 aa 对应其中第 1–157 位（解出 153/157；缺 1–2、156–157）
 - 蛋白质链：149 aa — Nanobody
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 
@@ -622,7 +622,7 @@ Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex
 
 输入：
 - 蛋白质链：622 aa — Mesothelin, cleaved form
-- 　└ 全长序列 Q13421：对应全长第 582–598 位（构建体 17 aa，解出 17/17）
+- 　└ UniProt 全长序列 Q13421：构建体 17 aa 对应其中第 582–598 位（解出 17/17）
 - 蛋白质链：211 aa — Heavy chain of the RO4 fab fragment
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：216 aa — Light chain of the RO4 Fab fragment
@@ -647,10 +647,10 @@ Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1
 
 输入：
 - 蛋白质链：341 aa — Uncharacterized WD repeat-containing protein C824.04
-- 　└ 全长序列 Q9UT39：对应全长第 1–341 位（构建体 341 aa，解出 339/341；缺 340–341）
+- 　└ UniProt 全长序列 Q9UT39：构建体 341 aa 对应其中第 1–341 位（解出 339/341；缺 340–341）
 - 　└ 训练截止前同源体：无同源体
 - 蛋白质链：710 aa — Cleavage and polyadenylation factor complex subunit C74.02c
-- 　└ 全长序列 O74535：对应全长第 565–644 位（构建体 87 aa，解出 80/80）
+- 　└ UniProt 全长序列 O74535：构建体 87 aa 对应其中第 565–644 位（解出 80/80）
 - 　└ 训练截止前同源体：无同源体
 
 文件：`job_files/bing_1_9SCE.json` · `sequences/bing_1_9SCE.fasta`
@@ -666,7 +666,7 @@ Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex c
 
 输入：
 - 蛋白质链：371 aa — Homeobox protein Nkx-2.1
-- 　└ 全长序列 P43699：对应全长第 161–219 位（构建体 59 aa，解出 59/59）
+- 　└ UniProt 全长序列 P43699：构建体 59 aa 对应其中第 161–219 位（解出 59/59）
 - DNA 链：12 nt — 12bp reverse complementary
 - DNA 链：12 nt — CACG-containing 12bp forward strand
 - 离子：MG ×1
@@ -689,11 +689,11 @@ cryoEM structure of retron-Eco7 complex
 - DNA 链：74 nt — msdDNA
 - RNA 链：65 nt — msrRNA
 - 蛋白质链：216 aa — Retron Ec78 putative HNH endonuclease
-- 　└ 全长序列 P0DV92：对应全长第 1–216 位（构建体 216 aa，解出 210/216；缺 83–86、215–216）
+- 　└ UniProt 全长序列 P0DV92：构建体 216 aa 对应其中第 1–216 位（解出 210/216；缺 83–86、215–216）
 - 蛋白质链 ×4：550 aa — Retron Ec78 probable ATPase
-- 　└ 全长序列 P0DV91：对应全长第 1–550 位（构建体 550 aa，解出 447/550；缺 1–37、212–221、258–308 等 4 段）
+- 　└ UniProt 全长序列 P0DV91：构建体 550 aa 对应其中第 1–550 位（解出 447/550；缺 1–37、212–221、258–308 等 4 段）
 - 蛋白质链：311 aa — Retron Ec78 reverse transcriptase
-- 　└ 全长序列 Q46666：对应全长第 1–311 位（构建体 311 aa，解出 273/311；缺 1–24、117–126、308–311）
+- 　└ UniProt 全长序列 Q46666：构建体 311 aa 对应其中第 1–311 位（解出 273/311；缺 1–24、117–126、308–311）
 - 配体（下拉菜单内置）：ATP ×3 — ADENOSINE-5'-TRIPHOSPHATE
 - 离子：MG ×1
 
@@ -713,7 +713,7 @@ Crystal structure of Rv0097 with Fe and CADA bound
 
 输入：
 - 蛋白质链 ×2：289 aa — (3R)-3-[(carboxymethyl)amino]fatty acid oxygenase/decarboxylase
-- 　└ 全长序列 P9WG83：对应全长第 1–289 位（构建体 302 aa，解出 288/289；缺 1）
+- 　└ UniProt 全长序列 P9WG83：构建体 302 aa 对应其中第 1–289 位（解出 288/289；缺 1）
 - 　└ 训练截止前同源体：≥30%（8 个）
 - 配体（非内置 CCD）：VY9 ×2 — (3R)-3-(2-hydroxy-2-oxoethylamino)decanoic acid
 - 离子：FE ×2
@@ -735,12 +735,12 @@ Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron 
 
 输入：
 - 蛋白质链：317 aa — NF-kappa-B inhibitor alpha
-- 　└ 全长序列 P25963：对应全长第 28–39 位（构建体 12 aa，解出 10/12；缺 28、39）
+- 　└ UniProt 全长序列 P25963：构建体 12 aa 对应其中第 28–39 位（解出 10/12；缺 28、39）
 - 　└ 训练截止前同源体：无同源体
 - 　└ 翻译后修饰：SEP 加在第 32 位（S，构建体编号 5）
 - 　└ 翻译后修饰：SEP 加在第 36 位（S，构建体编号 9）
 - 蛋白质链：605 aa — F-box/WD repeat-containing protein 1A
-- 　└ 全长序列 Q9Y297：对应全长第 222–584 位（构建体 365 aa，解出 354/363；缺 254–262）
+- 　└ UniProt 全长序列 Q9Y297：构建体 365 aa 对应其中第 222–584 位（解出 354/363；缺 254–262）
 - 　└ 训练截止前同源体：≥95%（7 个）
 
 注意：
@@ -761,7 +761,7 @@ Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation
 
 输入：
 - 蛋白质链：549 aa — Acetyl-coenzyme A transporter 1
-- 　└ 全长序列 O00400：对应全长第 1–549 位（构建体 560 aa，解出 424/549；缺 1–70、279–293、477–504 等 4 段）
+- 　└ UniProt 全长序列 O00400：构建体 560 aa 对应其中第 1–549 位（解出 424/549；缺 1–70、279–293、477–504 等 4 段）
 - 　└ 训练截止前同源体：无同源体
 - 配体（非内置 CCD）：ACO ×1 — ACETYL COENZYME *A
 
@@ -783,7 +783,7 @@ Cryo-EM structure of human choline-phosphotransferase 1
 
 输入：
 - 蛋白质链 ×2：406 aa — Cholinephosphotransferase 1
-- 　└ 全长序列 Q8WUD6：对应全长第 1–406 位（构建体 406 aa，解出 368/406；缺 1–15、384–406）
+- 　└ UniProt 全长序列 Q8WUD6：构建体 406 aa 对应其中第 1–406 位（解出 368/406；缺 1–15、384–406）
 - 　└ 训练截止前同源体：无同源体
 - 离子：MG ×2
 
@@ -809,7 +809,7 @@ Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoi
 - 蛋白质链：217 aa — Light Chain of Fab MAM01
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：397 aa — Circumsporozoite protein
-- 　└ 全长序列 Q7K740：对应全长第 249–272 位（构建体 24 aa，解出 15/24；缺 249、265–272）
+- 　└ UniProt 全长序列 Q7K740：构建体 24 aa 对应其中第 249–272 位（解出 15/24；缺 249、265–272）
 
 注意：
 - 以下链在实验结构里并未全部解出（Circumsporozoite 62%），比较时只对齐两者共有的残基
@@ -832,7 +832,7 @@ hA5-6 Fab bound to SFTSV glycoprotein Gn
 - 蛋白质链：232 aa — hA5-6 Fab heavy chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：1073 aa — Envelopment polyprotein
-- 　└ 全长序列 W5VWE0：对应全长第 20–340 位（构建体 338 aa，解出 314/321；缺 294–300）
+- 　└ UniProt 全长序列 W5VWE0：构建体 338 aa 对应其中第 20–340 位（解出 314/321；缺 294–300）
 
 注意：
 - 以下链在实验结构里并未全部解出（hA5-6 Fab heavy  92%、Envelopment poly 92%），比较时只对齐两者共有的残基
@@ -851,7 +851,7 @@ Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII
 
 输入：
 - 蛋白质链：3433 aa — Envelope protein E
-- 　└ 全长序列 Q9Q6P4：对应全长第 590–690 位（构建体 102 aa，解出 99/101；缺 590–591）
+- 　└ UniProt 全长序列 Q9Q6P4：构建体 102 aa 对应其中第 590–690 位（解出 99/101；缺 590–591）
 - 蛋白质链：214 aa — W037 Fab Light Chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：224 aa — W037 Fab Heavy Chain
@@ -875,10 +875,10 @@ RelSI toxin-antitoxin complex
 
 输入：
 - 蛋白质链 ×4：77 aa — Toxin
-- 　└ 全长序列 I6X520：对应全长第 1–77 位（构建体 77 aa，解出 77/77）
+- 　└ UniProt 全长序列 I6X520：构建体 77 aa 对应其中第 1–77 位（解出 77/77）
 - 　└ 训练截止前同源体：无同源体
 - 蛋白质链 ×4：84 aa — RelI
-- 　└ 全长序列 I6Y9Z5：对应全长第 1–84 位（构建体 84 aa，解出 77/84；缺 1–3、81–84）
+- 　└ UniProt 全长序列 I6Y9Z5：构建体 84 aa 对应其中第 1–84 位（解出 77/84；缺 1–3、81–84）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -900,7 +900,7 @@ S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp
 - DNA 链：10 nt — Primer strand
 - DNA 链：16 nt — Template strand
 - 蛋白质链：335 aa — DNA polymerase beta
-- 　└ 全长序列 P06746：对应全长第 1–335 位（构建体 335 aa，解出 326/335；缺 1–9）
+- 　└ UniProt 全长序列 P06746：构建体 335 aa 对应其中第 1–335 位（解出 326/335；缺 1–9）
 - 配体（非内置 CCD）：F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
 - 离子：NA ×1
 - 离子：MG ×1
@@ -923,7 +923,7 @@ Crystal structure of the pre-reactive state of porcine OAS1 in complex with dsRN
 - RNA 链：19 nt — RNA (5'-R(*UP*UP*CP*AP*UP*AP*AP*AP*GP*GP*UP*CP*AP*AP*AP*AP*GP*CP*C)-3')
 - RNA 链：19 nt — RNA (5'-R(*GP*GP*CP*UP*UP*UP*UP*GP*AP*CP*CP*UP*UP*UP*AP*UP*GP*AP*A)-3')
 - 蛋白质链：349 aa — 2'-5'-oligoadenylate synthase 1
-- 　└ 全长序列 Q29599：对应全长第 1–349 位（构建体 357 aa，解出 349/349）
+- 　└ UniProt 全长序列 Q29599：构建体 357 aa 对应其中第 1–349 位（解出 349/349）
 - 配体（非内置 CCD）：APC ×1 — DIPHOSPHOMETHYLPHOSPHONIC ACID ADENOSYL ESTER
 - 离子：MN ×3
 
@@ -944,7 +944,7 @@ Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus c
 
 输入：
 - 蛋白质链：338 aa — Ferric anguibactin-binding protein
-- 　└ 全长序列 Q815N5：对应全长第 40–338 位（构建体 302 aa，解出 295/299；缺 40–42、338）
+- 　└ UniProt 全长序列 Q815N5：构建体 302 aa 对应其中第 40–338 位（解出 295/299；缺 40–42、338）
 - 　└ 训练截止前同源体：≥30%（1 个）
 - 配体（非内置 CCD）：DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
 - 离子：FE ×1
@@ -967,10 +967,10 @@ FOXO3 pS413 phosphopeptide binding to 14-3-3sigma
 
 输入：
 - 蛋白质链 ×2：673 aa — Forkhead box protein O3
-- 　└ 全长序列 O43524：对应全长第 410–418 位（构建体 9 aa，解出 9/9）
+- 　└ UniProt 全长序列 O43524：构建体 9 aa 对应其中第 410–418 位（解出 9/9）
 - 　└ 翻译后修饰：SEP 加在第 413 位（S，构建体编号 4）
 - 蛋白质链 ×2：248 aa — 14-3-3 protein sigma
-- 　└ 全长序列 P31947：对应全长第 1–231 位（构建体 236 aa，解出 231/231）
+- 　└ UniProt 全长序列 P31947：构建体 236 aa 对应其中第 1–231 位（解出 231/231）
 - 　└ 训练截止前同源体：≥95%（278 个）
 - 离子：CA ×2
 - 离子：CL ×1
@@ -992,7 +992,7 @@ Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound 
 
 输入：
 - 蛋白质链：485 aa — Auxin transporter protein 1
-- 　└ 全长序列 Q96247：对应全长第 1–485 位（构建体 485 aa，解出 431/485；缺 1–38、470–485）
+- 　└ UniProt 全长序列 Q96247：构建体 485 aa 对应其中第 1–485 位（解出 431/485；缺 1–38、470–485）
 - 　└ 训练截止前同源体：无同源体
 - 配体（非内置 CCD）：3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
 
@@ -1014,7 +1014,7 @@ Human TMEM63A mutant V53M lipid-open state
 
 输入：
 - 蛋白质链：807 aa — CSC1-like protein 1
-- 　└ 全长序列 O94886：对应全长第 1–807 位（构建体 807 aa，解出 650/807；缺 1–43、86–112、371–378 等 4 段）
+- 　└ UniProt 全长序列 O94886：构建体 807 aa 对应其中第 1–807 位（解出 650/807；缺 1–43、86–112、371–378 等 4 段）
 - 　└ 训练截止前同源体：无同源体
 
 注意：
@@ -1034,7 +1034,7 @@ Bc8.108 Fab bound to preS2 peptide
 
 输入：
 - 蛋白质链：191 aa — Large S protein
-- 　└ 全长序列 B2Y6K4：对应全长第 120–142 位（构建体 23 aa，解出 23/23）
+- 　└ UniProt 全长序列 B2Y6K4：构建体 23 aa 对应其中第 120–142 位（解出 23/23）
 - 蛋白质链：228 aa — Fab Bc8.108 heavy chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：215 aa — Fab Bc8.108 light chain
@@ -1057,7 +1057,7 @@ Crystal structure of Fabs 7411 in complex with TREM2 peptide
 
 输入：
 - 蛋白质链：230 aa — TREM-2 stalk peptide
-- 　└ 全长序列 Q9NZC2：对应全长第 131–148 位（构建体 18 aa，解出 17/18；缺 148）
+- 　└ UniProt 全长序列 Q9NZC2：构建体 18 aa 对应其中第 131–148 位（解出 17/18；缺 148）
 - 蛋白质链：212 aa — 7411 Fab Light Chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：221 aa — 7411 Fab Heavy Chain
@@ -1085,7 +1085,7 @@ Crystal structure of the walnut allergen Jug r 2 bound to the human-derived Fab 
 - 蛋白质链：230 aa — 6D12 Fab Heavy Chain
 - 　└ 直接输入 PDB 里提交的序列：抗体链（Fab / 纳米抗体），没有对应的 UniProt 全长
 - 蛋白质链：593 aa — Vicilin Jug r 2.0102 hairpinin alpha 4
-- 　└ 全长序列 Q9SEW4：对应全长第 12–56 位（构建体 47 aa，解出 39/45；缺 12–13、53–56）
+- 　└ UniProt 全长序列 Q9SEW4：构建体 47 aa 对应其中第 12–56 位（解出 39/45；缺 12–13、53–56）
 - 离子：CL ×1
 
 注意：
