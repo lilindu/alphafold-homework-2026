@@ -60,6 +60,36 @@ def revcomp_pairs(rec):
     return out
 
 
+def full_span(regs):
+    """构建体在母体全长序列上覆盖的区间 (lo, hi);无比对信息则 None。
+
+    学生拿到的是全长序列,而实验结构只覆盖其中一段,且这一段**常常不在 N 端**
+    (如 11KP 的构建体是全长 837 的第 728–837 位、9QNG 的 9 残基肽在第 410–418 位)。
+    不给出这个区间,学生就得自己先做一遍序列比对才能把模型和实验结构对齐。
+    """
+    if not regs:
+        return None
+    return min(g[1] for g in regs), max(g[1] + g[2] - 1 for g in regs)
+
+
+def full_gaps(regs, ranges):
+    """把「未解出」的构建体编号区间映射到全长编号,合并相邻段。"""
+    out = []
+    for a, b in ranges or []:
+        for cb, fb, L in regs or []:
+            lo, hi = max(a, cb), min(b, cb + L - 1)
+            if lo <= hi:
+                out.append((fb + lo - cb, fb + hi - cb))
+    out.sort()
+    merged = []
+    for lo, hi in out:
+        if merged and lo <= merged[-1][1] + 1:
+            merged[-1][1] = max(merged[-1][1], hi)
+        else:
+            merged.append([lo, hi])
+    return merged
+
+
 def inputs(rec):
     out = []
     for c in rec["chains"]:
@@ -71,10 +101,25 @@ def inputs(rec):
         if c["type"] == "Protein":
             if c["source"] == "uniprot":
                 obs = c.get("observed")
-                extra = (f",实验结构里只解出 {obs} 个残基"
-                         if obs is not None and obs < c["len"] else "")
-                out.append(f"　└ 全长序列 {c['uniprot']}(构建体 {c['construct_len']} aa"
-                           f"{extra})")
+                sp = full_span(c["regions"])
+                loc = f":对应全长第 {sp[0]}–{sp[1]} 位" if sp else ""
+                if obs is None:
+                    cnt = ""
+                elif c["regions"]:
+                    # 分母用「与全长对齐的残基数」而不是构建体长度:构建体常含标签等
+                    # 不属于母体的残基(如 9VEB 构建体 549 aa 而母体只 543 aa),
+                    # 用构建体长度当分母会让人以为母体区间里也少了那几个。
+                    n_aln = sum(g[2] for g in c["regions"])
+                    gaps = full_gaps(c["regions"], c.get("unobserved_ranges"))
+                    cnt = f",解出 {n_aln - sum(b - a + 1 for a, b in gaps)}/{n_aln}"
+                    if gaps:
+                        shown = "、".join(f"{a}–{b}" if a != b else f"{a}" for a, b in gaps[:3])
+                        cnt += (f";缺 {shown} 等 {len(gaps)} 段" if len(gaps) > 3
+                                else f";缺 {shown}")
+                else:
+                    cnt = f",解出 {obs}/{c['construct_len']}"
+                out.append(f"　└ 全长序列 {c['uniprot']}{loc}"
+                           f"(构建体 {c['construct_len']} aa{cnt})")
             else:
                 out.append(f"　└ 直接输入 PDB 里提交的序列:{c['reason_construct']}")
             h = c.get("homology")
