@@ -84,7 +84,7 @@ def inputs(rec):
                 out.append(f"　└ 翻译后修饰:{p['code']} 加在第 {p['pos']} 位"
                            f"({p['parent']},构建体编号 {p['pos_construct']})")
     for l in rec["ligands"]:
-        tag = "下拉菜单内置" if l["code"] in BUILTIN_LIG else "任意 CCD"
+        tag = "下拉菜单内置" if l["code"] in BUILTIN_LIG else "非内置 CCD"
         out.append(f"配体({tag}):{l['code']} ×{l['count']} — {l['name'][:56]}")
     for i in rec["ions"]:
         out.append(f"离子:{i['code']} ×{i['count']}")
@@ -95,7 +95,7 @@ def cautions(rec):
     cs = []
     manual = [l["code"] for l in rec["ligands"] if l["code"] not in BUILTIN_LIG]
     if manual:
-        cs.append("以下配体不在下拉菜单里,而是任意 CCD 代码:" + "、".join(manual)
+        cs.append("以下配体是非内置 CCD 代码:" + "、".join(manual)
                   + "。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲")
     if rec["ptms"]:
         cs.append("修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),"
@@ -128,7 +128,7 @@ def cautions(rec):
     if rec["category"] == "ab":
         cs.append("建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型")
     if rec["category"] == "memb":
-        cs.append("Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方")
+        cs.append("Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方")
     return cs
 
 

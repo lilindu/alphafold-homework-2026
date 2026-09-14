@@ -197,14 +197,14 @@ CLASSES = [
                          and clean(r) and resol(r) <= 3.2),
          order="diverse"),
     dict(key="ligand", n=4, label="蛋白 + 小分子配体",
-         note="配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;"
+         note="配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;"
               "代码已核实在冻结的 CCD 2024_10_28 字典中",
          test=lambda r: (otherlig(r) and not cofac(r) and not NUC(r)
                          and not has_ab_chain(r) and not memb(r)
                          and clean(r) and resol(r) <= 2.2),
          order="homology"),
     dict(key="ptm", n=4, label="有翻译后修饰的蛋白",
-         note="修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,"
+         note="修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,"
               "4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,"
               "同源体无法避免",
          test=lambda r: (r["ptms"] and len(P(r)) >= 2 and not has_ab_chain(r)
@@ -212,7 +212,7 @@ CLASSES = [
          order="homology"),
     dict(key="memb", n=8, label="膜蛋白",
          note="带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,"
-              "跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+              "跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
          test=lambda r: (memb(r) and P(r) and not has_ab_chain(r) and clean(r)
                          and 250 <= sum(c["len"] * c["copies"] for c in r["chains"]) <= 2400),
          order="homology"),

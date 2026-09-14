@@ -150,7 +150,7 @@ def assembly_counts(eid):
         if rep % listed == 0:
             f = rep // listed
             per = {k: v * f for k, v in per.items()}
-            note = f"生物学装配按对称操作展开 ×{f}"
+            note = f"生物学单元按对称操作展开 ×{f}"
         else:
             note = f"PDB 报告 {rep} 条链、实例表列出 {listed} 条,拷贝数请自行核对"
     return per, note

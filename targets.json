@@ -337,7 +337,7 @@
   "class": "甲班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
-  "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
+  "note": "配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "24UX",
   "title": "Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis O6 in complex with SAH",
   "publication": {
@@ -413,7 +413,7 @@
   "ptms": [],
   "ptm_interface": null,
   "tokens": 668,
-  "assembly_note": "生物学装配按对称操作展开 ×2",
+  "assembly_note": "生物学单元按对称操作展开 ×2",
   "ghosts": [],
   "no": 4,
   "prefix": "jia"
@@ -422,7 +422,7 @@
   "class": "甲班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
-  "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
+  "note": "修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
   "id": "30TL",
   "title": "14-3-3sigma protein binding to ERalpha-weak peptide (AAA mutation)",
   "publication": {
@@ -514,7 +514,7 @@
    "code": "TPO"
   },
   "tokens": 509,
-  "assembly_note": "生物学装配按对称操作展开 ×2",
+  "assembly_note": "生物学单元按对称操作展开 ×2",
   "ghosts": [],
   "no": 5,
   "prefix": "jia"
@@ -523,7 +523,7 @@
   "class": "甲班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9O0I",
   "title": "Cryo-EM structure of Local KwaA-KwaB complex",
   "publication": {
@@ -618,7 +618,7 @@
   "class": "甲班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9VEB",
   "title": "Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C",
   "publication": {
@@ -1525,7 +1525,7 @@
   "class": "乙班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
-  "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
+  "note": "配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "9PV1",
   "title": "Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketoglutarate, chloride",
   "publication": {
@@ -1629,7 +1629,7 @@
   "class": "乙班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
-  "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
+  "note": "修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
   "id": "9S1S",
   "title": "Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosphopeptide",
   "publication": {
@@ -1736,7 +1736,7 @@
   "class": "乙班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9MAU",
   "title": "Cryo-EM structure of human OAT1 in the apo state",
   "publication": {
@@ -1808,7 +1808,7 @@
   "class": "乙班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9PS4",
   "title": "Cryo-EM structure of NCLX without calcium (class 1)",
   "publication": {
@@ -2559,7 +2559,7 @@
   "class": "丙班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
-  "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
+  "note": "配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "9P9O",
   "title": "Crystal structure of Rv0097 with Fe and CADA bound",
   "publication": {
@@ -2640,7 +2640,7 @@
   "class": "丙班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
-  "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
+  "note": "修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
   "id": "9T9W",
   "title": "Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron peptide",
   "publication": {
@@ -2767,7 +2767,7 @@
   "class": "丙班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9M0S",
   "title": "Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation",
   "publication": {
@@ -2851,7 +2851,7 @@
   "class": "丙班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9UET",
   "title": "Cryo-EM structure of human choline-phosphotransferase 1",
   "publication": {
@@ -3587,7 +3587,7 @@
   "class": "丁班",
   "category": "ligand",
   "label": "蛋白 + 小分子配体",
-  "note": "配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
+  "note": "配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中",
   "id": "21ZG",
   "title": "Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus complexed with ferric siderophore mimic, Fe(3,4-DHB)2",
   "publication": {
@@ -3677,7 +3677,7 @@
   "class": "丁班",
   "category": "ptm",
   "label": "有翻译后修饰的蛋白",
-  "note": "修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
+  "note": "修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免",
   "id": "9QNG",
   "title": "FOXO3 pS413 phosphopeptide binding to 14-3-3sigma",
   "publication": {
@@ -3771,7 +3771,7 @@
    "code": "SEP"
   },
   "tokens": 1845,
-  "assembly_note": "生物学装配按对称操作展开 ×2",
+  "assembly_note": "生物学单元按对称操作展开 ×2",
   "ghosts": [],
   "no": 5,
   "prefix": "ding"
@@ -3780,7 +3780,7 @@
   "class": "丁班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9M2H",
   "title": "Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound state",
   "publication": {
@@ -3856,7 +3856,7 @@
   "class": "丁班",
   "category": "memb",
   "label": "膜蛋白",
-  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的",
+  "note": "带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的",
   "id": "9N93",
   "title": "Human TMEM63A mutant V53M lipid-open state",
   "publication": {

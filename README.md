@@ -26,12 +26,12 @@
 
 | 步骤 | 数量 | 说明 |
 |---|---|---|
-| PDB 中 deposit 晚于 2025-02-03 的实验结构 | 15,831 | 全库基数 |
+| PDB 中 deposit 晚于 2025-02-03 的实验结构 | 15,831 | 候选结构总数 |
 | 按类定向检索后合并去重 | 3,126 | |
 | − 序列含未知/非标准残基或碱基 | −157 | 主体是未知残基 `X` |
 | − 有链短于 4 个残基/碱基 | −30 | Server 要求每条链 ≥ 4 |
 | − **配体不在冻结的 CCD 字典里** | **−762** | 最大的单一淘汰原因 |
-| − 生物学装配超过 12 条链 | −93 | 病毒衣壳、纤维等 |
+| − 生物学单元超过 12 条链 | −93 | 病毒衣壳、纤维等 |
 | − token 超过 5,000 | −2 | |
 | **通过全部限制** | **2,082** | 从中选出 41 个 |
 
@@ -44,11 +44,11 @@
    的代码会被判 invalid。这一条淘汰了 762 个(占被剔除总数 73%):结构越新,配体越
    可能是新登记的 —— 这是「deposit 要新」与「配体要可用」之间的真实冲突。
 3. **token ≤ 5,000。** 按 FAQ 算法:蛋白 1/残基、核酸 1/碱基、配体 1/原子、离子 1/个。
-4. **生物学装配 ≤ 12 条链。** 装配上百条链时,「正确答案」不是学生会提交的那几条链。
+4. **生物学单元 ≤ 12 条链。** 上百条链的生物学单元里,「正确答案」不是学生会提交的那几条链。
 
 ### 逐个核对过的四件事
 
-- **拷贝数按生物学装配算,不是晶体学不对称单位。** 两者常不同:曾发现某条目不对称
+- **拷贝数按生物学单元算,不是晶体学不对称单位。** 两者常不同:曾发现某条目不对称
   单位里每种链 6 份(晶体堆积),生物学单元其实是 1:1。
 - **空拷贝已剔除。** 装配成员若只有极少数残基有坐标,那是晶格占位而非真实亚基
   (曾发现某条目声明 3 份胰蛋白酶,其中两份各只有 3 个残基)。
@@ -86,7 +86,7 @@ deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋�
 | 异源复合体 | 17 | 6 |
 | 翻译后修饰 | 34 | **0** |
 
-据此:**膜蛋白 8/8 题、异源复合体 4/4 题选用训练窗口内查不到同源体的结构**,是真正的从头预测测试。
+据此:**膜蛋白 8/8 题、异源复合体 4/4 题选用训练截止前查不到同源体的结构**,是真正的从头预测测试。
 配体类 2/4 题无同源,其余 2 题的同源体数为 1 个、8 个。
 
 **翻译后修饰类找不到干净的,这是结构性的**:被 Server 支持的修饰主要出现在 14-3-3、
@@ -169,7 +169,7 @@ deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋�
 同样内容的 FASTA。下面是人读版本。
 
 **上传 JSON 后不需要手输任何东西** —— 序列、配体的 CCD 代码、离子、翻译后修饰都会
-自动填进 request builder(点 “Open draft” 即可核对)。下面标「任意 CCD」的配体只是
+自动填进 request builder(点 “Open draft” 即可核对)。下面标「非内置 CCD」的配体只是
 说它不在下拉菜单的 19 种内置辅因子里,不是说要自己敲。
 
 ### 甲班
@@ -211,11 +211,11 @@ HIV-1 reverse transcriptase in complex with DNAddG Aptamer and unincorporated IS
 - 　└ 全长序列 P04585(构建体 455 aa,实验结构里只解出 375 个残基)
 - 蛋白质链:1435 aa — Reverse transcriptase/ribonuclease H
 - 　└ 全长序列 P04585(构建体 562 aa,实验结构里只解出 530 个残基)
-- 配体(任意 CCD):6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
+- 配体(非内置 CCD):6FN ×1 — 2'-deoxy-4'-ethynyl-2-fluoroadenosine 5'-(tetrahydrogen 
 - 离子:MG ×1
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:6FN。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:6FN。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 以下链在实验结构里并未全部解出(p51 RT 82%、Reverse transcri 94%),比较时只对齐两者共有的残基
 
 文件:`job_files/jia_2_36BT.json` · `sequences/jia_2_36BT.fasta`
@@ -246,18 +246,18 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 - 论文:[*Int J Biol Macromol* 2026](https://doi.org/10.1016/j.ijbiomac.2026.153837)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-03-22 · release 2026-08-12 · 估算 token 668
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
 - 蛋白质链 ×2:321 aa — Methyltransferase domain protein
 - 　└ 全长序列 A0AB33WVX4(构建体 311 aa,实验结构里只解出 292 个残基)
 - 　└ 训练截止前同源体:无同源体
-- 配体(任意 CCD):SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
+- 配体(非内置 CCD):SAH ×1 — S-ADENOSYL-L-HOMOCYSTEINE
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:SAH。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
-- 生物学装配按对称操作展开 ×2
+- 以下配体是非内置 CCD 代码:SAH。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 生物学单元按对称操作展开 ×2
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×1、IMD×1
 - 以下链在实验结构里并未全部解出(Methyltransferas 93%),比较时只对齐两者共有的残基
 
@@ -269,7 +269,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 - 论文:[*Biochemistry* 2026](https://doi.org/10.1021/acs.biochem.6c00427)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2026-05-13 · release 2026-08-26 · 估算 token 509
-- 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
+- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 - 修饰介导互作的实测证据:TPO 到对方链最近 2.63 Å,4 Å 内接触原子 34 个
 
@@ -286,7 +286,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 注意:
 - 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
-- 生物学装配按对称操作展开 ×2
+- 生物学单元按对称操作展开 ×2
 - 含极短肽链(ERa peptide pT594 weak mutant 5 aa):FAQ 明示 pTM 对短于 16 残基的链系统性偏低,该值接近 0 不代表预测失败。评估以 pLDDT / PAE 为主;要看界面就取 chain_pair_iptm 里「受体链 × 该肽链」那一格,不要用整体 ipTM
 
 文件:`job_files/jia_5_30TL.json` · `sequences/jia_5_30TL.fasta`
@@ -297,7 +297,7 @@ Cryo-EM structure of Local KwaA-KwaB complex
 
 - 论文:[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.07.002)
 - ELECTRON MICROSCOPY / 3.86 Å · deposit 2025-04-02 · release 2025-08-06 · 估算 token 825
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
@@ -309,7 +309,7 @@ Cryo-EM structure of Local KwaA-KwaB complex
 - 　└ 训练截止前同源体:无同源体
 
 注意:
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/jia_6_9O0I.json` · `sequences/jia_6_9O0I.fasta`
 
@@ -319,7 +319,7 @@ Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C
 
 - 论文:[*Commun Biol* 2025](https://doi.org/10.1038/s42003-025-08676-7)
 - ELECTRON MICROSCOPY / 3.56 Å · deposit 2025-06-09 · release 2025-08-06 · 估算 token 1086
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
@@ -328,7 +328,7 @@ Cryo-EM structure of the aspartate:alanine antiporter AspT mutant L60C
 - 　└ 训练截止前同源体:无同源体
 
 注意:
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/jia_7_9VEB.json` · `sequences/jia_7_9VEB.fasta`
 
@@ -498,20 +498,20 @@ Biotin halogenase BtnX, anaerobic structure with Fe(II), biotin, alpha-ketogluta
 
 - 论文:[*Nature* 2026](https://doi.org/10.1038/s41586-026-10716-z)
 - X-RAY DIFFRACTION / 1.20 Å · deposit 2025-07-31 · release 2026-06-24 · 估算 token 674
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
 - 蛋白质链 ×2:310 aa — Biotin halogenase BtnX
 - 　└ 全长序列 A8LT50(构建体 312 aa)
 - 　└ 训练截止前同源体:无同源体
-- 配体(任意 CCD):AKG ×2 — 2-OXOGLUTARIC ACID
-- 配体(任意 CCD):BTN ×2 — BIOTIN
-- 配体(任意 CCD):FE2 ×1 — FE (II) ION
+- 配体(非内置 CCD):AKG ×2 — 2-OXOGLUTARIC ACID
+- 配体(非内置 CCD):BTN ×2 — BIOTIN
+- 配体(非内置 CCD):FE2 ×1 — FE (II) ION
 - 离子:CL ×1
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:AKG、BTN、FE2。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:AKG、BTN、FE2。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×2、PEG×1、SO4×1
 
 文件:`job_files/yi_4_9PV1.json` · `sequences/yi_4_9PV1.fasta`
@@ -522,7 +522,7 @@ Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosph
 
 - 论文:[*J.Biol.Chem.* 2025](https://doi.org/10.1016/j.jbc.2025.110982)
 - X-RAY DIFFRACTION / 1.62 Å · deposit 2025-07-21 · release 2025-12-10 · 估算 token 1212
-- 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
+- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 - 修饰介导互作的实测证据:SEP 到对方链最近 2.67 Å,4 Å 内接触原子 56 个
 
@@ -548,7 +548,7 @@ Cryo-EM structure of human OAT1 in the apo state
 
 - 论文:[*Cell Rep* 2025](https://doi.org/10.1016/j.celrep.2025.115975)
 - ELECTRON MICROSCOPY / 2.87 Å · deposit 2025-03-14 · release 2025-06-18 · 估算 token 563
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
@@ -558,7 +558,7 @@ Cryo-EM structure of human OAT1 in the apo state
 
 注意:
 - 以下链在实验结构里并未全部解出(Isoform 2 of Sol 88%),比较时只对齐两者共有的残基
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/yi_6_9MAU.json` · `sequences/yi_6_9MAU.fasta`
 
@@ -568,7 +568,7 @@ Cryo-EM structure of NCLX without calcium (class 1)
 
 - 论文:[*Nature* 2025](https://doi.org/10.1038/s41586-025-09491-0)
 - ELECTRON MICROSCOPY / 3.29 Å · deposit 2025-07-24 · release 2025-09-10 · 估算 token 1755
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
@@ -578,7 +578,7 @@ Cryo-EM structure of NCLX without calcium (class 1)
 
 注意:
 - 以下链在实验结构里并未全部解出(NCLX 83%),比较时只对齐两者共有的残基
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/yi_7_9PS4.json` · `sequences/yi_7_9PS4.fasta`
 
@@ -724,18 +724,18 @@ Crystal structure of Rv0097 with Fe and CADA bound
 
 - 论文:[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-68588-w)
 - X-RAY DIFFRACTION / 1.12 Å · deposit 2025-06-24 · release 2026-03-11 · 估算 token 614
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
 - 蛋白质链 ×2:289 aa — (3R)-3-[(carboxymethyl)amino]fatty acid oxygenase/decarboxylase
 - 　└ 全长序列 P9WG83(构建体 302 aa)
 - 　└ 训练截止前同源体:>=30%(8 个)
-- 配体(任意 CCD):VY9 ×2 — (3R)-3-(2-hydroxy-2-oxoethylamino)decanoic acid
+- 配体(非内置 CCD):VY9 ×2 — (3R)-3-(2-hydroxy-2-oxoethylamino)decanoic acid
 - 离子:FE ×2
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:VY9。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:VY9。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 
 文件:`job_files/bing_4_9P9O.json` · `sequences/bing_4_9P9O.fasta`
 
@@ -745,7 +745,7 @@ Crystal structure of beta-TrCP bound by diphosphorylated I-kappa-B-alpha degron 
 
 - 论文:[*Acs Chem.Biol.* 2026](https://doi.org/10.1021/acschembio.5c01007)
 - X-RAY DIFFRACTION / 1.16 Å · deposit 2025-11-17 · release 2026-04-08 · 估算 token 922
-- 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
+- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 - 修饰介导互作的实测证据:SEP 到对方链最近 2.61 Å,4 Å 内接触原子 32 个
 
@@ -772,19 +772,19 @@ Acetyl-CoA-bound SLC33A1 in a cytoplasm-facing conformation
 
 - 论文:[*Cell Discov* 2025](https://doi.org/10.1038/s41421-025-00793-1)
 - ELECTRON MICROSCOPY / 3.50 Å · deposit 2025-02-25 · release 2025-04-23 · 估算 token 600
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
 - 蛋白质链:549 aa — Acetyl-coenzyme A transporter 1
 - 　└ 全长序列 O00400(构建体 560 aa,实验结构里只解出 424 个残基)
 - 　└ 训练截止前同源体:无同源体
-- 配体(任意 CCD):ACO ×1 — ACETYL COENZYME *A
+- 配体(非内置 CCD):ACO ×1 — ACETYL COENZYME *A
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:ACO。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:ACO。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 以下链在实验结构里并未全部解出(Acetyl-coenzyme  75%),比较时只对齐两者共有的残基
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/bing_6_9M0S.json` · `sequences/bing_6_9M0S.fasta`
 
@@ -794,7 +794,7 @@ Cryo-EM structure of human choline-phosphotransferase 1
 
 - 论文:[*Biochem.Biophys.Res.Commun.* 2025](https://doi.org/10.1016/j.bbrc.2025.152082)
 - ELECTRON MICROSCOPY / 3.68 Å · deposit 2025-04-09 · release 2025-06-18 · 估算 token 814
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
@@ -806,7 +806,7 @@ Cryo-EM structure of human choline-phosphotransferase 1
 注意:
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:POV×2
 - 以下链在实验结构里并未全部解出(Cholinephosphotr 90%),比较时只对齐两者共有的残基
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/bing_7_9UET.json` · `sequences/bing_7_9UET.fasta`
 
@@ -917,12 +917,12 @@ S180R human DNA polymerase beta, Ternary complex dT:dAmpCpp
 - DNA 链:16 nt — Template strand
 - 蛋白质链:335 aa — DNA polymerase beta
 - 　└ 全长序列 P06746(构建体 335 aa,实验结构里只解出 326 个残基)
-- 配体(任意 CCD):F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
+- 配体(非内置 CCD):F2A ×1 — 2'-deoxy-5'-O-[(S)-hydroxy{[(S)-hydroxy(phosphonooxy)pho
 - 离子:NA ×1
 - 离子:MG ×1
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:F2A。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:F2A。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 
 文件:`job_files/ding_2_9Y1J.json` · `sequences/ding_2_9Y1J.fasta`
 
@@ -940,11 +940,11 @@ Crystal structure of the pre-reactive state of porcine OAS1 in complex with dsRN
 - RNA 链:19 nt — RNA (5'-R(*GP*GP*CP*UP*UP*UP*UP*GP*AP*CP*CP*UP*UP*UP*AP*UP*GP*AP*A)-3')
 - 蛋白质链:349 aa — 2'-5'-oligoadenylate synthase 1
 - 　└ 全长序列 Q29599(构建体 357 aa)
-- 配体(任意 CCD):APC ×1 — DIPHOSPHOMETHYLPHOSPHONIC ACID ADENOSYL ESTER
+- 配体(非内置 CCD):APC ×1 — DIPHOSPHOMETHYLPHOSPHONIC ACID ADENOSYL ESTER
 - 离子:MN ×3
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:APC。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:APC。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×1
 
 文件:`job_files/ding_3_9NYB.json` · `sequences/ding_3_9NYB.fasta`
@@ -955,18 +955,18 @@ Crystal structure of the petrobactin-binding protein FatB from Bacillus cereus c
 
 - 论文:[*Nat Commun* 2026](https://doi.org/10.1038/s41467-026-72127-y)
 - X-RAY DIFFRACTION / 1.40 Å · deposit 2026-01-04 · release 2026-04-22 · 估算 token 350
-- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走任意 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
+- 这一类考察什么:配体不在 Server 的 19 种内置辅因子里,走非内置 CCD 代码那条路;代码已核实在冻结的 CCD 2024_10_28 字典中
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
 - 蛋白质链:338 aa — Ferric anguibactin-binding protein
 - 　└ 全长序列 Q815N5(构建体 302 aa,实验结构里只解出 295 个残基)
 - 　└ 训练截止前同源体:>=30%(1 个)
-- 配体(任意 CCD):DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
+- 配体(非内置 CCD):DHB ×1 — 3,4-DIHYDROXYBENZOIC ACID
 - 离子:FE ×1
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:DHB。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:DHB。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:IPA×1、EDO×1
 
 文件:`job_files/ding_4_21ZG.json` · `sequences/ding_4_21ZG.fasta`
@@ -977,7 +977,7 @@ FOXO3 pS413 phosphopeptide binding to 14-3-3sigma
 
 - 论文:[*Digit Discov* 2025](https://doi.org/10.1039/d5dd00132c)
 - X-RAY DIFFRACTION / 1.35 Å · deposit 2025-03-25 · release 2025-09-03 · 估算 token 1845
-- 这一类考察什么:修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
+- 这一类考察什么:修饰残基由坐标实测确认介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,同源体无法避免
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 - 修饰介导互作的实测证据:SEP 到对方链最近 2.65 Å,4 Å 内接触原子 31 个
 
@@ -993,7 +993,7 @@ FOXO3 pS413 phosphopeptide binding to 14-3-3sigma
 
 注意:
 - 修饰用 proteinChain 的 modifications 字段(ptmType + ptmPosition),位置已换算为全长编号
-- 生物学装配按对称操作展开 ×2
+- 生物学单元按对称操作展开 ×2
 
 文件:`job_files/ding_5_9QNG.json` · `sequences/ding_5_9QNG.fasta`
 
@@ -1003,19 +1003,19 @@ Structure of the auxin importer AUX1 in Arabidopsis thaliana in the CHPAA-bound 
 
 - 论文:[*Cell* 2025](https://doi.org/10.1016/j.cell.2025.04.028)
 - ELECTRON MICROSCOPY / 3.40 Å · deposit 2025-02-27 · release 2025-05-28 · 估算 token 497
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
 - 蛋白质链:485 aa — Auxin transporter protein 1
 - 　└ 全长序列 Q96247(构建体 485 aa,实验结构里只解出 431 个残基)
 - 　└ 训练截止前同源体:无同源体
-- 配体(任意 CCD):3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
+- 配体(非内置 CCD):3C4 ×1 — (3-CHLORO-4-HYDROXYPHENYL)ACETIC ACID
 
 注意:
-- 以下配体不在下拉菜单里,而是任意 CCD 代码:3C4。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
+- 以下配体是非内置 CCD 代码:3C4。上传 job JSON 会自动填入 “CCD Code” 栏;只有从零手工搭建输入时才需自己敲
 - 以下链在实验结构里并未全部解出(Auxin transporte 88%),比较时只对齐两者共有的残基
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/ding_6_9M2H.json` · `sequences/ding_6_9M2H.fasta`
 
@@ -1025,7 +1025,7 @@ Human TMEM63A mutant V53M lipid-open state
 
 - 论文:[*Neuron* 2025](https://doi.org/10.1016/j.neuron.2025.05.009)
 - ELECTRON MICROSCOPY / 2.95 Å · deposit 2025-02-10 · release 2025-06-11 · 估算 token 807
-- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练窗口内查不到同源体的
+- 这一类考察什么:带 PDBTM / MemProtMD / mpstruc 跨膜注释。Server 不建模膜平面,跨膜螺旋排布与构象态最易错;本类优先选训练截止前查不到同源体的
 - 评估重点:单链:pLDDT + Cα RMSD / TM-score
 
 输入:
@@ -1035,7 +1035,7 @@ Human TMEM63A mutant V53M lipid-open state
 
 注意:
 - 以下链在实验结构里并未全部解出(CSC1-like protei 80%),比较时只对齐两者共有的残基
-- Server 不知道膜平面,跨膜螺旋的相对排布是本题最可能出错的地方
+- Server 不建模膜平面,跨膜螺旋之间的相对排布只能靠模型自行推断,是本题最可能出错的地方
 
 文件:`job_files/ding_7_9N93.json` · `sequences/ding_7_9N93.fasta`
 
@@ -1129,5 +1129,5 @@ evidence/          筛选依据与出处:同源筛查、界面实测、装配拷
 结构数据来自 [RCSB PDB](https://www.rcsb.org)(CC0)。
 AlphaFold Server 的限制依据其 [FAQ](https://alphafoldserver.com/faq) 与
 [Release Updates](https://alphafoldserver.com/release-updates);
-任意 CCD 配体输入自 2026-08-19 起开放。
+非内置 CCD 配体输入自 2026-08-19 起开放。
 模型见 Abramson et al., *Nature* 630:493–500 (2024)。
