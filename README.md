@@ -7,7 +7,7 @@
 
 | 类别 | 每班 | 甲班 | 乙班 | 丙班 | 丁班 |
 |---|---|---|---|---|---|
-| 1. 异源蛋白复合体 | 1 | 9V8I | 11KP | 9SCD | 9SDC |
+| 1. 异源蛋白复合体 | 1 | 9V8I | 11KP | 9SCE | 9SDC |
 | 2. 蛋白 + DNA | 1 | 36BT | 9NYI | 9U19 | 9Y1J |
 | 3. 蛋白 + RNA | 1 | 9QS9 | 9SIT | 9VHE | 9TEL |
 | 4. 蛋白 + 小分子配体 | 1 | 24UX | 9PV1 | 29LA | 21ZG |
@@ -136,7 +136,7 @@ deposit 日期只保证「这个条目」不在训练集里,不保证同源蛋�
 
 | # | PDB | 类别 | 分辨率 | token | 组成 | 训练前同源 | 名称 |
 |---|---|---|---|---|---|---|---|
-| 1 | [9SCD](https://www.rcsb.org/structure/9SCD) | 1 | 1.52 | 1051 | 蛋白710 + 蛋白341 | 无 | Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 2 |
+| 1 | [9SCE](https://www.rcsb.org/structure/9SCE) | 1 | 1.61 | 1051 | 蛋白341 + 蛋白710 | 无 | Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1 |
 | 2 | [9U19](https://www.rcsb.org/structure/9U19) | 2 | 1.18 | 396 | 蛋白371 + DNA12 + DNA12 + 离子 MG | 未筛查 | Crystal structure of the NKX2.1 homeodomain in complex with a 12-bp DNA duplex containing a CACG motif variant |
 | 3 | [9VHE](https://www.rcsb.org/structure/9VHE) | 3 | 2.50 | 2960 | DNA74 + RNA65 + 蛋白216 + 蛋白550×4 + 蛋白311 + 配体 ATP×3 + 离子 MG | 未筛查 | cryoEM structure of retron-Eco7 complex |
 | 4 | [29LA](https://www.rcsb.org/structure/29LA) | 4 | 1.13 | 289 | 蛋白275 + 配体 4NC + 离子 K + 离子 CL + 离子 MG | ≥30% (1) | L-DOPA extradiol dioxygenase from Beta vulgaris in complex with 4-nitrocatechol |
@@ -633,26 +633,23 @@ Co-crystal of broadly neutralizing biparatopic monomeric VHH in complex with car
 
 ### 丙班
 
-#### 丙班 1. 9SCD — 第 1 类 异源蛋白复合体
+#### 丙班 1. 9SCE — 第 1 类 异源蛋白复合体
 
-Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 2
+Structure of S. pombe PNUTS (565 - 644) bound to Swd2.2 - crystal form 1
 
-- X-RAY DIFFRACTION / 1.52 Å · deposit 2025-08-10 · release 2026-08-05 · 估算 token 1051
+- X-RAY DIFFRACTION / 1.61 Å · deposit 2025-08-10 · release 2026-08-05 · 估算 token 1051
 - 这一类考察什么:两条以上不同蛋白链的复合体(不含抗体链、不含核酸、非膜蛋白)。考察跨链共进化信号能否把界面摆对
 - 评估重点:多链:ipTM 与 chain_pair_iptm 看界面,pLDDT 看各链自身
 
 输入:
-- 蛋白质链:710 aa — Cleavage and polyadenylation factor complex subunit C74.02c
-- 　└ 全长序列 O74535(构建体 87 aa,实验结构里只解出 79 个残基)
-- 　└ 训练截止前同源体:无同源体
 - 蛋白质链:341 aa — Uncharacterized WD repeat-containing protein C824.04
-- 　└ 全长序列 Q9UT39(构建体 341 aa,实验结构里只解出 325 个残基)
+- 　└ 全长序列 Q9UT39(构建体 341 aa,实验结构里只解出 339 个残基)
+- 　└ 训练截止前同源体:无同源体
+- 蛋白质链:710 aa — Cleavage and polyadenylation factor complex subunit C74.02c
+- 　└ 全长序列 O74535(构建体 87 aa,实验结构里只解出 87 个残基)
 - 　└ 训练截止前同源体:无同源体
 
-注意:
-- 以下链在实验结构里并未全部解出(Cleavage and pol 90%),比较时只对齐两者共有的残基
-
-文件:`job_files/bing_1_9SCD.json` · `sequences/bing_1_9SCD.fasta`
+文件:`job_files/bing_1_9SCE.json` · `sequences/bing_1_9SCE.fasta`
 
 #### 丙班 2. 9U19 — 第 2 类 蛋白 + DNA
 
