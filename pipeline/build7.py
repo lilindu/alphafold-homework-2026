@@ -23,6 +23,15 @@ from collections import Counter
 REPO = "/Users/lilindu/alphafold-homework-2026"
 BAN = ["班1", "班2", "班3", "班4"]
 
+# alloc7.json still uses the old 班N keys, but targets.json and the job files use
+# the class names 甲乙丙丁 and a per-class prefix. The rename is strictly a rename:
+# no target changed classes. The mapping below was re-derived by aligning the ID
+# SETS (not from memory) -- old 班4 is 甲班, the 11-student class, because the
+# 13th antibody lands there.
+RENAME = {"班4": "甲班", "班1": "乙班", "班2": "丙班", "班3": "丁班"}
+PREFIX = {"甲班": "jia", "乙班": "yi", "丙班": "bing", "丁班": "ding"}
+CLS_ORDER = ["甲班", "乙班", "丙班", "丁班"]
+
 BUILTIN_LIG = {"ADP", "ATP", "AMP", "GTP", "GDP", "FAD", "NAD", "NAP", "NDP",
                "HEM", "HEC", "PLM", "OLA", "MYR", "CIT", "CLA", "CHL", "BCL", "BCB"}
 BUILTIN_ION = {"MG", "ZN", "CL", "CA", "NA", "MN", "K", "FE", "CU", "CO"}
@@ -248,7 +257,7 @@ for b in BAN:
                       "code": bestp["code"]}
 
         records.append({
-            "class": b, "category": it["category"], "label": it["label"],
+            "class": RENAME[b], "category": it["category"], "label": it["label"],
             "note": it["note"], "id": eid, "title": r["title"],
             "resolution": r["resolution"], "method": r["method"],
             "deposit": r["deposit"], "release": r["release"],
@@ -262,12 +271,16 @@ for b in BAN:
         })
 
 CAT_ORDER = ["hetero", "dna", "rna", "ligand", "ptm", "memb", "ab"]
-records.sort(key=lambda r: (BAN.index(r["class"]), CAT_ORDER.index(r["category"]), r["id"]))
-for i, r in enumerate(records, 1):
-    r["no"] = i
+records.sort(key=lambda r: (CLS_ORDER.index(r["class"]),
+                            CAT_ORDER.index(r["category"]), r["id"]))
+_seen = {}
+for r in records:
+    _seen[r["class"]] = _seen.get(r["class"], 0) + 1
+    r["no"] = _seen[r["class"]]          # 班内序号,不是全局连续编号
+    r["prefix"] = PREFIX[r["class"]]
 
 print("targets:", len(records))
-for b in BAN:
+for b in CLS_ORDER:
     print(f"  {b}: {sum(1 for r in records if r['class'] == b)} 题")
 print("token range:", min(r["tokens"] for r in records), "-", max(r["tokens"] for r in records))
 print("over limit:", sum(1 for r in records if r["tokens"] > TOKEN_LIMIT))
