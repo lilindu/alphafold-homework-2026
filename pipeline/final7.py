@@ -251,88 +251,93 @@ def pick(pool, n, order):
     return chosen[:n]
 
 
-used, result = set(), {}
-for spec in CLASSES:
-    pool = [r for r in valid.values() if r["id"] not in used and spec["test"](r)]
-    got = pick(pool, spec["n"], spec["order"])
-    for r in got:
+def main():
+    used, result = set(), {}
+    for spec in CLASSES:
+        pool = [r for r in valid.values() if r["id"] not in used and spec["test"](r)]
+        got = pick(pool, spec["n"], spec["order"])
+        for r in got:
+            used.add(r["id"])
+        result[spec["key"]] = got
+        print(f"{spec['key']:8s} pool={len(pool):5d} picked={len(got)}/{spec['n']}")
+        for r in got:
+            b, nn = homology(r)
+            lab = ("未查" if b is None else "无" if b == 0 else
+                   f">={int(b*100)}%")
+            print(f"     {r['id']}  同源{lab:>6s}({nn if nn is not None else '-'})"
+                  f"  res={str(resol(r))[:4]:4s} tok={r['tokens']:5d}  {r['title'][:52]}")
+
+    # ---- antibodies: 13, split between peptide and folded-domain epitopes ----
+    def epitope(r):
+        ag = agch(r)
+        return "peptide" if ag and max(c["len"] for c in ag) <= 30 else "domain"
+
+
+    abpool = [r for r in valid.values() if r["id"] not in used and is_ab_complex(r)
+              and clean(r) and resol(r) <= 3.0
+              and 300 <= r["tokens"] <= 1600]
+    pep = [r for r in abpool if epitope(r) == "peptide"]
+    dom = [r for r in abpool if epitope(r) == "domain"]
+    nb = [r for r in abpool if nbch(r)]
+    sel_nb = pick(nb, 3, "diverse")
+    for r in sel_nb:
         used.add(r["id"])
-    result[spec["key"]] = got
-    print(f"{spec['key']:8s} pool={len(pool):5d} picked={len(got)}/{spec['n']}")
-    for r in got:
-        b, nn = homology(r)
-        lab = ("未查" if b is None else "无" if b == 0 else
-               f">={int(b*100)}%")
-        print(f"     {r['id']}  同源{lab:>6s}({nn if nn is not None else '-'})"
-              f"  res={str(resol(r))[:4]:4s} tok={r['tokens']:5d}  {r['title'][:52]}")
+    pep = [r for r in pep if r["id"] not in used]
+    dom = [r for r in dom if r["id"] not in used]
+    sel_pep = pick(pep, 5, "diverse")
+    for r in sel_pep:
+        used.add(r["id"])
+    dom = [r for r in dom if r["id"] not in used]
+    sel_dom = pick(dom, 5, "diverse")
+    for r in sel_dom:
+        used.add(r["id"])
+    abs_ = sel_nb + sel_pep + sel_dom
+    print(f"ab       pool={len(abpool):5d} picked={len(abs_)}/13"
+          f"  (纳米抗体 {len(sel_nb)}, 线性肽表位 {len(sel_pep)}, 折叠域表位 {len(sel_dom)})")
+    for r in abs_:
+        print(f"     {r['id']}  {epitope(r):8s} res={str(resol(r))[:4]:4s} tok={r['tokens']:5d}"
+              f"  {r['title'][:52]}")
+    result["ab"] = abs_
 
-# ---- antibodies: 13, split between peptide and folded-domain epitopes ----
-def epitope(r):
-    ag = agch(r)
-    return "peptide" if ag and max(c["len"] for c in ag) <= 30 else "domain"
+    # ---- allocate to the four 班 ----
+    BAN = ["班1", "班2", "班3", "班4"]
+    alloc = {b: [] for b in BAN}
+    SPEC = {s["key"]: s for s in CLASSES}
+    SPEC["ab"] = AB
+
+    for i, key in enumerate(["hetero", "dna", "rna", "ligand", "ptm"]):
+        for j, r in enumerate(result[key]):
+            alloc[BAN[(i + j) % 4]].append((SPEC[key], r))
+    # membrane: 2 per 班
+    for j, r in enumerate(result["memb"]):
+        alloc[BAN[j % 4]].append((SPEC["memb"], r))
+    # antibody: 3 per 班 + 1 extra to 班4; spread the types
+    order = []
+    for k in range(5):
+        for grp in (sel_pep, sel_dom):
+            if k < len(grp):
+                order.append(grp[k])
+    order = sel_nb[:1] + order + sel_nb[1:]
+    order = [r for i, r in enumerate(order) if r["id"] not in {x["id"] for x in order[:i]}]
+    for j, r in enumerate(order):
+        alloc[BAN[j % 4]].append((SPEC["ab"], r))
+
+    print()
+    tot = 0
+    for b in BAN:
+        items = alloc[b]
+        tot += len(items)
+        cats = Counter = {}
+        for s, r in items:
+            cats[s["key"]] = cats.get(s["key"], 0) + 1
+        print(f"{b}: {len(items):2d} 题  {cats}")
+    print("TOTAL:", tot)
+
+    out = {b: [{"category": s["key"], "label": s["label"], "note": s["note"], "rec": r}
+               for s, r in alloc[b]] for b in BAN}
+    json.dump(out, open("alloc7.json", "w"), ensure_ascii=False, indent=1)
+    print("wrote alloc7.json")
 
 
-abpool = [r for r in valid.values() if r["id"] not in used and is_ab_complex(r)
-          and clean(r) and resol(r) <= 3.0
-          and 300 <= r["tokens"] <= 1600]
-pep = [r for r in abpool if epitope(r) == "peptide"]
-dom = [r for r in abpool if epitope(r) == "domain"]
-nb = [r for r in abpool if nbch(r)]
-sel_nb = pick(nb, 3, "diverse")
-for r in sel_nb:
-    used.add(r["id"])
-pep = [r for r in pep if r["id"] not in used]
-dom = [r for r in dom if r["id"] not in used]
-sel_pep = pick(pep, 5, "diverse")
-for r in sel_pep:
-    used.add(r["id"])
-dom = [r for r in dom if r["id"] not in used]
-sel_dom = pick(dom, 5, "diverse")
-for r in sel_dom:
-    used.add(r["id"])
-abs_ = sel_nb + sel_pep + sel_dom
-print(f"ab       pool={len(abpool):5d} picked={len(abs_)}/13"
-      f"  (纳米抗体 {len(sel_nb)}, 线性肽表位 {len(sel_pep)}, 折叠域表位 {len(sel_dom)})")
-for r in abs_:
-    print(f"     {r['id']}  {epitope(r):8s} res={str(resol(r))[:4]:4s} tok={r['tokens']:5d}"
-          f"  {r['title'][:52]}")
-result["ab"] = abs_
-
-# ---- allocate to the four 班 ----
-BAN = ["班1", "班2", "班3", "班4"]
-alloc = {b: [] for b in BAN}
-SPEC = {s["key"]: s for s in CLASSES}
-SPEC["ab"] = AB
-
-for i, key in enumerate(["hetero", "dna", "rna", "ligand", "ptm"]):
-    for j, r in enumerate(result[key]):
-        alloc[BAN[(i + j) % 4]].append((SPEC[key], r))
-# membrane: 2 per 班
-for j, r in enumerate(result["memb"]):
-    alloc[BAN[j % 4]].append((SPEC["memb"], r))
-# antibody: 3 per 班 + 1 extra to 班4; spread the types
-order = []
-for k in range(5):
-    for grp in (sel_pep, sel_dom):
-        if k < len(grp):
-            order.append(grp[k])
-order = sel_nb[:1] + order + sel_nb[1:]
-order = [r for i, r in enumerate(order) if r["id"] not in {x["id"] for x in order[:i]}]
-for j, r in enumerate(order):
-    alloc[BAN[j % 4]].append((SPEC["ab"], r))
-
-print()
-tot = 0
-for b in BAN:
-    items = alloc[b]
-    tot += len(items)
-    cats = Counter = {}
-    for s, r in items:
-        cats[s["key"]] = cats.get(s["key"], 0) + 1
-    print(f"{b}: {len(items):2d} 题  {cats}")
-print("TOTAL:", tot)
-
-out = {b: [{"category": s["key"], "label": s["label"], "note": s["note"], "rec": r}
-           for s, r in alloc[b]] for b in BAN}
-json.dump(out, open("alloc7.json", "w"), ensure_ascii=False, indent=1)
-print("wrote alloc7.json")
+if __name__ == "__main__":
+    main()
