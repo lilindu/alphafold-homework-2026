@@ -32,6 +32,28 @@ def worst_hom(r):
     return max(hs, key=lambda h: (h["bin"], h["n"] or 0))
 
 
+def hom_stats(cat):
+    """(无同源的题数, 该类题数, 其余题各自的同源体数,升序)。
+
+    正文里关于同源体的叙述一律从这个函数取数。原先这些数字是写死的,换题后
+    就与下面的分班清单表自相矛盾(配体类换入 9P9O 后仍写着「2 题仅 1 个同源体」;
+    PTM 类换入 9QNG 后仍写着「按数量取最低」)。
+    """
+    zero, tot, rest = 0, 0, []
+    for r in recs:
+        if r["category"] != cat:
+            continue
+        tot += 1
+        h = worst_hom(r)
+        if h is None:
+            continue                     # 未筛查(DNA/RNA/抗体三类不做筛查)
+        if h["bin"] == 0:
+            zero += 1
+        else:
+            rest.append(h["n"] or 0)
+    return zero, tot, sorted(rest)
+
+
 def comp(r):
     """All four input kinds, in the order they appear in the job JSON."""
     parts = []
@@ -152,12 +174,22 @@ A("| 小分子配体 | 100 | 13 |")
 A("| 异源复合体 | 17 | 6 |")
 A("| 翻译后修饰 | 34 | **0** |")
 A("")
-A("据此:**膜蛋白 8 题和异源复合体 4 题全部选用训练窗口内查不到同源体的结构**,是真正")
-A("的从头预测测试。配体类 2 题无同源、2 题仅 1 个同源体。")
+_zm, _tm, _ = hom_stats("memb")
+_zh, _th, _ = hom_stats("hetero")
+A(f"据此:**膜蛋白 {_zm}/{_tm} 题、异源复合体 {_zh}/{_th} 题选用训练窗口内查不到同源体"
+  f"的结构**,是真正的从头预测测试。")
+_zl, _tl, _rl = hom_stats("ligand")
+if _rl:
+    A(f"配体类 {_zl}/{_tl} 题无同源,其余 {len(_rl)} 题的同源体数为 "
+      + "、".join(f"{n} 个" for n in _rl) + "。")
 A("")
+_, _tp, _rp = hom_stats("ptm")
 A("**翻译后修饰类找不到干净的,这是结构性的**:被 Server 支持的修饰主要出现在 14-3-3、")
-A("β-TrCP 这类反复研究的识别模块上。已按同源体**数量**取最低(3 个 vs 278 个,同属")
-A("≥95% 档但泄漏程度差很多)。")
+if _rp:
+    A(f"β-TrCP 这类反复研究的识别模块上 —— 本作业 {len(_rp)} 道 PTM 题都已有同源体,"
+      f"数量从 {_rp[0]} 个到 {_rp[-1]} 个,泄漏程度差很多。")
+else:
+    A("β-TrCP 这类反复研究的识别模块上,同源体无法避免。")
 A("")
 A("**DNA / RNA / 抗体三类未做筛查**,理由:核酸端没有「训练同源」概念;抗体骨架实测")
 A("必然 ≥80%(免疫球蛋白高度保守),无法规避 —— 但抗原端往往查不到同源体,而表位识别")

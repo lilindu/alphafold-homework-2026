@@ -206,7 +206,7 @@ CLASSES = [
     dict(key="ptm", n=4, label="有翻译后修饰的蛋白",
          note="修饰残基经坐标实测介导蛋白-蛋白互作(最近距离 2.2–3.0 Å,"
               "4 Å 内接触原子 ≥ 20)。该类受体多为反复研究的识别模块,"
-              "同源体无法避免,已在同源体数量上取最低",
+              "同源体无法避免",
          test=lambda r: (r["ptms"] and len(P(r)) >= 2 and not has_ab_chain(r)
                          and clean(r) and ptm_ok(r)),
          order="homology"),
