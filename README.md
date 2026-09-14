@@ -275,7 +275,7 @@ Crystal structure of FPP-methyltransferase PcFPPMT from Pseudomonas chlororaphis
 
 输入:
 - 蛋白质链 ×2:5 aa — ERa peptide pT594 weak mutant
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:合成肽 / 人工设计蛋白,无天然全长序列
 - 　└ 翻译后修饰:TPO 加在第 4 位(T,构建体编号 4)
 - 蛋白质链 ×2:248 aa — 14-3-3 protein sigma
 - 　└ 全长序列 P31947(构建体 236 aa,实验结构里只解出 236 个残基)
@@ -345,7 +345,7 @@ Crystal structure of Mengla virus nucleoprotein bound by a cross-reactive anti-M
 - 蛋白质链:697 aa — Nucleoprotein
 - 　└ 全长序列 A0A1Q1NMU1(构建体 106 aa,实验结构里只解出 68 个残基)
 - 蛋白质链:118 aa — Anti-Marburgvirus Nucleoprotein Single Domain Antibody A
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 以下链在实验结构里并未全部解出(Nucleoprotein 64%、Anti-Marburgviru 92%),比较时只对齐两者共有的残基
@@ -364,9 +364,9 @@ Fab1392 in complex with the C-terminal alpha-TSR domain of the P. falciparum cir
 
 输入:
 - 蛋白质链:230 aa — Fab1392 heavy chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:213 aa — Fab1392 light chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:397 aa — Circumsporozoite protein
 - 　└ 全长序列 Q7K740(构建体 73 aa,实验结构里只解出 65 个残基)
 
@@ -390,9 +390,9 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (S14-S24)
 - 蛋白质链:360 aa — C-C chemokine receptor type 4
 - 　└ 全长序列 P51679(构建体 11 aa,实验结构里只解出 10 个残基)
 - 蛋白质链:219 aa — light chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:231 aa — heavy chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 以下链在实验结构里并未全部解出(C-C chemokine re 90%、heavy chain 93%),比较时只对齐两者共有的残基
@@ -413,11 +413,11 @@ Mogamulizumab in complex with CCR4 N-terminus peptide (N2-C29)
 - 蛋白质链:360 aa — C-C chemokine receptor type 4
 - 　└ 全长序列 P51679(构建体 28 aa,实验结构里只解出 11 个残基)
 - 蛋白质链:130 aa — anti-kappa VHH
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:219 aa — light chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:231 aa — heavy chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 以下链在实验结构里并未全部解出(C-C chemokine re 39%、anti-kappa VHH 92%、heavy chain 92%),比较时只对齐两者共有的残基
@@ -458,7 +458,7 @@ Structure of HalA in complex with oligodeoxyadenylate
 输入:
 - DNA 链 ×4:6 nt — DNA (5'-D(*AP*AP*AP*AP*AP*A)-3')
 - 蛋白质链 ×4:371 aa — Structure of HalA in complex with oligodeoxyadenylate
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:合成肽 / 人工设计蛋白,无天然全长序列
 
 注意:
 - 以下链在实验结构里并未全部解出(Structure of Hal 89%),比较时只对齐两者共有的残基
@@ -528,7 +528,7 @@ Crystal structure of C278S mutant of mouse CDC14A in complex with a model phosph
 
 输入:
 - 蛋白质链:6 aa — Model phosphohexapeptide
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:合成肽 / 人工设计蛋白,无天然全长序列
 - 　└ 翻译后修饰:SEP 加在第 2 位(S,构建体编号 2)
 - 蛋白质链 ×2:603 aa — Dual specificity protein phosphatase CDC14A
 - 　└ 全长序列 Q6GQT0(构建体 344 aa,实验结构里只解出 339 个残基)
@@ -595,9 +595,9 @@ Terminal two domains of ClfA002 with bound Fab of AZD7745
 - 蛋白质链:989 aa — Clumping factor A
 - 　└ 全长序列 Q99VJ4(构建体 302 aa,实验结构里只解出 302 个残基)
 - 蛋白质链:225 aa — Human antibody, heavy chain fragment, antigen binding
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:214 aa — Human antibody, light chain, antigen binding
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×2
@@ -618,7 +618,7 @@ ISG15 complexed with nanobody
 - 蛋白质链:165 aa — Ubiquitin-like protein ISG15
 - 　└ 全长序列 P05161(构建体 165 aa,实验结构里只解出 153 个残基)
 - 蛋白质链:149 aa — Nanobody
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:EDO×3、SO4×1
@@ -640,9 +640,9 @@ Crystal structure of Mesothelin C-terminal peptide-RO4 Fab complex
 - 蛋白质链:622 aa — Mesothelin, cleaved form
 - 　└ 全长序列 Q13421(构建体 17 aa,实验结构里只解出 17 个残基)
 - 蛋白质链:211 aa — Heavy chain of the RO4 fab fragment
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:216 aa — Light chain of the RO4 Fab fragment
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:GOL×1
@@ -821,9 +821,9 @@ Crystal structure of Fab MAM01 in complex with NANP6 peptide from circumsporozoi
 
 输入:
 - 蛋白质链:230 aa — Heavy Chain of Fab MAM01
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:217 aa — Light Chain of Fab MAM01
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:397 aa — Circumsporozoite protein
 - 　└ 全长序列 Q7K740(构建体 24 aa,实验结构里只解出 15 个残基)
 
@@ -844,9 +844,9 @@ hA5-6 Fab bound to SFTSV glycoprotein Gn
 
 输入:
 - 蛋白质链:218 aa — hA5-6 Fab light chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:232 aa — hA5-6 Fab heavy chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:1073 aa — Envelopment polyprotein
 - 　└ 全长序列 W5VWE0(构建体 338 aa,实验结构里只解出 314 个残基)
 
@@ -869,9 +869,9 @@ Neutralizing W037 Fab antibody fragment in complex with West Nile Virus EDIII
 - 蛋白质链:3433 aa — Envelope protein E
 - 　└ 全长序列 Q9Q6P4(构建体 102 aa,实验结构里只解出 99 个残基)
 - 蛋白质链:214 aa — W037 Fab Light Chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:224 aa — W037 Fab Heavy Chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 建议跑 3–5 个不同 seed,按 ranking_score / chain_pair_iptm 选最优模型
@@ -1052,9 +1052,9 @@ Bc8.108 Fab bound to preS2 peptide
 - 蛋白质链:191 aa — Large S protein
 - 　└ 全长序列 B2Y6K4(构建体 23 aa,实验结构里只解出 23 个残基)
 - 蛋白质链:228 aa — Fab Bc8.108 heavy chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:215 aa — Fab Bc8.108 light chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:PEG×1、EDO×2
@@ -1075,9 +1075,9 @@ Crystal structure of Fabs 7411 in complex with TREM2 peptide
 - 蛋白质链:230 aa — TREM-2 stalk peptide
 - 　└ 全长序列 Q9NZC2(构建体 18 aa,实验结构里只解出 17 个残基)
 - 蛋白质链:212 aa — 7411 Fab Light Chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:221 aa — 7411 Fab Heavy Chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 
 注意:
 - 去垢剂/结晶助剂/不支持的重原子已剔除,不要输入:PEG×1、GOL×1、SO4×2、EDO×2
@@ -1097,9 +1097,9 @@ Crystal structure of the walnut allergen Jug r 2 bound to the human-derived Fab 
 
 输入:
 - 蛋白质链:214 aa — 6D12 Fab light chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:230 aa — 6D12 Fab Heavy Chain
-- 　└ 用沉积序列:合成肽 / 人工设计蛋白,无天然全长序列
+- 　└ 直接输入 PDB 里提交的序列:抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长
 - 蛋白质链:593 aa — Vicilin Jug r 2.0102 hairpinin alpha 4
 - 　└ 全长序列 Q9SEW4(构建体 47 aa,实验结构里只解出 39 个残基)
 - 离子:CL ×1

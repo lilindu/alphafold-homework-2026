@@ -751,7 +751,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -806,7 +806,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "2",
@@ -828,7 +828,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "3",
@@ -952,7 +952,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -978,7 +978,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -1069,7 +1069,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "2",
@@ -1091,7 +1091,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -1117,7 +1117,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -1939,7 +1939,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "3",
@@ -1961,7 +1961,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -2053,7 +2053,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -2135,7 +2135,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -2152,7 +2152,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -2960,7 +2960,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "2",
@@ -2982,7 +2982,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "3",
@@ -3069,7 +3069,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "2",
@@ -3095,7 +3095,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -3210,7 +3210,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -3232,7 +3232,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -3986,7 +3986,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -4003,7 +4003,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -4090,7 +4090,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "1",
@@ -4112,7 +4112,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    }
   ],
   "ligands": [],
@@ -4179,7 +4179,7 @@
     "frac_observed": 1.0,
     "unobserved_ranges": [],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "2",
@@ -4205,7 +4205,7 @@
      ]
     ],
     "homology": null,
-    "reason_construct": "合成肽 / 人工设计蛋白,无天然全长序列"
+    "reason_construct": "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
    },
    {
     "entity": "3",

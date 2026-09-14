@@ -18,9 +18,17 @@ found earlier, not a hypothetical:
 """
 import json
 import os
+import re
 from collections import Counter
 
 REPO = "/Users/lilindu/alphafold-homework-2026"
+
+# 没有 UniProt 全长的链要分清两种:抗体链(Fab 重/轻链、纳米抗体、VHH)是天然的
+# 免疫球蛋白结构域,只是杂交瘤/免疫序列通常不入 UniProt;另一类才是真正的合成肽或
+# 人工设计蛋白。实测 28 条非全长链里有 25 条是前者,原先一律写成「合成肽 / 人工设计
+# 蛋白」,89% 的情况下说错了。
+AB_CHAIN = re.compile(r"heavy chain|light chain|\bfab\b|\bscfv\b|nanobody|\bvhh\b"
+                      r"|single[- ]domain antibody|sybody|\bvariable domain\b", re.I)
 BAN = ["班1", "班2", "班3", "班4"]
 
 # alloc7.json still uses the old 班N keys, but targets.json and the job files use
@@ -213,6 +221,8 @@ for b in BAN:
                 "homology": homology_of(d["construct"]),
                 "reason_construct": (
                     None if source == "uniprot" else
+                    "抗体链(Fab / 纳米抗体),没有对应的 UniProt 全长"
+                    if AB_CHAIN.search(d["desc"] or "") else
                     "合成肽 / 人工设计蛋白,无天然全长序列" if not d["uniprots"] else
                     "融合构建体,无单一全长形式" if len(d["uniprots"]) > 1 else
                     "缺少 UniProt 比对信息"),

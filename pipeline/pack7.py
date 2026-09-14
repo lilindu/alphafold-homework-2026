@@ -76,7 +76,7 @@ def inputs(rec):
                 out.append(f"　└ 全长序列 {c['uniprot']}(构建体 {c['construct_len']} aa"
                            f"{extra})")
             else:
-                out.append(f"　└ 用沉积序列:{c['reason_construct']}")
+                out.append(f"　└ 直接输入 PDB 里提交的序列:{c['reason_construct']}")
             h = c.get("homology")
             if h is not None:
                 out.append(f"　└ 训练截止前同源体:{hom_label(h)}")
